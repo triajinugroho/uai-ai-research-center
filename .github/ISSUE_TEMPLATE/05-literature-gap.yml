@@ -1,0 +1,76 @@
+# Issue Form — Literature Gap (dari Literature Evidence Map / synthesis matrix; G3 → G4). Label persis sesuai .github/labels.yml.
+name: "Literature Gap"
+description: "Gap yang teridentifikasi dari Literature Evidence Map / synthesis matrix, sebagai bahan RQ (G3 → G4)."
+title: "[UIAI-YYYY-NNN] Gap: "
+labels:
+  - "type:literature-gap"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Literature Gap — diturunkan dari synthesis matrix, bukan dari perasaan
+
+        Gap yang sah berasal dari pola pada synthesis matrix: apa yang konsisten, apa yang bertentangan,
+        apa yang belum diuji. Setiap sumber yang dirujuk harus **terverifikasi ada (DOI/URL)** dan benar-benar dibaca —
+        satu referensi yang tidak dapat diverifikasi membuat **G3 Evidence Ready gagal**. Sumber yang ditemukan lewat AI
+        diverifikasi dan dicatat di AI Usage Log (TPL-10).
+
+  - type: input
+    id: research-id
+    attributes:
+      label: "Research ID"
+      placeholder: "UIAI-2026-001"
+    validations:
+      required: true
+
+  - type: textarea
+    id: gap-statement
+    attributes:
+      label: "Gap statement"
+      description: "Satu paragraf: apa yang sudah diketahui literatur, dan tepat di titik mana pengetahuan itu berhenti/bertentangan."
+      placeholder: "Literatur menunjukkan ... (konsisten pada ...), tetapi bertentangan/kosong pada ... karena ..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: "Bukti dari synthesis matrix"
+      description: "Daftar sumber (penulis, tahun, venue, DOI/URL) + baris matriks yang menunjukkan gap. Semua sumber harus terverifikasi DOI/URL."
+      placeholder: |
+        | Baris | Sumber (DOI/URL) | Temuan relevan | Keterbatasan yang membuka gap |
+        |---|---|---|---|
+        | SM-07 | Penulis A (2023), Venue, https://doi.org/... | ... | hanya data bahasa Inggris |
+    validations:
+      required: true
+
+  - type: dropdown
+    id: gap-type
+    attributes:
+      label: "Jenis gap"
+      options:
+        - "Belum diteliti (unexplored)"
+        - "Hasil bertentangan (conflicting results)"
+        - "Konteks Indonesia belum diuji (context gap)"
+        - "Metode belum dibandingkan (missing comparison)"
+        - "Dataset belum ada (missing dataset)"
+        - "Replikasi diperlukan (replication needed)"
+    validations:
+      required: true
+
+  - type: textarea
+    id: rq-implication
+    attributes:
+      label: "Implikasi untuk RQ"
+      description: "RQ/hipotesis apa yang secara logis lahir dari gap ini, dan jenis kontribusi yang mungkin (empiris, artefak, metode, dataset, replikasi, studi kasus)."
+      placeholder: "Gap ini mengarah ke RQ: ... Kontribusi yang mungkin: ..."
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: verification
+    attributes:
+      label: "Verifikasi sumber"
+      options:
+        - label: "Semua sumber di atas terverifikasi ada (DOI/URL dibuka sendiri) dan benar-benar dibaca; sumber dari AI sudah diverifikasi."
+          required: true
