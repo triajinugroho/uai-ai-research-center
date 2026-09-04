@@ -1,0 +1,33 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.idea/
+.vscode/
+
+# Python tooling
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Office temp files
+~$*.docx
+~$*.xlsx
+~$*.pptx
+
+# Data & artefak riset TIDAK disimpan di repo ini (lihat SECURITY.md & LICENSING.md)
+data/raw/
+data/private/
+*.parquet
+*.h5
+*.ckpt
+*.pt
+*.pth
+*.safetensors
+
+# Output build lokal
+build/
+dist/
+*.log
