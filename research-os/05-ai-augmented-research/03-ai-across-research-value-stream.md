@@ -111,3 +111,37 @@ AI membantu memeriksa kesesuaian format dan meringkas kebijakan venue — yang k
 | Writing | Bahasa & struktur | Menulis hasil/diskusi; menambah sitasi |
 | Review | Reviewer tambahan untuk draft sendiri | Mereview tim lain untuk Anda |
 | Publication | Cek format | Menjadi penulis; menggantikan pembacaan kebijakan |
+
+## 6. Contoh penerapan: satu riset melintasi tiga belas tahap (ilustratif)
+
+Tim `[isi]`, Research ID `UIAI-2026-0NN`, entry door *Faculty Research*, masalah: deteksi dini mahasiswa berisiko drop-out dari aktivitas LMS empat minggu pertama.
+
+| Tahap | Yang dilakukan tim | Yang dilakukan AI | Verifikasi & catatan log |
+|---|---|---|---|
+| Problem | Wawancara singkat tim akademik: keputusan yang berubah = intervensi minggu ke-4 | Diminta 3 reframing problem-first; menyorot bahwa "prediksi" bukan tujuan, "intervensi tepat waktu" tujuannya | Reframing #2 dipakai setelah dikonfirmasi ke dosen pemilik masalah; #1 dan #3 ditolak (log #01) |
+| Search | String pencarian di Scholar & Semantic Scholar; citation chaining dari 3 paper kunci | Kandidat kata kunci lintas bahasa ("early warning", "learning analytics", "at-risk") dan 12 kandidat paper dari mode deep research | 9 dari 12 kandidat ditemukan dan relevan; 3 tidak ditemukan → dibuang (log #02–#04) |
+| Read | 18 paper dibaca; matriks diisi dengan rujukan halaman | Pra-baca struktur 6 paper yang paling sulit | Peer cross-check 2 baris; satu koreksi angka AUC (log #05) |
+| Synthesis | 4 tema: fitur aktivitas, fitur akademik, ketidakseimbangan kelas, generalisasi lintas institusi | Diminta menyusun tabel tema × sumber dari matriks yang diberikan; menyorot kontradiksi pada tema 4 | Kontradiksi dicek di 3 paper; benar (log #06) |
+| Gap | Gap kontekstual + metodologis: baseline sederhana jarang dilaporkan; data institusi Indonesia minim | AI menantang: "apakah sudah ada studi di Indonesia?" | Pencarian ulang dengan kata kunci Indonesia: 2 studi ditemukan, dimasukkan ke matriks; gap dipersempit (log #07) |
+| RQ | "Apakah fitur aktivitas LMS 4 minggu pertama meningkatkan F1 kelas berisiko ≥0,05 dibanding baseline IPK semester 1?" | Hipotesis saingan: efek berasal dari mahasiswa cuti (survivorship) | Kriteria penolakan ditulis tim; hipotesis saingan masuk Threats (log #08) |
+| Method | Benchmarking + experiment; baseline majority & logistic regression IPK; metrik F1 kelas positif; split stratified per angkatan | Red team desain: 8 ancaman; menyarankan AUC sebagai metrik | 4 ancaman diadopsi; AUC dijadikan metrik sekunder dengan justifikasi; SMOTE ditolak (log #09–#12) |
+| Coding | Repositori TPL-15; `run.sh`; tes split | Fungsi split stratified dan evaluasi; penjelasan error pandas | Tes proporsi & ID unik lulus; tidak ada data ke AI (skema saja) (log #13–#18) |
+| Experiment | Pilot pada 1 angkatan, 5 seed | Diagnosis run gagal (memory) | Peer dari tim lain mereproduksi baseline (selisih F1 <0,01) (log #19) |
+| Analysis | Mean ± SD antar seed; error analysis pada false negative | Penjelasan interval bootstrap; kode plotting | Semua angka dari `src/analysis/`; asumsi uji dicek; interpretasi ditulis tim (log #20–#23) |
+| Writing | Proposal TA dari Research Pack | Penyuntingan bahasa bab 1–2; umpan balik struktur | Bagian hasil ditulis tim; sitasi hanya dari `.bib`; `AI-USAGE.md` diperbarui (log #24–#26) |
+| Review | Menulis 2 review untuk tim lain; menerima 2 review | Reviewer tambahan untuk draft sendiri | Draft tim lain tidak diunggah; response letter ditulis tim (log #27) |
+| Publication | Endgame TA; aspirasi paper venue nasional setelah eksperimen penuh | — (belum) | Handoff mencatat "missing evidence: eksperimen 3 angkatan" |
+
+Hasilnya: 27 entri log, 7 di antaranya berisi keputusan **ditolak** — tanda tim menilai, bukan menyalin. Reviewer G8 dapat mengaudit peran AI tanpa bertanya ke tim.
+
+## 7. Cara memakai tabel ini di studio
+
+| Pengguna | Gunakan untuk |
+|---|---|
+| Mahasiswa | Sebelum memakai AI di suatu tahap, baca baris tahap itu: apa tugas manusia, apa peran AI, verifikasi apa yang wajib; salin kolom *Verification* ke kolom verifikasi di AI Usage Log |
+| Dosen (blok konsep) | Tampilkan satu baris tabel di minggu terkait ([MET-03](../04-metopen-research-studio/03-metopen-16-week-blueprint.md)); bahas satu red flag dengan contoh nyata (dianonimkan) dari semester sebelumnya |
+| Mentor (studio) | Saat tim menunjukkan output AI, tanyakan tiga hal: "sumbernya?", "kamu hitung/jalankan ulang?", "dicatat di mana?" |
+| Reviewer gate | Cocokkan log tim dengan kolom *Verification* tahap yang direview; red flags §3 menjadi daftar periksa cepat |
+| Tim kurikulum | Untuk mata kuliah mode E/R, ambil subset tahap (mis. Coding–Experiment–Analysis untuk AI/ML) dan sesuaikan level target ([AIX-02](02-ai-research-competency-framework.md) §7) |
+
+Tabel ini sengaja **tidak** menyebut nama tool spesifik selain sebagai contoh; ketika tool berganti, kolom *Human Task*, *Verification*, dan *Artifact* tetap berlaku. Itulah bagian yang harus dikuasai mahasiswa.
