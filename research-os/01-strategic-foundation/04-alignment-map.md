@@ -73,6 +73,23 @@ Tabel ini menunjukkan pada gate mana setiap kerangka mendapatkan evidence utaman
 | G7 Claim | ● | ● | | | | ● | ● |
 | G8 Contribution | ● | ● | ● | ● | ● | ● | ● |
 
+## 3.1 Empat prinsip alignment
+
+1. **Alignment lewat artefak, bukan lewat narasi.** Setiap klaim "selaras dengan OBE/PjBL/PP-PTS" harus menunjuk artefak yang dapat dibuka (PR, release, entri registry). Tanpa artefak, alignment hanya kalimat di proposal.
+2. **Satu artefak, banyak kerangka.** PR `GATE REVIEW: Method Ready` melayani OBE (asesmen), PjBL (milestone proyek), PP-PTS (bukti kegiatan), AI Center (mentor terlibat), dan TA (desain yang akan dieksekusi). Jangan membuat artefak terpisah per kerangka.
+3. **Kerangka mengikuti pipeline, bukan sebaliknya.** Jika suatu kerangka menuntut format tertentu, format itu dipenuhi lewat *ekspor* ([GOV-05 §3](../07-governance/05-ppts-and-institutional-evidence.md)), bukan dengan mengubah alur riset mahasiswa.
+4. **Keselarasan diverifikasi tiap semester.** Tabel §1 dan §3 diperiksa pada evaluasi semester; kerangka yang berubah (mis. instrumen akreditasi baru) memicu pembaruan kolom "Evidence", bukan pembongkaran sistem.
+
+## 3.2 Cara memakai dokumen ini
+
+| Kebutuhan | Langkah |
+|---|---|
+| **Revisi RPS Metopen/AI-ML** | Ambil baris OBE, CPL/CPMK, PjBL di §1 → buka [ARC-05](../02-academic-architecture/05-cpl-cpmk-artifact-alignment.md) untuk memetakan CPL resmi Prodi ke CPMK konseptual [MET-02](../04-metopen-research-studio/02-metopen-course-outcomes.md) → tulis kolom "bukti capaian" RPS dengan nama artefak Research Pack, bukan "UTS/UAS" |
+| **Concept paper AI Research Center** | Ambil baris Roadmap/Renstra, AI Research Center, Publikasi → gabungkan dengan paket [03](../03-ai-research-ecosystem/01-ai-research-center-concept.md) dan [STR-05](05-theory-of-change.md) |
+| **Laporan PP-PTS / akreditasi / hibah** | Ambil baris PP-PTS dan §3 (gate mana yang menghasilkan evidence) → ikuti prosedur ekspor dan checklist [GOV-05](../07-governance/05-ppts-and-institutional-evidence.md) |
+| **Sosialisasi ke pembimbing TA** | Ambil baris Tugas Akhir → tunjukkan bahwa Research Pack + handoff adalah proposal TA yang sudah melewati G5–G8 |
+| **Menjawab "ini menambah beban?"** | Tunjukkan §3.1 butir 2: satu artefak melayani banyak kerangka; tidak ada form paralel (RSK-07 di [GOV-04](../07-governance/04-risk-register.md)) |
+
 ## 4. Yang belum selaras dan perlu keputusan
 
 | Isu | Status | Tindak lanjut |

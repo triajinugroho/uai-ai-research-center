@@ -49,6 +49,32 @@ Register ini mencatat risiko yang dapat memutus rantai sebab-akibat di [STR-05](
 
 Empat risiko tinggi memiliki benang merah: **kapasitas manusia** (RSK-01, RSK-12) dan **integritas di era GenAI** (RSK-02, RSK-04). Itulah sebabnya desain memilih sweet spot di bawah frontier dan menempatkan integritas sebagai gate lulus/gagal, bukan skor.
 
+## 3.1 Risiko yang paling akut per fase
+
+Setiap fase [GOV-02](02-implementation-roadmap.md) mengaktifkan risiko yang berbeda; owner fase memantau baris yang relevan lebih ketat.
+
+| Fase | Risiko paling akut | Mengapa | Pengaman utama pada fase itu |
+|---|---|---|---|
+| Phase 1 Pilot Metopen | RSK-01, RSK-02, RSK-12, RSK-09 | Semua serba pertama: beban belum terukur, protokol AI baru dikenal, mentor terbatas, reviewer belum terkalibrasi | S0 onboarding; kalibrasi reviewer; dosen pengampu merangkap mentor; audit referensi W5 |
+| Phase 2 Integrate AI/ML | RSK-05, RSK-06, RSK-04 | MK lain masuk; asset mulai dipakai ulang tanpa atribusi; ID mudah terlewat | Mode R yang jelas; handoff Course → Metopen; pencatatan reuse eksplisit |
+| Phase 3 Expand technical courses | RSK-05, RSK-09, RSK-13 | Lebih banyak dosen dengan pemahaman berbeda; ketergantungan pada penggagas | Lecturer Playbook; workshop; `@maintainers` kedua |
+| Phase 4 AI Research Center | RSK-10, RSK-03, RSK-08, RSK-12 | Data partner masuk; tekanan publikasi/hibah naik; kebutuhan mentor melonjak | Perjanjian data; venue registry; IP review; research leads klaster |
+| Phase 5 Scale cross-faculty | RSK-10, RSK-07, RSK-11, RSK-14 | Data lintas fakultas lebih sensitif; laporan publik; otomasi bergantung tool; dokumen formal dikutip luas | SECURITY.md lintas fakultas; ekspor otomatis; katalog kategorikal; verifikasi fakta |
+
+## 3.2 Dashboard risiko untuk rapat bulanan
+
+Admin riset mengisi tabel ini sebelum rapat Research Ops ([GOV-01 §4](01-governance-model.md)); hanya risiko sedang/tinggi dan risiko dengan sinyal aktif yang dibahas.
+
+| ID | Skor saat ini | Sinyal aktif bulan ini? (ya/tidak + bukti) | Tren (naik/tetap/turun) | Tindakan bulan lalu | Tindakan bulan ini | Owner hadir? |
+|---|---|---|---|---|---|---|
+| RSK-01 | 16 | [isi] | [isi] | [isi] | [isi] | [isi] |
+| RSK-02 | 20 | [isi] | [isi] | [isi] | [isi] | [isi] |
+| RSK-12 | 16 | [isi] | [isi] | [isi] | [isi] | [isi] |
+| RSK-04 | 15 | [isi] | [isi] | [isi] | [isi] | [isi] |
+| … | | | | | | |
+
+Contoh terisi (pilot, bulan ke-2): `RSK-12 | 16 | ya — 2 mentor memegang 7 tim, PR G4 tim C menunggu 8 hari | naik | matching mentor | tambah 1 reviewer dari @reviewers untuk G4; batasi 5 tim/mentor mulai angkatan berikutnya | ya`.
+
 ## 4. Proses review risiko
 
 | Langkah | Kapan | Siapa | Apa yang dilakukan |

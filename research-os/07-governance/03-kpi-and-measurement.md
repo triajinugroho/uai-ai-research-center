@@ -87,6 +87,42 @@ Setiap KPI dapat dicapai dengan cara yang salah. Aturan berikut mengikat.
 
 Prinsip umumnya: **ketika target dan kualitas bertentangan, kualitas menang, dan targetnya yang direvisi** — dicatat sebagai keputusan pada evaluasi semester.
 
+## 6.1 Contoh laporan KPI semester (format satu halaman)
+
+Format ini diisi admin riset dari ekspor GitHub ([GOV-05 §3](05-ppts-and-institutional-evidence.md)) dan dibahas pada evaluasi semester. Angka di bawah hanya ilustrasi format, bukan data riil.
+
+```
+LAPORAN KPI — Metopen Research Studio
+Semester: ganjil 2026/2027 (pilot)      Tim terdaftar (S0): 12      Tag repo: v0.2.0
+Tanggal ekspor: [isi]                    Disusun: admin riset         Disetujui: Kaprodi
+
+LEADING                          Aktual     Target pilot   Status   Catatan
+KPI-L-01 One-Pager v0 (W2)       12/12=100%   100%          hijau
+KPI-L-02 RQ tervalidasi (W6)     10/12= 83%   ≥90%          kuning   2 tim mengulang G3 (referensi tak terverifikasi)
+KPI-L-04 Pilot lolos G6 (W10)     9/12= 75%   ≥70%          hijau
+KPI-L-05 Gate review dalam SLA   41/52= 79%   ≥80%          kuning   bottleneck G4–G5 pada 2 mentor (RSK-12)
+KPI-L-07 AI Usage Log per sprint  88%         ≥85%          hijau
+KPI-L-08 Mentor terpasang (W2)   12/12=100%   100%          hijau
+
+INTERMEDIATE                     Aktual     Target pilot   Status
+KPI-I-01 Research Pack v1.0      10/12= 83%   ≥80%          hijau    100% lolos G5 (TA Ready)
+KPI-I-04 Research Ready (G7)      7/12= 58%   ≥50%          hijau
+KPI-I-07 Handoff lengkap         10/10=100%   ≥80%          hijau
+
+KUALITAS & INTEGRITAS            Aktual     Target pilot   Status
+KPI-Q-01 Integrity lolos pertama 49/52= 94%   ≥90%          hijau
+KPI-Q-02 Referensi terverifikasi 117/120=98%  ≥98%          hijau    audit sampel W5 + akhir semester
+KPI-Q-03 Reproduksi peer pertama  6/9 = 67%   ≥60%          hijau
+KPI-Q-05 Insiden integritas       0           0             hijau
+
+KEPUTUSAN EVALUASI SEMESTER
+1. Tambah 1 reviewer @reviewers untuk G4–G5; batas 5 tim per mentor (RSK-12).
+2. Audit referensi dimajukan ke W4 untuk mencegah pengulangan G3.
+3. Lanjut ke Phase 2 (exit criteria Phase 1 terpenuhi: ≥80% G8, handoff diterima TA supervisor).
+```
+
+Status: hijau = mencapai target; kuning = meleset ≤15% dari target; merah = meleset >15% atau KPI-Q-05/Q-06 >0. Setiap status kuning/merah wajib disertai catatan dan rujukan risiko ([GOV-04](04-risk-register.md)).
+
 ## 7. Hubungan dengan dokumen lain
 
 - Rantai sebab-akibat yang dijelaskan KPI ini: [STR-05](../01-strategic-foundation/05-theory-of-change.md).

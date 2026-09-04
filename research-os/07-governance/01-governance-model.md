@@ -100,6 +100,17 @@ Peran akademik di dokumen ini dipetakan ke tim GitHub di [GOVERNANCE.md §3](../
 
 Aturan branch dan PR (`research/gN-*`, `GATE REVIEW:`, merge = lulus) mengikuti [CONTRIBUTING.md](../../CONTRIBUTING.md). Field Mission Control (Research Gate, Maturity, Faculty Mentor, Status, Next Evidence) adalah sumber data utama forum di §4 dan KPI di [GOV-03](03-kpi-and-measurement.md).
 
+## 5.1 Jalur eskalasi
+
+| Masalah | Tingkat 1 | Tingkat 2 | Tingkat 3 | Batas waktu |
+|---|---|---|---|---|
+| Blocker teknis/data satu tim | Sprint review (dosen pengampu) | Mentor | Rapat bulanan Research Ops | 1 minggu per tingkat |
+| PR gate tidak direview dalam SLA | Admin riset mengingatkan reviewer | Dosen pengampu menunjuk reviewer pengganti dari `@reviewers` | Kaprodi | 5 hari kerja per tingkat |
+| Ketidaksepakatan reviewer vs tim atas keputusan gate | Diskusi di PR dengan bukti | Reviewer kedua (mentor/dosen lain) | Dosen pengampu memutuskan; dicatat di PR | 1 minggu |
+| Dugaan pelanggaran integritas | Laporan ke dosen pengampu (rahasia) | Dosen pengampu + AI Research Center memeriksa bukti | Kaprodi memutuskan sesuai [MET-07](../04-metopen-research-studio/07-research-integrity-and-ethics.md) dan aturan universitas | Segera; tidak dibahas di repo publik |
+| Konflik prinsip desain | Rujuk [STR-03 §11](../01-strategic-foundation/03-design-principles.md) | `@maintainers` + tim kurikulum | Kaprodi (amendemen) | Sesuai PR |
+| Kapasitas mentor tidak cukup | Dosen pengampu merangkap sementara | AI Research Center mencari mentor lintas klaster | Kaprodi membatasi jumlah tim/menambah pengakuan beban | Sebelum W2 |
+
 ## 6. Onboarding peran
 
 | Peran | Yang harus dibaca | Yang harus bisa dilakukan sebelum semester |

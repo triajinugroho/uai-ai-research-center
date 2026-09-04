@@ -82,7 +82,16 @@ Contoh untuk MK teknis: CPMK teknis yang sudah ada tetap; yang ditambahkan adala
 | 6 | CPL-x: [isi] | Mendokumentasikan penggunaan AI untuk kode/analisis secara jujur | Lintas minggu | Kriteria disclosure | AI Usage Log | `docs/AI-USAGE.md` |
 | 7 | CPL-x: [isi] | Menyerahkan asset untuk dilanjutkan (handoff) | Pertemuan akhir | Kriteria handoff terisi | Handoff #1 ([TPL-14](../08-templates/14-research-handoff-template.md)) | `docs/handoff-course.md`; daftar handoff di koordinator Metopen |
 
-Untuk MK mode E, cukup baris 1, 2, 4, 6; untuk mode F, cukup satu baris bernuansa evidence reasoning (mis. "menafsirkan hasil analisis dan menyatakan apa yang tidak boleh disimpulkan" → artifact: laporan + notebook; evidence: notebook yang dijalankan ulang teman).
+Untuk MK mode E, cukup baris 1, 2, 4, 6; untuk mode F, cukup satu–dua baris bernuansa evidence reasoning seperti contoh berikut.
+
+## 5b. Contoh terisi — Statistika Terapan (semester II, mode F)
+
+| # | CPL | CPMK | Learning Activity | Assessment | Research Artifact | Evidence |
+|---|---|---|---|---|---|---|
+| 1 | CPL-x: [isi] | Menafsirkan hasil analisis inferensial pada data nyata dan menyatakan secara eksplisit apa yang tidak boleh disimpulkan (korelasi ≠ kausalitas, generalisasi terbatas sampel) | Tugas analisis dataset publik/anonim (minggu 10–12) | Rubrik laporan: kriteria "batas kesimpulan" berbobot ≥ 20% | Laporan analisis + notebook yang dapat dijalankan ulang | Notebook dijalankan ulang oleh teman sekelas (peer check tercatat di laporan) |
+| 2 | CPL-x: [isi] | Mereplikasi satu analisis dari paper/data terbuka dan menjelaskan perbedaan hasil | Tugas replikasi berpasangan (minggu 13–14) | Rubrik: kejujuran melaporkan perbedaan; bukan "hasil sama" | Notebook replikasi + catatan perbedaan | Repositori/folder tugas dengan data, kode, dan seed |
+
+Dua baris ini tidak menambah materi Statistika Terapan; keduanya hanya mengarahkan tugas yang sudah ada agar menghasilkan kebiasaan Year 1 spiral ([ARC-01 §3](01-research-capability-spiral.md)).
 
 ## 6. Aturan kualitas baris
 
