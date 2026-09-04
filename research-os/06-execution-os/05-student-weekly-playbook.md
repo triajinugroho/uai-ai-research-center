@@ -76,7 +76,7 @@ Isi tiap bagian diambil dari kolom WBS: *Tasks* ← `Task ID`, `Task`, `Estimate
 
 ## Contoh terisi: Week 06 — RQ
 
-Contoh di bawah memakai Task ID nyata dari [OPS-01](01-research-wbs-master.md) sprint S6. Halaman resminya: [`week-06-rq.md`](../../metopen-research-studio/weeks/week-06-rq.md).
+Contoh di bawah memakai Task ID nyata dari [OPS-01](01-research-wbs-master.md) sprint S6. Halaman resminya: `week-06-rq.md` di [`metopen-research-studio/weeks/`](../../metopen-research-studio/weeks/).
 
 ```
 # Week 06 — RQ                      (Sprint S6 · mengejar Gate G4 Question Ready)
