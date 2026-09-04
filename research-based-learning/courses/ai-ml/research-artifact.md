@@ -14,7 +14,7 @@ Dokumen ini menetapkan **research asset** yang dihasilkan mata kuliah AI & Machi
 | **Experiment Card** | Wajib | Markdown, `docs/experiment-card.md` | [TPL-09](../../../research-os/08-templates/09-experiment-card.md) | — (mengikuti Research ID bila ada) | Hipotesis, baseline, variabel, dataset, metrik, kontrol, expected result, threats awal — semua terisi **sebelum** hasil ada (dibuktikan tanggal commit) | Repo tim; dilampirkan ke handoff | G5 |
 | **Reproducible notebook / repo** | Wajib | Repo dari TPL-15: `src/`, `notebooks/`, `experiments/`, `results/`, `figures/`, `requirements.txt`/`environment.yml`, `experiments/README.md` | [TPL-15](../../../research-os/08-templates/15-research-repository-template.md) | — | Peer dari tim lain mereproduksi angka baseline tanpa bertanya; seed dan konfigurasi tercatat; catatan reproduksi peer tersimpan | Repo tim (INTERNAL → PUBLIC bila dirilis) | G6 |
 | **Error analysis** | Wajib | `results/analysis.md` + figur di `figures/` | — | — | Kasus gagal dikelompokkan; perbandingan terhadap baseline; variansi dilaporkan; klaim dibatasi bukti; hasil negatif tidak disembunyikan | Repo tim; diringkas di one-pager | G7 |
-| **Research One-Pager v0** | Wajib | Markdown 1 halaman, `docs/one-pager.md` | [TPL-01](../../../research-os/08-templates/01-research-one-pager-template.md) | `UIAI-YYYY-TBD` (sementara; resmi saat lolos G2 di Metopen) | Problem, why, RQ awal, method, data, baseline, metric, expected contribution, keterbatasan; ditulis problem-first | Dilampirkan ke Issue backlog; handoff ke Metopen | G2 (awal), G7 (klaim) |
+| **Research One-Pager v0** | Wajib | Markdown 1 halaman, `docs/one-pager.md` | [TPL-01](../../../research-os/08-templates/01-research-one-pager-template.md) | ID sementara per [CONTRIBUTING.md §2](../../../CONTRIBUTING.md); `UIAI-YYYY-NNN` resmi saat lolos G2 di Metopen | Problem, why, RQ awal, method, data, baseline, metric, expected contribution, keterbatasan; ditulis problem-first | Dilampirkan ke Issue backlog; handoff ke Metopen | G2 (awal), G7 (klaim) |
 | **AI Usage Log + AI Usage Statement** | Wajib | `AI-USAGE.md` di repo; log tabel per penggunaan | [TPL-10](../../../research-os/08-templates/10-ai-usage-log-template.md) | — | Tool, tanggal, tujuan, output material, verifikasi, dimasukkan/tidak ke hasil akhir; kekeliruan AI yang ditemukan dicatat | Repo tim; lampiran laporan | Integrity check setiap milestone |
 | **Issue Research Problem** | Opsional (wajib bila tema baru) | Issue GitHub `type:problem` + `cluster:*` | Form *Research Problem* di `.github/ISSUE_TEMPLATE/` | `UIAI-YYYY-NNN` saat lolos G2 | Problem-first; stakeholder jelas; potential dataset dan related courses terisi | `research-backlog/` | G2 |
 | **Model / artefak terlatih** | Opsional | Weights di luar GitHub (server institusi/HF) + kartu model di `docs/model-card.md` | — | `ART-YYYY-NNN` bila dirilis lewat release review | Kartu model: data latih, metrik, keterbatasan, lisensi; IP review bila berpotensi HKI ([LICENSING.md](../../../LICENSING.md)) | `publications/` (bagian artefak) | Release review |
@@ -36,7 +36,7 @@ Dokumen ini menetapkan **research asset** yang dihasilkan mata kuliah AI & Machi
 | Artefak | Lokasi | ID | Status |
 |---|---|---|---|
 | Dataset card v0 "[isi nama dataset]" | `datasets-registry/datasets/ds-YYYY-NNN-[slug].md` | `DS-YYYY-NNN` | Diterima pengelola registry, privasi `Public` |
-| Experiment Card "baseline logistic regression vs [metode]" | `proj-YYYY-[topik]/docs/experiment-card.md` | `UIAI-YYYY-TBD` | Commit 2 minggu sebelum hasil |
+| Experiment Card "baseline logistic regression vs [metode]" | `proj-YYYY-[topik]/docs/experiment-card.md` | ID sementara | Commit 2 minggu sebelum hasil |
 | Handoff ke Metopen | `proj-YYYY-[topik]/docs/handoff.md` | — | Missing evidence: threats to validity eksternal, literature map |
 
 ## 4. Ke mana artefak mengalir
@@ -44,7 +44,7 @@ Dokumen ini menetapkan **research asset** yang dihasilkan mata kuliah AI & Machi
 ```
 AI/ML (sem. V)
 ├─ dataset card ──────────► datasets-registry/  (DS-YYYY-NNN)
-├─ one-pager + Issue ─────► research-backlog/   (UIAI-YYYY-TBD → NNN di G2 Metopen)
+├─ one-pager + Issue ─────► research-backlog/   (ID sementara → UIAI-YYYY-NNN di G2 Metopen)
 ├─ experiment card + repo ► Metopen W1–W2 (entry door Course Project) ─► TA
 ├─ model/artefak ─────────► publications/ (ART-YYYY-NNN) bila dirilis
 └─ semua ─────────────────► Mission Control (field Course = AI/ML) untuk tim yang lanjut

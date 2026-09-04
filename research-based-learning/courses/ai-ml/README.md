@@ -81,7 +81,7 @@ Minggu 1–2 dipakai untuk pembentukan tim, pembacaan protokol AI, dan pemilihan
 ### 5.3 Hubungan ke backlog dan datasets-registry
 
 - **Masuk:** tema diambil dari backlog/registry (*reuse before create*). Bila tim membuat tema baru, tim membuka Issue *Research Problem* pada minggu 3 sehingga masalahnya tercatat sekalipun proyek berhenti di akhir semester.
-- **Keluar:** dataset card v0 diserahkan ke pengelola `datasets-registry/` (ID `DS-YYYY-NNN` diberikan bila lolos verifikasi metadata); Research One-Pager v0 dilampirkan ke Issue backlog; tim yang lanjut ke Metopen membawa Research ID sementara `UIAI-YYYY-TBD` yang diresmikan saat lolos G2 di Metopen.
+- **Keluar:** dataset card v0 diserahkan ke pengelola `datasets-registry/` (ID `DS-YYYY-NNN` diberikan bila lolos verifikasi metadata); Research One-Pager v0 dilampirkan ke Issue backlog; tim yang lanjut ke Metopen membawa Research ID sementara (format sementara sesuai [CONTRIBUTING.md §2](../../../CONTRIBUTING.md)) yang diresmikan menjadi `UIAI-YYYY-NNN` saat lolos G2 di Metopen.
 
 ## 6. Rubrik ringkas research-quality
 
