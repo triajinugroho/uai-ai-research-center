@@ -6,7 +6,7 @@
 
 ## Cara pakai
 
-Registry ini adalah daftar venue (jurnal, konferensi, workshop, repositori dataset/artefak) yang **sudah diperiksa** sehingga tim tidak memilih venue predatory atau salah sasaran. Diisi dan ditinjau oleh pengelola publications bersama `@research-leads`, minimal setahun sekali dan setiap ada usulan venue baru lewat Issue **Publication**. Mahasiswa memakainya pada W1 (menetapkan aspirasi endgame) dan W13 (manuscript) untuk backward design ([MET-05](../04-metopen-research-studio/05-publication-backward-design.md)); kolom **Publication Target** di Mission Tracker hanya boleh berisi venue berstatus *whitelist* atau *hati-hati* dengan persetujuan mentor. Disimpan di `publications/VENUES.md` (indeks) dengan catatan pemeriksaan per venue di Issue.
+Registry ini adalah daftar venue (jurnal, konferensi, workshop, repositori dataset/artefak) yang **sudah diperiksa** sehingga tim tidak memilih venue predatory atau salah sasaran. Diisi dan ditinjau oleh pengelola publications bersama `@research-leads`, minimal setahun sekali dan setiap ada usulan venue baru lewat Issue **Publication**. Mahasiswa memakainya pada W1 (menetapkan aspirasi endgame) dan W13 (manuscript) untuk backward design ([MET-05](../04-metopen-research-studio/05-publication-backward-design.md)); kolom **Publication Target** di Mission Tracker hanya boleh berisi venue berstatus *whitelist* atau *hati-hati* dengan persetujuan mentor. Disimpan di `publications/` sebagai bagian **Venue Registry** di [PUBLICATIONS.md](../../publications/PUBLICATIONS.md) (atau file indeks terpisah yang ditautkan dari sana), dengan catatan pemeriksaan per venue di Issue.
 
 ## Nilai kolom
 
@@ -23,7 +23,7 @@ Registry ini adalah daftar venue (jurnal, konferensi, workshop, repositori datas
 | Kecocokan endgame | TA (laporan/proposal dapat dikonversi) / Paper / Dataset / Artefak |
 | Diverifikasi oleh, tanggal | nama + tanggal pemeriksaan; ulang setahun sekali |
 
-## Template tabel (salin ke `publications/VENUES.md`)
+## Template tabel (salin ke bagian Venue Registry di `publications/PUBLICATIONS.md`)
 
 ```markdown
 | Venue | Jenis | Tingkat | Scope | Indexing | Template | Deadline / siklus | Cost | Ethics status | Suitable topics | Kecocokan endgame | Diverifikasi |

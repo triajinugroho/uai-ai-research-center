@@ -1,0 +1,195 @@
+# Pemeriksaan dokumen (CONTRIBUTING.md §6 / CLAUDE.md "Verifikasi sebelum commit"):
+#   1. tools/check_links.py      — link & anchor relatif di semua *.md
+#   2. tools/build_wbs.py --check — 01-research-wbs-master.md sinkron dengan research-wbs.csv
+#   3. Validasi YAML .github/    — semua *.yml dapat di-load; issue forms sesuai skema GitHub;
+#                                  label yang dirujuk ada di .github/labels.yml
+# CATATAN: versi actions/checkout (@v4) dan actions/setup-python (@v5) perlu ditinjau berkala.
+name: docs-check
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "**/*.md"
+      - "**/*.yml"
+      - "**/*.yaml"
+      - "**/*.csv"
+      - "tools/**"
+  pull_request:
+    paths:
+      - "**/*.md"
+      - "**/*.yml"
+      - "**/*.yaml"
+      - "**/*.csv"
+      - "tools/**"
+
+permissions:
+  contents: read
+
+jobs:
+  docs-check:
+    name: Links, WBS, and issue-form validation
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4 # tinjau versi secara berkala
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5 # tinjau versi secara berkala
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install pyyaml
+
+      - name: Check relative links and anchors
+        run: python3 tools/check_links.py
+
+      - name: Check WBS render is in sync with research-wbs.csv
+        run: python3 tools/build_wbs.py --check
+
+      - name: Validate .github YAML and issue forms
+        run: |
+          python3 - <<'PY'
+          import glob, os, re, sys
+          import yaml
+
+          errors = []
+          def err(msg):
+              errors.append(msg)
+
+          # 1. Semua YAML di .github/ harus dapat di-load.
+          files = sorted(glob.glob(".github/**/*.yml", recursive=True)
+                         + glob.glob(".github/**/*.yaml", recursive=True))
+          docs = {}
+          for f in files:
+              try:
+                  with open(f, encoding="utf-8") as fh:
+                      docs[f] = yaml.safe_load(fh)
+              except Exception as e:  # noqa: BLE001
+                  err(f"{f}: YAML tidak valid — {e}")
+          print(f"YAML di-load: {len(docs)}/{len(files)} file")
+
+          # 2. labels.yml: list [{name, color, description}], nama unik, warna hex 6 digit.
+          label_names = set()
+          labels = docs.get(".github/labels.yml")
+          if not isinstance(labels, list):
+              err(".github/labels.yml: harus berupa list label")
+          else:
+              for i, lab in enumerate(labels):
+                  if not isinstance(lab, dict) or not {"name", "color", "description"} <= set(lab):
+                      err(f".github/labels.yml: entri #{i} harus punya name, color, description")
+                      continue
+                  if lab["name"] in label_names:
+                      err(f".github/labels.yml: label duplikat '{lab['name']}'")
+                  label_names.add(lab["name"])
+                  if not re.fullmatch(r"[0-9a-fA-F]{6}", str(lab["color"])):
+                      err(f".github/labels.yml: warna '{lab['color']}' pada '{lab['name']}' bukan hex 6 digit")
+          print(f"Label dalam taksonomi: {len(label_names)}")
+
+          # 3. Issue forms: skema GitHub Issue Forms.
+          VALID_TYPES = {"markdown", "input", "textarea", "dropdown", "checkboxes"}
+          form_names = set()
+          forms = sorted(glob.glob(".github/ISSUE_TEMPLATE/*.yml")
+                         + glob.glob(".github/ISSUE_TEMPLATE/*.yaml"))
+          n_forms = 0
+          for f in forms:
+              d = docs.get(f)
+              if os.path.basename(f) in ("config.yml", "config.yaml"):
+                  if not isinstance(d, dict) or "blank_issues_enabled" not in d:
+                      err(f"{f}: harus punya blank_issues_enabled")
+                  for j, cl in enumerate((d or {}).get("contact_links") or []):
+                      if not isinstance(cl, dict) or not {"name", "url", "about"} <= set(cl):
+                          err(f"{f}: contact_links #{j} harus punya name, url, about")
+                      elif not str(cl["url"]).startswith("https://"):
+                          err(f"{f}: contact_links #{j} url harus https://")
+                  continue
+              n_forms += 1
+              if not isinstance(d, dict):
+                  err(f"{f}: issue form harus berupa mapping")
+                  continue
+              for key in ("name", "description", "body"):
+                  if not d.get(key):
+                      err(f"{f}: field wajib '{key}' kosong/tidak ada")
+              name = d.get("name")
+              if name in form_names:
+                  err(f"{f}: name '{name}' sudah dipakai form lain (harus unik)")
+              form_names.add(name)
+              labs = d.get("labels", [])
+              if isinstance(labs, str):
+                  labs = [s.strip() for s in labs.split(",") if s.strip()]
+              if not isinstance(labs, list):
+                  err(f"{f}: labels harus list atau string")
+                  labs = []
+              for lab in labs:
+                  if lab not in label_names:
+                      err(f"{f}: label '{lab}' tidak ada di .github/labels.yml")
+              body = d.get("body")
+              if not isinstance(body, list) or not body:
+                  err(f"{f}: body harus list tidak kosong")
+                  continue
+              ids = set()
+              n_fields = 0
+              for i, el in enumerate(body):
+                  where = f"{f}: body[{i}]"
+                  if not isinstance(el, dict) or "type" not in el:
+                      err(f"{where}: elemen harus mapping dengan 'type'")
+                      continue
+                  t = el["type"]
+                  if t not in VALID_TYPES:
+                      err(f"{where}: type '{t}' tidak dikenal")
+                      continue
+                  attrs = el.get("attributes")
+                  if not isinstance(attrs, dict):
+                      err(f"{where}: attributes harus mapping")
+                      continue
+                  if t == "markdown":
+                      if not attrs.get("value"):
+                          err(f"{where}: markdown harus punya attributes.value")
+                      continue
+                  n_fields += 1
+                  eid = el.get("id")
+                  if not eid:
+                      err(f"{where}: elemen '{t}' harus punya id")
+                  elif not re.fullmatch(r"[A-Za-z0-9_-]+", str(eid)):
+                      err(f"{where}: id '{eid}' hanya boleh alfanumerik, '-' dan '_'")
+                  elif eid in ids:
+                      err(f"{where}: id '{eid}' duplikat dalam form")
+                  else:
+                      ids.add(eid)
+                  if not attrs.get("label"):
+                      err(f"{where}: elemen '{t}' harus punya attributes.label")
+                  if t == "dropdown":
+                      opts = attrs.get("options")
+                      if not isinstance(opts, list) or not opts:
+                          err(f"{where}: dropdown harus punya options (list tidak kosong)")
+                      elif any(not isinstance(o, str) or not o for o in opts):
+                          err(f"{where}: semua options dropdown harus string tidak kosong")
+                      elif len(set(opts)) != len(opts):
+                          err(f"{where}: options dropdown harus unik")
+                      else:
+                          dflt = attrs.get("default")
+                          if dflt is not None and (not isinstance(dflt, int) or not 0 <= dflt < len(opts)):
+                              err(f"{where}: default harus indeks 0..{len(opts) - 1}")
+                  if t == "checkboxes":
+                      opts = attrs.get("options")
+                      if not isinstance(opts, list) or not opts:
+                          err(f"{where}: checkboxes harus punya options (list tidak kosong)")
+                      else:
+                          for j, o in enumerate(opts):
+                              if not isinstance(o, dict) or not o.get("label"):
+                                  err(f"{where}: options[{j}] checkboxes harus mapping dengan label")
+                  v = el.get("validations")
+                  if v is not None and not isinstance(v, dict):
+                      err(f"{where}: validations harus mapping")
+              if n_fields == 0:
+                  err(f"{f}: form harus punya minimal satu elemen selain markdown")
+          print(f"Issue forms diperiksa: {n_forms}")
+
+          if errors:
+              print("\nKESALAHAN:")
+              for e in errors:
+                  print(" -", e)
+              sys.exit(1)
+          print("OK: semua YAML .github valid, issue forms sesuai skema, label konsisten.")
+          PY
