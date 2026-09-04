@@ -135,7 +135,7 @@ Build hanya sebaik masalah yang masuk. Discover adalah fungsi pusat riset untuk 
 
 **Sumber masalah.** Roadmap 2026–2030 ([research-roadmap](../../research-roadmap/README.md)), Renstra Penelitian UAI, masalah mitra industri/pemerintah/masyarakat ([AIR-05](../03-ai-research-ecosystem/05-research-demand-supply-marketplace.md)), riset dosen ([AIR-03](../03-ai-research-ecosystem/03-faculty-research-alignment.md)), Problem Brief dari Kerja Praktik, dataset yang tersedia, dan handoff #3 dari TA sebelumnya.
 
-**Output.** Issue `type:problem` di research backlog dengan metadata (cluster, domain, problem owner, potential dataset, maturity, related courses, potential output, priority); Research ID sementara `UIAI-YYYY-TBD` yang menjadi resmi saat lolos G2.
+**Output.** Issue `type:problem` di research backlog dengan metadata (cluster, domain, problem owner, potential dataset, maturity, related courses, potential output, priority); Research ID sementara (format ID sementara mengikuti [CONTRIBUTING.md §2](../../CONTRIBUTING.md)) yang menjadi resmi saat lolos G2.
 
 **Pemilik.** AI Research Center (`@maintainers` untuk triase, research lead klaster untuk validasi), dosen pengusul, mahasiswa KP.
 
@@ -178,7 +178,7 @@ Ditambah: Research ID, entry door, klaster, lisensi/privasi data, dan AI Usage L
 
 **Research ID:** `UIAI-2026-017` · **Klaster primer:** C3 Human-Centered & Responsible AI · **Sekunder:** C4 Applied AI (domain Education) · **Entry door:** Course Project. Nama orang dan dataset di bawah adalah ilustrasi.
 
-**Discover (sebelum semester V).** Bagian akademik Prodi menyampaikan ke pusat riset bahwa mahasiswa yang tertinggal sering baru terdeteksi setelah UTS. Seorang dosen membuka Issue `type:problem` "Deteksi dini mahasiswa berisiko tertinggal dari aktivitas LMS" — cluster `human-ai`, domain Education, potential dataset: log LMS anonim (kandidat `DS-2026-004`), related course AI/ML + Metopen, priority P1. Research ID sementara `UIAI-2026-TBD`.
+**Discover (sebelum semester V).** Bagian akademik Prodi menyampaikan ke pusat riset bahwa mahasiswa yang tertinggal sering baru terdeteksi setelah UTS. Seorang dosen membuka Issue `type:problem` "Deteksi dini mahasiswa berisiko tertinggal dari aktivitas LMS" — cluster `human-ai`, domain Education, potential dataset: log LMS anonim (kandidat `DS-2026-004`), related course AI/ML + Metopen, priority P1. Research ID masih sementara — nomor resmi baru diberikan saat G2.
 
 **Build (semester V, AI & ML, mode R).** Tim tiga mahasiswa memilih masalah itu dari menu proyek. Mereka mengisi Experiment Card: hipotesis "fitur aktivitas minggu 1–6 memprediksi risiko dengan lebih baik daripada baseline IPK semester lalu"; baseline logistic regression pada IPK; metrik F1 kelas minoritas dan AUROC; split per angkatan untuk mencegah leakage. Repositori dibuat dari TPL-15; peer dari tim lain mereproduksi angka baseline. Hasil: gradient boosting sedikit lebih baik dari baseline pada satu angkatan, tidak pada angkatan lain. Mereka menuliskannya jujur, termasuk hasil negatif, dan mencatat penggunaan AI untuk debugging dan brainstorming fitur. Di akhir semester dosen pengampu mengisi **Handoff #1**: what exists (repo, card, baseline tereproduksi), missing evidence (evidence map, data lintas angkatan, fairness antar kelompok, threats to validity), next steps, owner (dosen C3).
 

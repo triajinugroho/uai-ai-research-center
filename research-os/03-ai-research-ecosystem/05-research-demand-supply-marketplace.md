@@ -61,7 +61,7 @@ Cara membaca: masalah industri paling sering dicocokkan dengan dosen sebagai men
 
 **Langkah 3 — Pencocokan.** Research lead klaster mencocokkan masalah dengan: (a) dosen dari Faculty Research Map yang *Possible Research*-nya berdekatan → calon mentor/owner; (b) MK mode R/E yang semester berikutnya bisa memakainya sebagai menu proyek → field *Course*; (c) mahasiswa Metopen/TA yang mencari topik → lewat menu masalah W1–W2; (d) dataset di registry yang relevan; (e) fakultas mitra bila lintas disiplin ([AIR-04](04-cross-faculty-ai-model.md)). Hasil: Issue diperbarui dengan *Faculty Mentor*, *Course*, *Entry Door*, dan ditandai `status:ready`.
 
-**Langkah 4 — Research ID.** Ketika tim terbentuk dan lolos **G2 Problem Ready**, `@maintainers` memberi `UIAI-YYYY-NNN`; Issue, repositori, dan Mission Control diperbarui. Sebelum itu ID sementara `UIAI-YYYY-TBD`.
+**Langkah 4 — Research ID.** Ketika tim terbentuk dan lolos **G2 Problem Ready**, `@maintainers` memberi `UIAI-YYYY-NNN`; Issue, repositori, dan Mission Control diperbarui. Sebelum itu dipakai ID sementara sesuai konvensi [CONTRIBUTING.md §2](../../CONTRIBUTING.md).
 
 **Langkah 5 — Pipeline.** Riset berjalan lewat G3–G8 ([OPS-03](../06-execution-os/03-research-gates.md)); pusat riset memantau lewat Mission Control, menyediakan compute/data/reviewer, dan menjaga komunikasi dengan problem owner (minimal di G5 dan G8).
 
