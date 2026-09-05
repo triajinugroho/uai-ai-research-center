@@ -6,7 +6,7 @@
 
 ## Cara pakai
 
-Backlog adalah **problem bank** Prodi/AI Center: daftar peluang riset yang layak dikerjakan berikutnya, bukan kumpulan paper. Setiap masalah masuk lewat Issue **Research Problem** (form di `.github/ISSUE_TEMPLATE/`), ditriase oleh `@faculty`/`@maintainers`, lalu dicatat sebagai satu entri di `research-backlog/problems/` dan satu baris di indeks `research-backlog/BACKLOG.md`. Mahasiswa memilih masalah dari sini pada W1 (G1 Endgame Ready); masalah mendapat Research ID resmi ketika tim yang mengambilnya lolos G2 Problem Ready. Dosen mengisi backlog dari riset sendiri, mata kuliah mode R, partner, atau roadmap; partner mengisi lewat Issue yang sama. Entri diperbarui saat status berubah dan ditinjau tiap awal semester.
+Backlog adalah **problem bank** Prodi/AI Center: daftar peluang riset yang layak dikerjakan berikutnya, bukan kumpulan paper. Setiap masalah masuk lewat Issue **Research Problem** (form di `.github/ISSUE_TEMPLATE/`), ditriase oleh `@faculty`/`@maintainers`, lalu dicatat sebagai satu entri di `research-backlog/problems/` dan satu baris di indeks `research-backlog/BACKLOG.md`. Mahasiswa memilih masalah dari sini saat onboarding Sprint S0 (pra-W1; OPS-004: pilih entry door + 1–3 kandidat), dituntaskan di W1 (G1 Endgame Ready); masalah memakai ID sementara `UIAI-YYYY-TBD` sejak Issue dibuka dan mendapat Research ID resmi `UIAI-YYYY-NNN` dari `@maintainers` ketika PR `GATE REVIEW: Problem Ready` (G2) tim yang mengambilnya di-merge. Dosen mengisi backlog dari riset sendiri, mata kuliah mode R, partner, atau roadmap; partner mengisi lewat Issue yang sama. Entri diperbarui saat status berubah dan ditinjau tiap awal semester.
 
 ## Format entri (salin ke `research-backlog/problems/<slug>.md`)
 
@@ -15,7 +15,7 @@ Backlog adalah **problem bank** Prodi/AI Center: daftar peluang riset yang layak
 
 | Field | Isi |
 |---|---|
-| Research ID | [— sebelum G2 / UIAI-YYYY-NNN setelah G2] |
+| Research ID | [UIAI-YYYY-TBD sebelum G2 / UIAI-YYYY-NNN setelah PR G2 di-merge] |
 | Issue | #[n] |
 | Cluster | [C1 / C2 / C3 / C4] |
 | Domain | [Education / Halal / Health / Food / Government / Business / Social Impact] |
@@ -44,7 +44,7 @@ Backlog adalah **problem bank** Prodi/AI Center: daftar peluang riset yang layak
 ```markdown
 | Research ID | Judul | Cluster | Domain | Problem owner | Dataset | Maturity | Courses | Output | Priority | Entry door | Status | Issue |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| [—/UIAI-YYYY-NNN] | [judul] | [C] | [domain] | [owner] | [DS-… / —] | [maturity] | [courses] | [output] | [P] | [door] | [status] | #[n] |
+| [UIAI-YYYY-TBD / UIAI-YYYY-NNN] | [judul] | [C] | [domain] | [owner] | [DS-… / —] | [maturity] | [courses] | [output] | [P] | [door] | [status] | #[n] |
 ```
 
 Urutan baris: Priority (P0 dulu), lalu Maturity, lalu tanggal Issue. Baris `Archived` dipindah ke bagian bawah.
@@ -56,12 +56,13 @@ Issue "Research Problem" (siapa pun)        label: type:problem, maturity:idea
         │  triase ≤ 1 minggu oleh @faculty/@maintainers
         ▼
 Masuk backlog   → entri problems/<slug>.md + baris BACKLOG.md   status: Idea
-        │  tim mahasiswa/dosen mengambil (assign di Issue)        status: Claimed
+        │  tim mahasiswa/dosen mengambil (assign di Issue; S0 onboarding, pra-W1)   status: Claimed
         ▼
-G1 Endgame Ready → repo proj-YYYY-topic dibuat                   label: gate:G1-endgame
+S0→W1: repo proj-YYYY-topic dibuat (OPS-005), Issue berjudul [UIAI-YYYY-TBD] …;
+       G1 Endgame Ready lulus di W1                                label: gate:G1-endgame
         │
         ▼
-G2 Problem Ready lulus → @maintainers memberi UIAI-YYYY-NNN       status: Active
+PR GATE REVIEW: Problem Ready (G2) di-merge → @maintainers memberi UIAI-YYYY-NNN   status: Active
    • judul Issue diubah `[UIAI-YYYY-NNN] Judul`
    • kolom Research ID di BACKLOG.md dan entri diisi
    • baris ditambahkan ke Mission Tracker (TPL-02)

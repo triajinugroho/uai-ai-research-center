@@ -36,8 +36,8 @@ Asset TA adalah **Research Pack lengkap + manuscript + artefak/ART + handoff ke 
 
 | Artefak | Lokasi | ID | Status |
 |---|---|---|---|
-| Manuscript "[isi judul]" untuk venue [isi] | `proj-YYYY-[topik]/paper/manuscript.tex` | `PUB-YYYY-NNN` | `submission-ready`; peer review internal 2 reviewer |
-| Benchmark harness + model weights | Release `v1.0`; weights di server institusi + `docs/model-card.md` | `ART-YYYY-NNN` | Apache-2.0 (kode); weights research-only |
+| Manuscript "[isi judul]" untuk venue [isi] | `proj-YYYY-[topik]/paper/manuscript.tex` | `PUB-YYYY-NNN` | Submission Ready (submission-ready); peer review internal 2 reviewer |
+| Benchmark harness + model weights | Release `v1.0`; weights di server institusi + `docs/model-card.md` (di luar struktur minimum TPL-15) | `ART-YYYY-NNN` | Apache-2.0 (kode); weights research-only |
 | Handoff ke AI Center | `docs/handoff.md` | — | Missing evidence: validitas eksternal pada domain [isi]; owner berikutnya: dosen klaster C4 [isi] |
 
 ## 4. Ke mana artefak mengalir

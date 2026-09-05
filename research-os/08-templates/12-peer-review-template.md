@@ -6,7 +6,7 @@
 
 ## Cara pakai
 
-Dipakai setiap kali sebuah artefak riset direview: PR `GATE REVIEW` (G2–G8), red team W8, dan peer review manuscript W14 (setiap mahasiswa mereview minimal satu Research Pack tim lain). Reviewer mengisi template ini sebagai komentar PR atau file `reviews/review-[gate]-[reviewer].md`; komentar tidak dihapus karena menjadi bukti proses ilmiah. Setiap dimensi diberi skor **dan** komentar wajib dua bagian: *apa yang kurang* dan *bukti apa yang dibutuhkan* — skor tanpa komentar tidak diterima. Penulis membalas dengan **response letter** (bagian akhir template) sebelum review ulang; PR di-merge hanya bila rekomendasi *Accept* atau *Minor* yang sudah ditindaklanjuti.
+Dipakai setiap kali sebuah artefak riset direview: PR `GATE REVIEW` (G2–G8), red team W8, dan peer review manuscript W14 (setiap mahasiswa mereview minimal satu Research Pack tim lain). Reviewer mengisi template ini sebagai komentar PR atau file `docs/reviews/review-[gate]-[reviewer].md` (folder yang sama dengan notulen red team, reproduksi, dan defense); komentar tidak dihapus karena menjadi bukti proses ilmiah. Setiap dimensi diberi skor **dan** komentar wajib dua bagian: *apa yang kurang* dan *bukti apa yang dibutuhkan* — skor tanpa komentar tidak diterima. Penulis membalas dengan **response letter** (bagian akhir template) sebelum review ulang; PR di-merge hanya bila rekomendasi *Accept* atau *Minor* yang sudah ditindaklanjuti.
 
 ## Skala
 

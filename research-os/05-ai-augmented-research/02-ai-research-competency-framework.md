@@ -71,7 +71,7 @@ Level bersifat kumulatif: Governor tetap melakukan hal-hal Collaborator; yang be
 
 **Perilaku yang terlihat.** AI Usage Log kontemporer dan spesifik; `AI-USAGE.md` membedakan bantuan penulisan dan bantuan proses riset; data sensitif tidak pernah ke AI; memilih tool berdasarkan kriteria ([AIX-05](05-ai-tools-reference.md)); mengajari/mengoreksi anggota tim; menyatakan batas: "bagian ini dibantu AI dan sudah diverifikasi dengan ___"; bisa menjelaskan setiap bagian yang dibantu AI tanpa AI.
 
-**Contoh prompt/praktik.** Sebelum memakai AI untuk analisis: menulis di log "tujuan: cek asumsi uji; input: ringkasan statistik (bukan data mentah); verifikasi: hitung ulang dengan skrip `src/analysis/check_assumptions.py`; keputusan: dipakai/tidak". Setelahnya: entri ditutup dengan hasil verifikasi dan tautan commit.
+**Contoh prompt/praktik.** Sebelum memakai AI untuk analisis: menulis di log "tujuan: cek asumsi uji; input: ringkasan statistik (bukan data mentah); verifikasi: hitung ulang dengan fungsi pemeriksaan asumsi di `src/analysis.py`; keputusan: dipakai/tidak". Setelahnya: entri ditutup dengan hasil verifikasi dan tautan commit.
 
 **Kesalahan khas.** Over-dokumentasi yang membebani tim (solusinya: log hanya untuk penggunaan *material*); terlalu konservatif sehingga tidak memakai AI di tahap yang justru sangat membantu (coding, red team).
 

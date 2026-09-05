@@ -128,7 +128,7 @@ Rincian task per gate ada di [OPS-01](01-research-wbs-master.md); urutan keterga
 
 **Bukti wajib:** commit eksperimen, `experiments/README.md`, hasil pilot, catatan reproduksi peer, AI Usage Log untuk kode yang dibantu AI.
 
-**Reviewer:** dosen pengampu + peer reproducer.
+**Reviewer:** dosen pengampu + mentor + peer reproducer.
 
 **Lulus jika:** peer dapat mereproduksi angka baseline dari repositori; **gagal jika** hasil hanya ada di laptop anggota tim.
 
