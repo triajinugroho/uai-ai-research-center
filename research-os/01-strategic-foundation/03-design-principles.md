@@ -129,7 +129,7 @@ Untuk setiap prinsip: pernyataan, arti, implikasi desain (yang kita lakukan / ti
 **Arti.** Kompleksitas adalah tanggung jawab desainer, bukan beban pengguna. Pimpinan tidak perlu melihat microtask; mahasiswa tidak perlu membaca theory of change.
 
 **Implikasi desain.**
-- Kita lakukan: dua view (A Institutional, B Student Execution — [MST-00 §9](../00-master/00-readme.md)); halaman mingguan [`metopen-research-studio/weeks/`](../../metopen-research-studio/weeks/week-01-endgame.md) yang hanya menampilkan 7–10 task per sprint; tier dokumen.
+- Kita lakukan: dua view (A Institutional, B Student Execution — [MST-00 §9](../00-master/00-readme.md)); halaman mingguan [`metopen-research-studio/weeks/`](../../metopen-research-studio/weeks/week-01-endgame.md) yang hanya menampilkan 5–10 task per sprint (umumnya 7–10); tier dokumen.
 - Kita tidak lakukan: memberi mahasiswa file WBS 145 baris pada minggu pertama; atau memaksa pimpinan membaca template.
 
 **Contoh di repo.** [OPS-05 Student Weekly Playbook](../06-execution-os/05-student-weekly-playbook.md) adalah *frontend*; [OPS-01 Research WBS](../06-execution-os/01-research-wbs-master.md) adalah *backend*.

@@ -15,5 +15,6 @@ Phase 0 (Foundation) + Phase 1 (Research OS) dari roadmap implementasi GitHub UA
 - `research-backlog/`, `datasets-registry/`, `publications/`: registry dengan indeks, template, dan contoh entri.
 - `research-based-learning/`: peta mata kuliah → research pipeline (mode F/E/R), panduan dosen & mahasiswa, asesmen.
 - `metopen-research-studio/`: halaman mingguan W1–W16 (View B mahasiswa), gate, rubrik, contoh, AI toolkit.
-- `tools/`: `check_links.py`, `build_wbs.py`.
+- `tools/`: `check_links.py`, `build_wbs.py`, `sync_weeks.py` (tabel task halaman mingguan dirender dari `research-wbs.csv`).
+- Tata letak repositori riset kanonik (pohon lengkap di TPL-15) dipakai konsisten oleh MET-04, OPS-03, template, PR template, research-based-learning, dan halaman studio; versi artefak dibakukan (One-Pager v0/v1/v2, Threats v1/v2, proposal v0.8/v0.9/v1.0).
 - Dokumen asal desain disimpan di `research-os/00-master/source/`.

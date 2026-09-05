@@ -75,7 +75,7 @@ Proyek Metopen **adalah** mata kuliahnya: satu *mini research cycle* per tim, 16
 | Tim | 1–3 mahasiswa (G1) |
 | Tema | Dari backlog/registry/artefak MK sebelumnya/riset dosen/partner/lomba — *multiple entry points, one pipeline* |
 | Hubungan ke backlog & registry | Research ID diberikan saat lolos G2 ([GOVERNANCE.md §5](../../../GOVERNANCE.md)); dataset baru didaftarkan sebelum G5; Issue backlog menjadi rekam jejak riset |
-| Ritme | Sprint mingguan 7–10 task ([OPS-02](../../../research-os/06-execution-os/02-weekly-sprints.md)); review gate lewat PR `GATE REVIEW: <gate>` ([CONTRIBUTING.md](../../../CONTRIBUTING.md)) |
+| Ritme | Sprint mingguan 5–10 task (umumnya 7–10) ([OPS-02](../../../research-os/06-execution-os/02-weekly-sprints.md)); review gate lewat PR `GATE REVIEW: <gate>` ([CONTRIBUTING.md](../../../CONTRIBUTING.md)) |
 | Endgame minimum | **TA Ready** (lolos G5) untuk 100% mahasiswa; target **Research Ready** (G6–G7); aspirasi **Publication Ready** |
 
 ## 7. Rubrik

@@ -1,6 +1,6 @@
 # Research-Based Learning — Mata Kuliah → Research Pipeline
 
-**Status** Draft v0.1 (2026-09) · Fase implementasi: **GitHub Phase 3 Curriculum Integration** (GOV-02 Phase 2 Integrate AI/ML → Phase 3 Expand technical courses) (artefak riil menyusul)
+**Status** Draft v0.1 (2026-09) · Fase implementasi: **GitHub Phase 3 Curriculum Integration** (GOV-02 Phase 2 Integrate AI/ML → Phase 3 Expand technical courses; artefak riil menyusul)
 **Terkait** [ARC-01 Research Capability Spiral](../research-os/02-academic-architecture/01-research-capability-spiral.md) · [ARC-02 Curriculum Research Map](../research-os/02-academic-architecture/02-curriculum-research-map.md) · [ARC-03 AI Contribution Modes](../research-os/02-academic-architecture/03-ai-contribution-modes.md) · [ARC-04 Build–Prove–Contribute](../research-os/02-academic-architecture/04-build-prove-contribute.md) · [ARC-05 CPL–CPMK–Artifact Alignment](../research-os/02-academic-architecture/05-cpl-cpmk-artifact-alignment.md) · [MST-03 Glossary](../research-os/00-master/03-glossary.md) · [GOVERNANCE.md](../GOVERNANCE.md)
 
 ## 1. Fungsi komponen ini
