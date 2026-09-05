@@ -1,0 +1,37 @@
+# Sinkronisasi label Issue/PR dari sumber tunggal .github/labels.yml (GOVERNANCE.md §6.1).
+# Dijalankan MANUAL (workflow_dispatch). Default dry-run = true: hanya menampilkan perubahan.
+# Jalankan ulang dengan dry-run = false untuk menerapkan. skip-delete = true: label di luar taksonomi
+# tidak dihapus otomatis — bersihkan manual bila memang perlu.
+#
+# Action yang dipakai membaca format list [{name, color, description}] persis seperti labels.yml.
+# CATATAN: versi action (@v5) dan actions/checkout (@v4) perlu ditinjau berkala oleh @maintainers.
+name: sync-labels
+
+on:
+  workflow_dispatch:
+    inputs:
+      dry-run:
+        description: "Dry run: hanya tampilkan label yang akan dibuat/diubah tanpa menerapkannya"
+        type: boolean
+        default: true
+        required: false
+
+permissions:
+  issues: write
+  contents: read
+
+jobs:
+  sync-labels:
+    name: Sync labels from .github/labels.yml
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4 # tinjau versi secara berkala
+
+      - name: Sync labels
+        uses: crazy-max/ghaction-github-labeler@v5 # tinjau versi secara berkala
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          yaml-file: .github/labels.yml
+          skip-delete: true
+          dry-run: ${{ inputs.dry-run }}

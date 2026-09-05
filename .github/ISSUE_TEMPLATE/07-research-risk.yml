@@ -1,0 +1,127 @@
+# Issue Form — Research Risk (bottleneck/risiko yang mengancam gate atau jadwal). Label persis sesuai .github/labels.yml.
+name: "Research Risk"
+description: "Bottleneck atau risiko yang mengancam gate/jadwal riset; butuh mitigasi atau keputusan."
+title: "[UIAI-YYYY-NNN] Risk: "
+labels:
+  - "type:research-risk"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Research Risk — laporkan lebih awal, bukan saat gate gagal
+
+        Risiko yang dilaporkan cepat lebih murah daripada gate yang gagal. Untuk risiko tingkat institusi
+        lihat GOV-04 Risk Register. **Insiden kebocoran data/kredensial**: ikuti prosedur SECURITY.md dan
+        jangan tulis detail data sensitif di Issue publik.
+
+  - type: input
+    id: research-id
+    attributes:
+      label: "Research ID"
+      placeholder: "UIAI-2026-001"
+    validations:
+      required: true
+
+  - type: textarea
+    id: risk
+    attributes:
+      label: "Risiko / bottleneck"
+      description: "Apa yang terjadi atau mungkin terjadi, sejak kapan, dan apa penyebab yang diketahui."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: "Kategori"
+      options:
+        - "Data — akses, kualitas, izin, representativitas"
+        - "Compute — GPU/CPU, storage, biaya"
+        - "Metode — desain tidak viable, baseline tidak jelas"
+        - "Waktu — jadwal sprint/gate tidak realistis"
+        - "Mentor — ketersediaan/keselarasan pembimbing"
+        - "Etika/privasi — consent, data pribadi, komite etik"
+        - "Tool/AI — ketergantungan alat, halusinasi, lisensi tool"
+        - "Tim — pembagian kerja, anggota tidak aktif"
+        - "Lainnya"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: affected-gate
+    attributes:
+      label: "Gate yang terdampak"
+      description: "Boleh lebih dari satu."
+      multiple: true
+      options:
+        - "G1 Endgame Ready"
+        - "G2 Problem Ready"
+        - "G3 Evidence Ready"
+        - "G4 Question Ready"
+        - "G5 Method Ready"
+        - "G6 Experiment Ready"
+        - "G7 Claim Ready"
+        - "G8 Contribution Ready"
+    validations:
+      required: true
+
+  - type: textarea
+    id: gate-impact
+    attributes:
+      label: "Dampak ke gate / jadwal"
+      description: "Definition of done mana yang terancam, berapa lama keterlambatan yang mungkin, apakah memblokir riset lain (kandidat P0)."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: likelihood
+    attributes:
+      label: "Likelihood"
+      options:
+        - "Low"
+        - "Medium"
+        - "High"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: impact
+    attributes:
+      label: "Impact"
+      options:
+        - "Low"
+        - "Medium"
+        - "High"
+    validations:
+      required: true
+
+  - type: textarea
+    id: mitigation
+    attributes:
+      label: "Mitigasi yang diusulkan"
+      description: "Opsi yang sudah dipertimbangkan, biaya masing-masing, dan rencana cadangan (mis. subset data, baseline lebih sederhana, ganti dataset publik)."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: decision-owner
+    attributes:
+      label: "Butuh keputusan dari siapa"
+      options:
+        - "Tim riset sendiri"
+        - "Mentor / dosen pembimbing"
+        - "Dosen pengampu Metopen"
+        - "Ketua klaster (@research-leads)"
+        - "Kaprodi / kepala pusat riset (@directors)"
+        - "Pengelola registry (dataset / publikasi)"
+        - "Partner / pemilik data"
+        - "Lainnya"
+    validations:
+      required: true
+
+  - type: input
+    id: decision-deadline
+    attributes:
+      label: "Keputusan dibutuhkan sebelum"
+      description: "Tanggal atau sprint (mis. 2026-10-15 atau S7)."
+      placeholder: "S7"

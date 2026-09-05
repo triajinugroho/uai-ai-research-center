@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+title: "UAI AI Research Center — Research Operating System"
+message: "Jika Anda memakai framework, template, atau materi dari repository ini, mohon sitasi sebagai berikut."
+type: software
+authors:
+  - family-names: Nugroho
+    given-names: Tri Aji
+    affiliation: "Program Studi Informatika, Universitas Al-Azhar Indonesia"
+  - name: "UAI AI Research Center"
+    affiliation: "Universitas Al-Azhar Indonesia"
+repository-code: "https://github.com/triajinugroho/uai-ai-research-center"
+abstract: >-
+  Research operating system Pusat Riset AI Universitas Al-Azhar Indonesia:
+  framework Research-Based Learning & AI Ecosystem (Build → Prove → Contribute),
+  desain mata kuliah Metodologi Penelitian sebagai Research Studio
+  (AI-Augmented Research Methods & Evidence Engineering for Informatics),
+  8 Research Gates, Research WBS, template toolkit, roadmap, backlog, dan registry.
+keywords:
+  - research methods
+  - evidence engineering
+  - responsible ai
+  - research-based learning
+  - informatics education
+  - indonesia
+license: "Apache-2.0 AND CC-BY-4.0"
+version: 0.1.0
+date-released: "2026-09-04"

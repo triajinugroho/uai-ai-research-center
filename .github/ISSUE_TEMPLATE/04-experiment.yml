@@ -1,0 +1,116 @@
+# Issue Form — Experiment (pilot / minimum viable experiment; G5 → G6). Label persis sesuai .github/labels.yml.
+name: "Experiment"
+description: "Eksperimen/pilot yang akan dijalankan: hipotesis, baseline, variabel, data & split, metrik, kontrol (G5 → G6)."
+title: "[UIAI-YYYY-NNN] Experiment: "
+labels:
+  - "type:experiment"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Experiment — satu Issue = satu Experiment Card
+
+        **Eksperimen tidak boleh dimulai sebelum metrik dan baseline ditetapkan (G5 Method Ready).**
+        Isi Experiment Card (TPL-09, `research-os/08-templates/09-experiment-card.md`) di repositori riset,
+        lalu ringkas di sini. Hasil disimpan di `results/`, figur di `figures/`, konfigurasi + seed di
+        `experiments/`. Kode yang dibantu AI dicatat di AI Usage Log (TPL-10).
+
+  - type: input
+    id: research-id
+    attributes:
+      label: "Research ID"
+      placeholder: "UIAI-2026-001"
+    validations:
+      required: true
+
+  - type: textarea
+    id: hypothesis
+    attributes:
+      label: "Hypothesis"
+      description: "Pernyataan yang dapat difalsifikasi, terhubung ke RQ tertentu."
+      placeholder: "H1: <metode> lebih baik daripada <baseline> pada <metrik> untuk <data>, dengan selisih minimal <x> yang berarti secara praktis karena ..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: baseline
+    attributes:
+      label: "Baseline"
+      description: "Pembanding paling sederhana yang masuk akal (majority class, rule-based, model klasik, sistem yang ada). Tanpa baseline, angka metrik tidak bermakna."
+    validations:
+      required: true
+
+  - type: textarea
+    id: variables
+    attributes:
+      label: "Variables"
+      description: "Variabel independen (yang diubah), dependen (yang diukur), dan yang dikendalikan/tetap."
+      placeholder: |
+        Independen: ...
+        Dependen: ...
+        Dikendalikan: ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: dataset-split
+    attributes:
+      label: "Dataset & split"
+      description: "Dataset ID (DS-YYYY-NNN), ukuran subset pilot, skema split train/val/test atau cross-validation, cara mencegah leakage."
+      placeholder: "DS-2026-003, subset 2.000 baris; stratified 70/15/15; split per pengguna agar tidak bocor antar split; ..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: metrics
+    attributes:
+      label: "Metric"
+      description: "Metrik utama dan sekunder yang selaras dengan RQ; alasan pemilihan; ambang 'berarti secara praktis'."
+      placeholder: "Utama: macro-F1 (kelas tidak seimbang). Sekunder: latency. Berarti bila selisih ≥ 3 poin dan konsisten antar seed."
+    validations:
+      required: true
+
+  - type: textarea
+    id: controls
+    attributes:
+      label: "Controls"
+      description: "Kontrol agar perbandingan adil: hyperparameter budget yang sama, seed tetap, ablation, data preprocessing identik."
+
+  - type: textarea
+    id: expected-result
+    attributes:
+      label: "Expected result"
+      description: "Apa yang Anda harapkan dan apa yang akan Anda simpulkan jika hasilnya sebaliknya (hasil negatif tetap dilaporkan)."
+
+  - type: textarea
+    id: threats
+    attributes:
+      label: "Threats to validity"
+      description: "Internal / eksternal / konstruk / statistik-kesimpulan yang relevan untuk eksperimen ini."
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: "Seed / config / environment"
+      description: "Seed, path file konfigurasi, versi Python & pustaka (requirements.txt/environment.yml), hardware (CPU/GPU), perkiraan waktu jalan."
+      placeholder: |
+        seed: 42 (dan 3 seed tambahan)
+        config: experiments/exp-01/config.yaml
+        env: python 3.11, requirements.txt (commit abc123)
+        hardware: 1x GPU lab / CPU laptop, ±2 jam
+
+  - type: input
+    id: experiment-card-link
+    attributes:
+      label: "Link Experiment Card (TPL-09)"
+      description: "Path/URL kartu eksperimen di repositori riset."
+      placeholder: "proj-2026-<topik>/experiments/exp-01/EXPERIMENT-CARD.md"
+
+  - type: checkboxes
+    id: prerequisites
+    attributes:
+      label: "Prasyarat"
+      options:
+        - label: "Metric & baseline sudah ditetapkan dan lolos G5 Method Ready (PR Method Review merged)."
+          required: true
+        - label: "Dataset sudah tercatat di datasets-registry dengan field Privacy dan License terisi."

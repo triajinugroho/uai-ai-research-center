@@ -1,0 +1,71 @@
+# Issue Form — Bug (kesalahan pada kode/dokumen/template/workflow). Label persis sesuai .github/labels.yml.
+name: "Bug"
+description: "Kesalahan pada kode, dokumen, template, workflow, atau repositori riset."
+title: "[Bug] "
+labels:
+  - "type:bug"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Bug
+
+        Gunakan form ini untuk kesalahan yang **bisa diperbaiki**: typo yang mengubah makna, link/anchor rusak,
+        skrip `tools/` gagal, template tidak konsisten dengan Glossary (MST-03), workflow CI error.
+        Untuk kerentanan keamanan atau kebocoran data, **jangan** buka Issue publik — ikuti SECURITY.md.
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: "Jenis"
+      options:
+        - "Dokumen / teks (research-os, README, registry)"
+        - "Template (research-os/08-templates, .github)"
+        - "Kode / tools (tools/, skrip riset)"
+        - "Workflow / CI (.github/workflows)"
+        - "Link / anchor rusak"
+        - "Repositori riset (proj-* / program-*)"
+        - "Lainnya"
+    validations:
+      required: true
+
+  - type: input
+    id: location
+    attributes:
+      label: "Lokasi"
+      description: "File/folder + baris, atau nama repositori riset dan path."
+      placeholder: "research-os/06-execution-os/03-research-gates.md baris 42 / proj-2026-<topik>/src/train.py"
+    validations:
+      required: true
+
+  - type: textarea
+    id: what-is-wrong
+    attributes:
+      label: "Apa yang salah"
+      description: "Perilaku/isi yang keliru, pesan error bila ada (tanpa kredensial atau data pribadi)."
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: "Yang diharapkan"
+      description: "Perilaku/isi yang benar menurut Anda, dan rujukannya (Glossary, OPS-03, CONTRIBUTING, dsb.)."
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: "Langkah reproduksi"
+      description: "Untuk bug kode/workflow: perintah yang dijalankan, versi Python/OS, output. Untuk dokumen: cara menemukan kesalahannya."
+      placeholder: |
+        1. python3 tools/check_links.py
+        2. ...
+        Output: ...
+
+  - type: textarea
+    id: proposed-fix
+    attributes:
+      label: "Usulan perbaikan"
+      description: "Bila sudah tahu solusinya, tulis di sini atau buka PR ke branch docs/<topik> dan rujuk Issue ini."

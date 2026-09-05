@@ -1,0 +1,188 @@
+# Issue Form — Research Problem (unit riset pertama; masuk research backlog / problem bank).
+# Skema resmi GitHub Issue Forms: name, description, title, labels, body[].
+# Nama label harus PERSIS sesuai .github/labels.yml.
+name: "Research Problem"
+description: "Usulkan masalah riset baru ke research backlog (problem bank): apa problemnya, mengapa penting, siapa yang peduli."
+title: "[UIAI-YYYY-TBD] "
+labels:
+  - "type:problem"
+  - "maturity:idea"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Research Problem — pintu masuk research backlog
+
+        **Issue ini adalah unit riset, bukan tiket bug.** Rumuskan masalah secara *problem-first*
+        ("mengapa X perlu diprediksi? untuk siapa? keputusan apa yang berubah?"), bukan *solution-first*
+        ("pakai Random Forest untuk X"). Research ID resmi `UIAI-YYYY-NNN` diberikan `@maintainers`
+        ketika masalah lolos **G2 Problem Ready**; sebelum itu biarkan `TBD` pada judul.
+
+        Setelah Issue dibuat, maintainer memasang label `cluster:*` dan `P0`–`P3` sesuai isian Anda.
+        Panduan: `research-backlog/README.md` · istilah: `research-os/00-master/03-glossary.md` (MST-03) ·
+        gate: `research-os/06-execution-os/03-research-gates.md` (OPS-03).
+
+  - type: input
+    id: problem-title
+    attributes:
+      label: "Judul masalah (Problem title)"
+      description: "Satu kalimat yang menyebut fenomena/masalah dan konteksnya — bukan nama algoritma atau aplikasi."
+      placeholder: "AI-assisted academic advising for Indonesian universities"
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem-statement
+    attributes:
+      label: "Problem statement"
+      description: "Fenomena/masalah nyata, konteks Indonesia/UAI, apa yang terjadi bila dibiarkan. 3–8 kalimat."
+      placeholder: "Mahasiswa semester awal sering salah memilih mata kuliah karena ... Saat ini proses advising ... Akibatnya ..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: why-it-matters
+    attributes:
+      label: "Mengapa penting & siapa stakeholder-nya (Why it matters / Stakeholder & impact)"
+      description: "Siapa yang peduli, keputusan apa yang berubah jika riset berhasil, mengapa penting sekarang."
+      placeholder: "Stakeholder: dosen PA, Kaprodi, mahasiswa. Keputusan yang berubah: ... Dampak bila berhasil: ..."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: cluster
+    attributes:
+      label: "Cluster (AIR-02)"
+      description: "Klaster riset AI yang paling dekat. Maintainer akan memasang label cluster:* yang sesuai."
+      options:
+        - "C1 — AI Models, Data & Knowledge"
+        - "C2 — AI Systems, Software & Security"
+        - "C3 — Human-Centered & Responsible AI"
+        - "C4 — Applied AI for Human Flourishing"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: domain
+    attributes:
+      label: "Domain (research roadmap)"
+      description: "Domain aplikasi utama. Pilih Other bila belum ada di roadmap; jelaskan di problem statement."
+      options:
+        - "Education"
+        - "Halal"
+        - "Health"
+        - "Food"
+        - "Government"
+        - "Business"
+        - "Social Impact"
+        - "Other"
+    validations:
+      required: true
+
+  - type: input
+    id: problem-owner
+    attributes:
+      label: "Problem owner"
+      description: "Siapa yang memiliki/mengalami masalah ini: unit UAI, dosen, partner, komunitas. Cukup peran/jabatan; hindari data pribadi."
+      placeholder: "Bagian Akademik Prodi Informatika UAI / partner: [isi]"
+    validations:
+      required: true
+
+  - type: textarea
+    id: potential-dataset
+    attributes:
+      label: "Potential dataset"
+      description: "Data apa yang mungkin dipakai, sudah ada atau belum, siapa pemiliknya, perkiraan ukuran. Sebut Dataset ID (DS-YYYY-NNN) bila sudah terdaftar di datasets-registry/. Jangan tempelkan data mentah."
+      placeholder: "Log KRS 5 tahun (internal, perlu izin), atau dataset publik ... / Belum ada → perlu pengumpulan."
+
+  - type: dropdown
+    id: maturity
+    attributes:
+      label: "Research maturity"
+      description: "Level kematangan saat ini (MST-03 §3.2). Masalah baru hampir selalu Idea."
+      options:
+        - "Idea"
+        - "TA Ready"
+        - "Research Ready"
+        - "Publication Ready"
+        - "Impact Ready"
+      default: 0
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: related-courses
+    attributes:
+      label: "Related courses"
+      description: "Mata kuliah yang dapat menghasilkan/menyerap research asset dari masalah ini."
+      options:
+        - label: "AI/ML"
+        - label: "Data Mining"
+        - label: "NLP"
+        - label: "RPL (Rekayasa Perangkat Lunak)"
+        - label: "HCI"
+        - label: "Metopen (Metodologi Penelitian)"
+        - label: "TA (Tugas Akhir)"
+        - label: "Lainnya (sebutkan pada Referensi awal)"
+
+  - type: checkboxes
+    id: potential-output
+    attributes:
+      label: "Potential output"
+      description: "Hasil yang mungkin lahir dari masalah ini (ARC-06 Research Output Taxonomy)."
+      options:
+        - label: "TA"
+        - label: "Paper"
+        - label: "Dataset"
+        - label: "Software"
+        - label: "Model"
+        - label: "HKI"
+        - label: "Prototype"
+        - label: "Competition"
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: "Priority"
+      description: "Usulan prioritas; keputusan akhir oleh maintainer/ketua klaster (label P0–P3)."
+      options:
+        - "P0-critical — kritis, memblokir riset/gate lain"
+        - "P1-high — tinggi"
+        - "P2-medium — sedang"
+        - "P3-low — rendah"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: entry-door
+    attributes:
+      label: "Entry door (pintu masuk riset)"
+      description: "Multiple entry points, one pipeline (MST-03 §3.5)."
+      options:
+        - "Problem — masalah nyata / stakeholder"
+        - "Dataset — data sudah tersedia"
+        - "Faculty Research — riset dosen"
+        - "Course Project — proyek mata kuliah"
+        - "Partner — industri / pemerintah / masyarakat"
+        - "Competition — lomba"
+    validations:
+      required: true
+
+  - type: textarea
+    id: references
+    attributes:
+      label: "Referensi awal"
+      description: "3–5 sumber awal (paper, laporan, berita, kebijakan) dengan DOI/URL yang sudah Anda buka sendiri. Referensi yang ditemukan lewat AI wajib diverifikasi dulu."
+      placeholder: |
+        1. Penulis (Tahun). Judul. Venue. DOI/URL
+        2. ...
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: "Konfirmasi"
+      options:
+        - label: "Issue ini tidak memuat data pribadi/sensitif atau data partner yang rahasia (lihat SECURITY.md)."
+          required: true
+        - label: "Saya sudah memeriksa research-backlog/BACKLOG.md dan Issue yang terbuka; masalah ini belum ada (bukan duplikat)."
+          required: true

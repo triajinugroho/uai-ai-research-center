@@ -1,0 +1,14 @@
+# Konfigurasi pemilih template Issue. Issue kosong dinonaktifkan: setiap Issue adalah unit riset
+# (Research Problem, Research Question, Dataset, Experiment, Literature Gap, Publication, Research Risk, Bug).
+# URL absolut diperlukan oleh GitHub untuk contact_links; sesuaikan bila repo dipindah ke Organization.
+blank_issues_enabled: false
+contact_links:
+  - name: "Cara mengusulkan masalah riset (Research Backlog)"
+    url: "https://github.com/triajinugroho/uai-ai-research-center/blob/main/research-backlog/README.md"
+    about: "Baca dulu cara kerja problem bank, kriteria masalah yang layak, dan cek duplikat di BACKLOG.md sebelum membuka Issue Research Problem."
+  - name: "Panduan kontribusi (CONTRIBUTING)"
+    url: "https://github.com/triajinugroho/uai-ai-research-center/blob/main/CONTRIBUTING.md"
+    about: "Issue sebagai unit riset, PR sebagai gate review, branch research/gN-*, aturan integritas, dan konvensi teknis."
+  - name: "Laporan keamanan / kebocoran data (privat)"
+    url: "https://github.com/triajinugroho/uai-ai-research-center/blob/main/SECURITY.md"
+    about: "Jangan buka Issue publik untuk kerentanan, kredensial bocor, atau data pribadi yang ter-commit. Ikuti prosedur pelaporan privat di SECURITY.md."

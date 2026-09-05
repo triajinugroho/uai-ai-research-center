@@ -1,0 +1,149 @@
+# Issue Form — Dataset (kartu metadata; data fisik tidak pernah masuk GitHub). Label persis sesuai .github/labels.yml.
+name: "Dataset"
+description: "Daftarkan dataset yang tersedia atau ajukan kebutuhan dataset — hanya metadata; data fisik tetap di luar GitHub."
+title: "[DS-YYYY-TBD] "
+labels:
+  - "type:dataset"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Dataset — metadata saja
+
+        **Data mentah yang sensitif tidak pernah masuk GitHub** (SECURITY.md). Issue ini mencatat *kartu metadata*;
+        setelah divalidasi, pengelola registry memberi Dataset ID `DS-YYYY-NNN` dan mencatatnya di
+        `datasets-registry/REGISTRY.md` (template kartu: TPL-05). Field **Privacy** dan **License** wajib
+        terisi sebelum riset terkait lolos **G5 Method Ready**. Lisensi dataset diputuskan lewat review
+        (LICENSING.md §4), bukan otomatis CC0.
+
+  - type: dropdown
+    id: availability
+    attributes:
+      label: "Status ketersediaan"
+      options:
+        - "Tersedia (available) — dataset sudah ada dan dapat diakses"
+        - "Dibutuhkan (needed) — belum ada; perlu dikumpulkan/diminta"
+    validations:
+      required: true
+
+  - type: input
+    id: dataset-name
+    attributes:
+      label: "Nama dataset"
+      placeholder: "UAI Academic Advising Logs 2021–2025"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: domain
+    attributes:
+      label: "Domain"
+      options:
+        - "Education"
+        - "Halal"
+        - "Health"
+        - "Food"
+        - "Government"
+        - "Business"
+        - "Social Impact"
+        - "Other"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: source
+    attributes:
+      label: "Source"
+      options:
+        - "Public — dataset publik (Kaggle / Hugging Face / repositori terbuka / instansi)"
+        - "UAI — dihasilkan atau dimiliki UAI"
+        - "Partner — industri / pemerintah / komunitas (perjanjian akses)"
+    validations:
+      required: true
+
+  - type: input
+    id: owner
+    attributes:
+      label: "Owner / pemilik data"
+      description: "Institusi/unit/peran yang memegang hak atas data. Cukup peran/jabatan; hindari data pribadi."
+      placeholder: "Bagian Akademik UAI / Kemenkes (open data) / partner: [isi]"
+    validations:
+      required: true
+
+  - type: input
+    id: size
+    attributes:
+      label: "Size"
+      description: "Jumlah baris/dokumen/gambar/jam audio, ukuran file, rentang waktu."
+      placeholder: "±12.000 baris, 5 tahun, 40 MB CSV"
+
+  - type: checkboxes
+    id: modality
+    attributes:
+      label: "Modality"
+      options:
+        - label: "Text"
+        - label: "Image"
+        - label: "Tabular"
+        - label: "Audio"
+        - label: "Video"
+        - label: "Graph"
+        - label: "Time series"
+
+  - type: input
+    id: license
+    attributes:
+      label: "License"
+      description: "Lisensi dataset saat ini atau yang diusulkan (LICENSING.md §4). Tulis 'belum ditentukan' bila masih perlu review."
+      placeholder: "CC BY 4.0 / restricted (perjanjian partner) / belum ditentukan"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: privacy
+    attributes:
+      label: "Privacy"
+      description: "Public: boleh dibuka. Restricted: akses terbatas/perlu izin. Confidential: data pribadi/partner rahasia — hanya metadata di GitHub."
+      options:
+        - "Public"
+        - "Restricted"
+        - "Confidential"
+    validations:
+      required: true
+
+  - type: textarea
+    id: potential-task
+    attributes:
+      label: "Potential task"
+      description: "Tugas riset/ML yang mungkin: klasifikasi, prediksi, retrieval, evaluasi model, user study, dsb. Sebutkan label/target bila ada."
+      placeholder: "Klasifikasi risiko drop mata kuliah (label: lulus/tidak), rekomendasi mata kuliah, ..."
+
+  - type: input
+    id: related-research-id
+    attributes:
+      label: "Related Research ID"
+      description: "UIAI-YYYY-NNN yang memakai/membutuhkan dataset ini (pisahkan dengan koma)."
+      placeholder: "UIAI-2026-001, UIAI-2026-004"
+
+  - type: textarea
+    id: quality-notes
+    attributes:
+      label: "Quality notes"
+      description: "Missing values, ketidakseimbangan kelas, bias sampling, representativitas terhadap populasi, potensi leakage, versi/perubahan skema."
+
+  - type: textarea
+    id: access-location
+    attributes:
+      label: "Access / lokasi fisik"
+      description: "Di mana data disimpan (server institusi, Hugging Face, Kaggle, Drive) dan cara meminta akses. Jangan menulis kredensial/token."
+      placeholder: "Server lab AI UAI, folder /data/advising — minta akses ke [isi]; atau tautan Hugging Face/Kaggle."
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: "Konfirmasi"
+      options:
+        - label: "Saya tidak mengunggah data mentah, data pribadi, atau kredensial ke GitHub; Issue ini hanya berisi metadata."
+          required: true

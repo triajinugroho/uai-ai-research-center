@@ -1,0 +1,93 @@
+# Issue Form — Research Question (G4 Question Ready). Label persis sesuai .github/labels.yml.
+name: "Research Question"
+description: "RQ/hipotesis yang perlu diuji, diturunkan dari gap pada synthesis matrix (G4 Question Ready)."
+title: "[UIAI-YYYY-NNN] RQ: "
+labels:
+  - "type:research-question"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Research Question — Gap–Claim–Evidence alignment
+
+        RQ **tidak boleh dianggap valid** sebelum evidence synthesis (**G3 Evidence Ready**) selesai.
+        Setiap RQ harus dapat ditelusuri ke baris tertentu pada synthesis matrix; gap naratif
+        ("belum ada yang meneliti di UAI") tidak cukup. Ganti `UIAI-YYYY-NNN` pada judul dengan Research ID Anda.
+
+        Rujukan: OPS-03 bagian G4 (`research-os/06-execution-os/03-research-gates.md`) ·
+        TPL-01 Research One-Pager (`research-os/08-templates/01-research-one-pager-template.md`).
+
+  - type: input
+    id: research-id
+    attributes:
+      label: "Research ID"
+      description: "Format UIAI-YYYY-NNN; harus sudah resmi (riset lolos G2)."
+      placeholder: "UIAI-2026-001"
+    validations:
+      required: true
+
+  - type: textarea
+    id: research-question
+    attributes:
+      label: "Research Question / Hipotesis"
+      description: "Satu RQ per Issue bila memungkinkan. Hipotesis harus dapat difalsifikasi dan dijawab dalam batas semester + TA."
+      placeholder: |
+        RQ1: Apakah <metode> dibandingkan <baseline> pada <data> menghasilkan <perbedaan> diukur dengan <metrik>?
+        H1: <pernyataan yang dapat salah>
+    validations:
+      required: true
+
+  - type: textarea
+    id: gap-source
+    attributes:
+      label: "Gap dari synthesis matrix (baris/sumber)"
+      description: "Sebutkan baris synthesis matrix dan sumber (DOI/URL) yang menunjukkan gap: apa yang konsisten, bertentangan, atau belum diuji."
+      placeholder: |
+        Baris SM-07, SM-12, SM-15 (docs/literature-map.md): metode X hanya diuji pada data berbahasa Inggris
+        (Penulis A 2023, DOI ...; Penulis B 2024, DOI ...); belum ada pembanding pada konteks Indonesia.
+    validations:
+      required: true
+
+  - type: textarea
+    id: contribution-statement
+    attributes:
+      label: "Contribution statement"
+      description: "Apa yang akan diketahui/dimiliki komunitas setelah RQ terjawab, dan mengapa bermakna. Jangan melebihi bukti yang mungkin dihasilkan."
+      placeholder: "Riset ini menyumbangkan <jenis kontribusi>: ... yang bermakna karena ..."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: contribution-type
+    attributes:
+      label: "Jenis kontribusi"
+      description: "Boleh lebih dari satu (ARC-06 Research Output Taxonomy)."
+      multiple: true
+      options:
+        - "Empiris — hasil evaluasi/eksperimen"
+        - "Artefak — software/model/benchmark/prototype"
+        - "Metode — teknik/algoritma/protokol"
+        - "Dataset"
+        - "Replikasi"
+        - "Studi kasus"
+    validations:
+      required: true
+
+  - type: input
+    id: evidence-map-link
+    attributes:
+      label: "Link evidence map / synthesis matrix"
+      description: "Path atau URL ke docs/literature-map.md + matriks (CSV/tabel) di repositori riset, atau PR Evidence Review (G3) yang sudah merged."
+      placeholder: "proj-2026-<topik>/docs/literature-map.md (PR #12, merged)"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: prerequisites
+    attributes:
+      label: "Prasyarat"
+      options:
+        - label: "RQ ini divalidasi setelah G3 Evidence Ready (PR Evidence Review sudah merged) — bukan sebelumnya."
+          required: true
+        - label: "Semua sumber yang dirujuk sudah dibaca dan terverifikasi ada (DOI/URL)."
+          required: true

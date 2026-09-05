@@ -1,0 +1,115 @@
+# Issue Form — Publication (naskah yang sedang disiapkan; pipeline MET-05). Label persis sesuai .github/labels.yml.
+name: "Publication"
+description: "Naskah yang sedang disiapkan: venue target, status pipeline, deadline, DOI, artefak terkait (setelah G8 / manuscript-ready)."
+title: "[PUB-YYYY-TBD] "
+labels:
+  - "type:publication"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Publication — satu Issue per naskah
+
+        Pipeline publikasi (MET-05): `manuscript-ready → submission-ready → submitted → accepted → published`.
+        Publication ID `PUB-YYYY-NNN` diberikan pengelola `publications/` saat naskah dicatat di
+        `publications/PUBLICATIONS.md`; sebelum itu biarkan `TBD`. Pilih venue dari Publication Venue Registry
+        (TPL-06, `research-os/08-templates/06-publication-venue-registry-template.md`). **Jangan unggah PDF publisher**
+        ke repository; simpan metadata, DOI, dan sitasi.
+
+  - type: input
+    id: pub-id
+    attributes:
+      label: "Publication ID"
+      description: "PUB-YYYY-NNN, atau TBD bila belum diberikan."
+      placeholder: "PUB-2027-001 / TBD"
+    validations:
+      required: true
+
+  - type: input
+    id: research-id
+    attributes:
+      label: "Research ID"
+      description: "Riset asal naskah ini (UIAI-YYYY-NNN)."
+      placeholder: "UIAI-2026-001"
+    validations:
+      required: true
+
+  - type: input
+    id: manuscript-title
+    attributes:
+      label: "Judul naskah (working title)"
+    validations:
+      required: true
+
+  - type: textarea
+    id: authors
+    attributes:
+      label: "Authors"
+      description: "Urutan penulis, peran (mahasiswa/dosen/partner), afiliasi, corresponding author. Urutan disepakati sebelum submit."
+      placeholder: |
+        1. [isi] (mahasiswa, UAI) — first author
+        2. [isi] (dosen pembimbing, UAI) — corresponding author
+    validations:
+      required: true
+
+  - type: input
+    id: venue-target
+    attributes:
+      label: "Venue target"
+      description: "Nama venue, jenis (jurnal/konferensi/workshop), indeks (Scopus/SINTA/lainnya), dan kode di TPL-06 bila ada."
+      placeholder: "Jurnal [isi] (SINTA 2) / Konferensi [isi] (Scopus) — TPL-06 #V-03"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: status
+    attributes:
+      label: "Status"
+      description: "Posisi naskah pada Publication Pipeline (Mission Control view 4)."
+      options:
+        - "Draft"
+        - "Internal Review"
+        - "Submission Ready"
+        - "Submitted"
+        - "Under Review"
+        - "Revision"
+        - "Accepted"
+        - "Published"
+      default: 0
+    validations:
+      required: true
+
+  - type: input
+    id: deadline
+    attributes:
+      label: "Deadline"
+      description: "Tanggal submission/camera-ready (YYYY-MM-DD)."
+      placeholder: "2027-03-31"
+
+  - type: input
+    id: doi
+    attributes:
+      label: "DOI / URL"
+      description: "Isi setelah accepted/published; boleh preprint bila diizinkan venue."
+      placeholder: "https://doi.org/10.xxxx/xxxxx"
+
+  - type: textarea
+    id: related-artifacts
+    attributes:
+      label: "Artefak / dataset / code terkait"
+      description: "Dataset ID (DS-), Artifact ID (ART-), repositori riset, release tag, reproducibility package yang menyertai naskah."
+      placeholder: |
+        Dataset: DS-2026-003 (restricted)
+        Code: proj-2026-<topik> release v1.1
+        Artifact: ART-2026-002
+
+  - type: checkboxes
+    id: integrity
+    attributes:
+      label: "Integritas & venue"
+      options:
+        - label: "Research Integrity Checklist (TPL-11) sudah selesai diisi dan disetujui seluruh penulis."
+          required: true
+        - label: "Venue target sudah dicek terhadap Publication Venue Registry (TPL-06) dan bukan venue predatory."
+          required: true
+        - label: "AI Usage Statement tersedia dan akan diungkap sesuai kebijakan venue."
