@@ -22,7 +22,7 @@ Repo ini adalah **UAI AI Research Center** — *research operating system* Pusat
 | `metopen-research-studio/` | View B mahasiswa Metopen | `weeks/week-01…16.md` merujuk Task ID WBS |
 | `publications/` | registry metadata publikasi | tanpa PDF publisher |
 | `.github/` | issue forms, PR templates, labels, workflows | |
-| `tools/` | `check_links.py`, `build_wbs.py` | |
+| `tools/` | `check_links.py`, `build_wbs.py`, `sync_weeks.py` | |
 
 Repo `program-*` dan `proj-YYYY-topic` **tidak** dibuat di sini; konvensinya ada di README dan `research-os/08-templates/15-research-repository-template.md`.
 
@@ -36,13 +36,15 @@ Repo `program-*` dan `proj-YYYY-topic` **tidak** dibuat di sini; konvensinya ada
 - Semua link internal **relatif**; jangan memakai URL absolut ke repo ini.
 - Fakta institusional (akreditasi, kurikulum, benchmark kampus lain) berasal dari dokumen asal dan diberi catatan "verifikasi sebelum dokumen formal"; jangan menambah klaim baru. Data riil dosen/dataset memakai placeholder `[isi]`.
 - Template harus *executable* (tabel/checklist/field), bukan narasi panjang.
-- WBS: `research-os/06-execution-os/research-wbs.csv` adalah sumber; `01-research-wbs-master.md` dirender oleh `python3 tools/build_wbs.py`. Ubah CSV, lalu render ulang; jangan mengedit MD hasil render secara manual.
+- WBS: `research-os/06-execution-os/research-wbs.csv` adalah sumber; `01-research-wbs-master.md` dirender oleh `python3 tools/build_wbs.py` dan tabel `## Tasks` di `metopen-research-studio/weeks/week-NN-*.md` dirender oleh `python3 tools/sync_weeks.py`. Ubah CSV, lalu render ulang keduanya; jangan mengedit tabel hasil render secara manual.
+- Tata letak repositori riset (path `docs/…`, `results/…`, dst.) mengikuti pohon kanonik di `research-os/08-templates/15-research-repository-template.md`; dokumen lain tidak boleh memakai path di luar pohon itu.
 
 ## Verifikasi sebelum commit
 
 ```bash
 python3 tools/check_links.py            # 0 link/anchor relatif rusak
 python3 tools/build_wbs.py --check      # MD sinkron dengan CSV, ID task unik, 8 gate terpakai
+python3 tools/sync_weeks.py --check     # tabel task 16 halaman mingguan sinkron dengan CSV
 python3 -c "import yaml,glob;[yaml.safe_load(open(f)) for f in glob.glob('.github/**/*.yml',recursive=True)]"
 ```
 

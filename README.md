@@ -61,7 +61,7 @@ Repository ini adalah **monorepo** yang meniru *launch set* GitHub Organization 
 | [`metopen-research-studio/`](metopen-research-studio/README.md) | Metodologi Penelitian sebagai Research Studio — halaman mingguan W1–W16 untuk mahasiswa | [Week 01](metopen-research-studio/weeks/week-01-endgame.md) |
 | [`publications/`](publications/README.md) | Registry metadata publikasi & artefak | [PUBLICATIONS.md](publications/PUBLICATIONS.md) |
 | [`.github/`](.github/) | Issue forms, PR templates (gate review), label taxonomy, workflows | [labels.yml](.github/labels.yml) |
-| [`tools/`](tools/) | `check_links.py`, `build_wbs.py` | — |
+| [`tools/`](tools/) | `check_links.py`, `build_wbs.py`, `sync_weeks.py` | — |
 
 Repo `program-<nama>` (program riset 5–10 tahun) dan `proj-YYYY-<topik>` (riset 3–12 bulan) dibuat **hanya ketika isi riilnya ada**, memakai [template repositori riset](research-os/08-templates/15-research-repository-template.md).
 

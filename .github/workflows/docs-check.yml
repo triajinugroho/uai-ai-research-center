@@ -1,6 +1,7 @@
 # Pemeriksaan dokumen (CONTRIBUTING.md §6 / CLAUDE.md "Verifikasi sebelum commit"):
 #   1. tools/check_links.py      — link & anchor relatif di semua *.md
 #   2. tools/build_wbs.py --check — 01-research-wbs-master.md sinkron dengan research-wbs.csv
+#   2b. tools/sync_weeks.py --check — tabel task halaman mingguan Metopen sinkron dengan research-wbs.csv
 #   3. Validasi YAML .github/    — semua *.yml dapat di-load; issue forms sesuai skema GitHub;
 #                                  label yang dirujuk ada di .github/labels.yml
 # CATATAN: versi actions/checkout (@v4) dan actions/setup-python (@v5) perlu ditinjau berkala.
@@ -47,6 +48,9 @@ jobs:
 
       - name: Check WBS render is in sync with research-wbs.csv
         run: python3 tools/build_wbs.py --check
+
+      - name: Check weekly Tasks tables are in sync with research-wbs.csv
+        run: python3 tools/sync_weeks.py --check
 
       - name: Validate .github YAML and issue forms
         run: |

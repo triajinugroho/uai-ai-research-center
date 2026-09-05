@@ -97,6 +97,7 @@ PR NON-RISET (dokumen / framework / template repo ini): hapus bagian GATE REVIEW
 **Checklist**
 - [ ] `python3 tools/check_links.py` lulus (0 link/anchor relatif rusak)
 - [ ] `python3 tools/build_wbs.py --check` lulus (wajib bila menyentuh `research-wbs.csv` / WBS)
+- [ ] `python3 tools/sync_weeks.py --check` lulus (wajib bila menyentuh `research-wbs.csv` atau halaman mingguan studio)
 - [ ] Blok metadata dokumen `research-os/` dipertahankan (ID, Paket, Tier, Status, Audiens, Terkait)
 - [ ] Istilah/ID mengikuti Glossary (MST-03); label/topics mengikuti `.github/labels.yml` dan GOVERNANCE.md
 - [ ] Perubahan tata kelola/lisensi/taksonomi dicatat di `CHANGELOG.md`
