@@ -4,7 +4,7 @@
 
 ## This Week
 
-Pada akhir minggu ini tim Anda dapat mengucapkan: **"Masalahnya adalah ___, penting bagi ___ karena ___"** — dan orang di luar tim dapat mengulanginya dalam dua kalimat tanpa menyebut satu pun nama algoritma. Masalah dinyatakan *problem-first* di `docs/problem.md` (Problem Brief + Stakeholder & Impact Statement) dengan bukti dari stakeholder nyata, dipetakan ke klaster C1–C4 dan domain roadmap, diringkas ke Research One-Pager v0, lalu dikumpulkan dalam PR `GATE REVIEW: Problem Ready`. Bila lulus, `@maintainers` memberi Research ID resmi `UIAI-YYYY-NNN` dan release `v0.1 Problem Validated` dibuat — inilah primary key yang mengikuti riset Anda sampai TA dan publikasi.
+Pada akhir minggu ini tim Anda dapat mengucapkan: **"Masalahnya adalah ___, penting bagi ___ karena ___"** — dan orang di luar tim dapat mengulanginya dalam dua kalimat tanpa menyebut satu pun nama algoritma. Masalah dinyatakan *problem-first* di `docs/problem.md` (Problem Brief + Stakeholder & Impact Statement) dengan bukti dari stakeholder nyata, dipetakan ke klaster C1–C4 dan domain roadmap, diringkas ke Research One-Pager v0, lalu dikumpulkan dalam PR `GATE REVIEW: Problem Ready`. Saat PR di-merge, `@maintainers` menetapkan Research ID resmi `UIAI-YYYY-NNN` (menggantikan ID sementara `UIAI-YYYY-TBD` di judul Issue dan README riset) dan release `v0.1 Problem Validated` dibuat — inilah primary key yang mengikuti riset Anda sampai TA dan publikasi.
 
 Sesi studio 100 menit dibagi tiga: **30 menit konsep** (solution-first vs problem-first, problem worth solving, stakeholder & impact), **60 menit studio** (latihan mundur dari solusi ke masalah, menulis Problem Brief, peer test dua kalimat lintas tim), **10 menit gate check** (tiap tim membacakan kalimat masalahnya; tim lain mengulang dalam dua kalimat). Ritme Senin–Jumat mengikuti [OPS-05](../../research-os/06-execution-os/05-student-weekly-playbook.md); sprint goal dari [OPS-02](../../research-os/06-execution-os/02-weekly-sprints.md) §S2.
 
@@ -18,7 +18,7 @@ Sesi studio 100 menit dibagi tiga: **30 menit konsep** (solution-first vs proble
 6. **Stakeholder & Impact Statement** menjawab tiga hal: siapa (primer/sekunder), keputusan apa yang berubah bila riset berhasil, dan siapa yang dirugikan bila hasilnya salah. Contoh baik: "Tim akademik Prodi memakai prediksi ini untuk memutuskan intervensi di minggu ke-4." Contoh lemah: "Bermanfaat bagi masyarakat luas."
 7. **Klaster ≠ domain.** Klaster primer (C1–C4) = *apa yang baru bila riset berhasil* (model/data, sistem/keamanan, manusia/nilai, dampak domain); domain roadmap (Education, Halal, Health, Food, Government, Business, Social Impact) = mitra dan dataset. Satu klaster primer wajib, maksimal satu sekunder ([AIR-02](../../research-os/03-ai-research-ecosystem/02-ai-research-clusters.md) §8–9).
 8. **Uji dua kalimat** adalah kriteria lulus G2: reviewer di luar tim menulis ulang masalah (kalimat 1) dan mengapa penting untuk siapa (kalimat 2) tanpa bertanya ke tim.
-9. **Research ID resmi lahir di gate ini.** Sebelum G2 lulus Anda memakai `UIAI-YYYY-…` (ID sementara); setelah merge, `@maintainers` memberi `UIAI-YYYY-NNN` yang mengikat Issue → repo → Metopen → TA → dataset → publikasi ([GOVERNANCE.md](../../GOVERNANCE.md) §skema identitas).
+9. **Research ID resmi lahir di gate ini.** Sebelum PR G2 di-merge Anda memakai ID sementara `UIAI-YYYY-TBD`; saat PR di-merge, `@maintainers` menetapkan `UIAI-YYYY-NNN` yang mengikat Issue → repo → Metopen → TA → dataset → publikasi ([GOVERNANCE.md](../../GOVERNANCE.md) §skema identitas).
 10. **Etika mulai dari wawancara pertama.** Izin sebelum mencatat, sebut peran bukan nama, kontak dan rekaman disimpan di luar repositori ([MET-07](../../research-os/04-metopen-research-studio/07-research-integrity-and-ethics.md) §4, [SECURITY.md](../../SECURITY.md)).
 
 **Pertanyaan pemandu** yang harus bisa Anda jawab di akhir sesi tanpa membaca catatan: *"Mengapa masalah ini perlu diselesaikan, siapa yang peduli, dan keputusan apa yang berubah bila riset kami berhasil — tanpa menyebut satu pun nama metode?"*
@@ -54,12 +54,12 @@ Hari Jumat, di repositori riset `proj-YYYY-topic` ([TPL-15](../../research-os/08
 | **Stakeholder & Impact Statement**: tabel peran · kepentingan · keputusan yang berubah · risiko bila salah (minimal 2 stakeholder) + paragraf dampak | `docs/problem.md` §Stakeholder & Impact | commit | OPS-018 |
 | **Alignment**: klaster primer C1–C4 (+ sekunder bila ada), domain roadmap, 3 kalimat alasan | `docs/problem.md` §Alignment; label `cluster:*` pada Issue | commit + label Issue | OPS-019 |
 | Research One-Pager v0: field Problem & why, Stakeholder, Expected contribution (tentatif) terisi; RQ/Method/Data/Baseline bertanda `[belum diisi — target G3–G5]` | `docs/one-pager.md` ([TPL-01](../../research-os/08-templates/01-research-one-pager-template.md)) | commit dengan tag `one-pager-v0` | OPS-020 |
-| Issue `type:problem` diperbarui (tautan `docs/problem.md`, cluster, domain, owner, maturity, priority) dan permintaan Research ID ke `@maintainers` | Issue di repo pusat (form [Research Problem](../../.github/ISSUE_TEMPLATE/01-research-problem.yml)); setelah ID diberikan, ganti `UIAI-YYYY-…` (ID sementara) di judul Issue, README riset, dan One-Pager | komentar Issue + commit | OPS-021 |
+| Issue `type:problem` diperbarui (tautan `docs/problem.md`, cluster, domain, owner, maturity, priority) dan permintaan Research ID ke `@maintainers` | Issue di repo pusat (form [Research Problem](../../.github/ISSUE_TEMPLATE/01-research-problem.yml)); setelah ID ditetapkan saat merge, ganti `UIAI-YYYY-TBD` di judul Issue, README riset, dan One-Pager | komentar Issue + commit | OPS-021 |
 | Latihan problem-first (judul solution-first → versi problem-first dengan 5 pertanyaan mundur) + jurnal W2: bukti apa yang paling meyakinkan bahwa masalah nyata | `docs/journal/w02.md` | commit | OPS-015, OPS-023 |
-| AI Usage Log W2 (termasuk saran AI yang ditolak dan alasannya) | `docs/ai-usage-log.md`, ringkasan di `docs/AI-USAGE.md` ([TPL-10](../../research-os/08-templates/10-ai-usage-log-template.md)) | commit | OPS-023 |
+| AI Usage Log W2 (termasuk saran AI yang ditolak dan alasannya) | `docs/AI-USAGE.md` — log + ringkasan statement ([TPL-10](../../research-os/08-templates/10-ai-usage-log-template.md)) | commit | OPS-023 |
 | **PR `GATE REVIEW: Problem Ready`** memakai template [problem-review.md](../../.github/PULL_REQUEST_TEMPLATE/problem-review.md), reviewer dosen pengampu + 1 peer | PR dari `research/g2-problem` ke branch utama repo riset | URL PR; setelah merge: label `gate:G2-problem`, release `v0.1 Problem Validated` | OPS-022 |
 
-README riset diperbarui: `Current Research Gate: G2 (in review)` pada Senin, `G2 passed` setelah merge, dan Research ID resmi menggantikan `UIAI-YYYY-…` (ID sementara). Release `v0.1 Problem Validated` berisi artefak Research Pack #1–#2 ([MET-04](../../research-os/04-metopen-research-studio/04-research-pack-specification.md) §7).
+README riset diperbarui: `Current Research Gate: G2 (in review)` pada Senin, `G2 passed` setelah merge, dan Research ID resmi menggantikan ID sementara `UIAI-YYYY-TBD`. Release `v0.1 Problem Validated` berisi artefak Research Pack #1–#2 ([MET-04](../../research-os/04-metopen-research-studio/04-research-pack-specification.md) §7).
 
 ## AI Assist
 
@@ -92,7 +92,7 @@ Ikuti [AIX-04](../../research-os/05-ai-augmented-research/04-ai-research-protoco
 | Setiap stakeholder di tabel nyata (bisa ditunjuk perannya), bukan hipotetis; keputusan yang berubah konkret | tim; mentor bila sudah ada | OPS-018 |
 | Klaster primer dan domain sesuai dengan *apa yang baru bila riset berhasil*, bukan sekadar topik | dosen pengampu (konfirmasi saat gate check) | OPS-019 |
 | One-Pager v0 tidak mendahului bukti: RQ/Method/Data/Baseline masih bertanda menunggu G3–G5; isi Problem & Stakeholder identik dengan `docs/problem.md` | tim; peer membaca 3 menit | OPS-020 |
-| Research ID resmi diberikan dan konsisten di judul Issue, README riset, One-Pager, dan `docs/problem.md` | `@maintainers` memberi ID; tim memeriksa konsistensi | OPS-021 |
+| Research ID resmi diberikan dan konsisten di judul Issue, README riset, One-Pager, dan `docs/problem.md` | `@maintainers` menetapkan ID saat PR G2 di-merge; tim memeriksa konsistensi | OPS-021 |
 | Setiap anggota memverifikasi entri AI Usage Log miliknya (tool, tujuan, verifikasi, dipakai/ditolak) | diri sendiri | OPS-023 |
 
 Prinsip: task selesai hanya jika Output ada di repo, Evidence dapat dibuka reviewer, Human Check sudah dilakukan, dan AI Usage Log tercatat ([OPS-05](../../research-os/06-execution-os/05-student-weekly-playbook.md) §Aturan sprint).
@@ -107,21 +107,21 @@ Minggu ini **menutup gate G2 Problem Ready**. Jawab ya/tidak per butir pada Juma
 - [ ] `docs/problem.md` §Stakeholder & Impact: tabel minimal 2 stakeholder dengan keputusan yang berubah dan risiko bila salah; paragraf dampak ditulis.
 - [ ] `docs/problem.md` §Alignment: satu klaster primer C1–C4, domain roadmap, 3 kalimat alasan; label `cluster:*` terpasang di Issue.
 - [ ] `docs/one-pager.md` v0 ter-tag `one-pager-v0`; field 7–8 terisi, field RQ/Method/Data/Baseline bertanda `[belum diisi — target G3–G5]`, tidak ada field kosong.
-- [ ] Issue `type:problem` diperbarui dan `@maintainers` diminta memberi Research ID; setelah diberikan, `UIAI-YYYY-…` (ID sementara) diganti di semua file.
-- [ ] `docs/journal/w02.md` berisi latihan problem-first dan jawaban "bukti apa yang paling meyakinkan bahwa masalah ini nyata"; `docs/ai-usage-log.md` mutakhir.
+- [ ] Issue `type:problem` diperbarui dan permohonan Research ID resmi ke `@maintainers` tercatat; setelah ID ditetapkan saat PR G2 di-merge, `UIAI-YYYY-TBD` diganti di judul Issue, README riset, dan semua file.
+- [ ] `docs/journal/w02.md` berisi latihan problem-first dan jawaban "bukti apa yang paling meyakinkan bahwa masalah ini nyata"; `docs/AI-USAGE.md` mutakhir.
 - [ ] Peer dari tim lain berhasil mengulang masalah dan mengapa penting dalam dua kalimat tanpa bertanya.
 - [ ] PR **`GATE REVIEW: Problem Ready`** termerge oleh dosen pengampu + 1 peer reviewer; label `gate:G2-problem`; release `v0.1 Problem Validated` dibuat; README §Current Research Gate diperbarui.
 
 **Ringkasan gate G2** ([OPS-03](../../research-os/06-execution-os/03-research-gates.md) §G2). **Lulus jika** orang di luar tim dapat menjelaskan ulang masalah dan mengapa penting dalam dua kalimat. **Gagal jika** masalah hanya justifikasi untuk algoritma yang sudah dipilih — atau bila ada pelanggaran integritas (stakeholder/angka dikarang, penggunaan AI tidak diungkap), terlepas dari kualitas lainnya. Reviewer: dosen pengampu + 1 peer reviewer. Gagal gate bukan hukuman: reviewer menulis apa yang kurang dan bukti apa yang dibutuhkan, tim merevisi, review dibuka ulang.
 
-**Cara membuka PR gate** ([CONTRIBUTING.md](../../CONTRIBUTING.md) §3): (1) pastikan semua bukti di tabel Deliverable ada di branch `research/g2-problem`; (2) buka PR berjudul `GATE REVIEW: Problem Ready — UIAI-YYYY-… (ID sementara)` memakai template [problem-review.md](../../.github/PULL_REQUEST_TEMPLATE/problem-review.md) (tambahkan `?template=problem-review.md` pada URL *Compare & pull request* atau salin isinya); (3) isi ringkasan Problem Brief, tabel stakeholder, bagian *Uji problem-first* (baseline lapangan, apa yang belum terjawab), tabel Evidence, dan AI Usage; (4) tautkan nomor PR G1 dan nomor Issue `type:problem`; (5) minta review dosen pengampu + 1 peer, dan minta reviewer mengisi bagian *uji dua kalimat*; (6) setelah merge: `@maintainers` memberi Research ID, label → `gate:G2-problem`, buat release `v0.1 Problem Validated`. Komentar review disimpan, tidak dihapus.
+**Cara membuka PR gate** ([CONTRIBUTING.md](../../CONTRIBUTING.md) §3): (1) pastikan semua bukti di tabel Deliverable ada di branch `research/g2-problem`; (2) buka PR berjudul `GATE REVIEW: Problem Ready — UIAI-YYYY-TBD` (ID sementara) memakai template [problem-review.md](../../.github/PULL_REQUEST_TEMPLATE/problem-review.md) (tambahkan `?template=problem-review.md` pada URL *Compare & pull request* atau salin isinya); (3) isi ringkasan Problem Brief, tabel stakeholder, bagian *Uji problem-first* (baseline lapangan, apa yang belum terjawab), tabel Evidence, dan AI Usage; (4) tautkan nomor PR G1 dan nomor Issue `type:problem`; (5) minta review dosen pengampu + 1 peer, dan minta reviewer mengisi bagian *uji dua kalimat*; (6) saat merge: `@maintainers` menetapkan Research ID resmi, lalu judul Issue dan README riset diperbarui; label → `gate:G2-problem`, buat release `v0.1 Problem Validated`. Komentar review disimpan, tidak dihapus.
 
 ## Templates & rujukan
 
 **Template yang dipakai minggu ini**
 
 - [TPL-01 Research One-Pager Template](../../research-os/08-templates/01-research-one-pager-template.md) — `docs/one-pager.md` v0 (field 7 Problem & why, 8 Stakeholder, 12 Contribution draft, 19 Next evidence, 20 Gate).
-- [TPL-10 AI Usage Log Template](../../research-os/08-templates/10-ai-usage-log-template.md) — `docs/ai-usage-log.md` dan `docs/AI-USAGE.md`.
+- [TPL-10 AI Usage Log Template](../../research-os/08-templates/10-ai-usage-log-template.md) — `docs/AI-USAGE.md` (log + ringkasan statement).
 - [TPL-04 Research Backlog Template](../../research-os/08-templates/04-research-backlog-template.md) — bentuk kartu masalah `problems/UIAI-YYYY-NNN-slug.md` yang dibuat setelah Research ID diberikan.
 - [TPL-15 Research Repository Template](../../research-os/08-templates/15-research-repository-template.md) — lokasi `docs/problem.md`, branch `research/g2-problem`.
 - Form Issue [Research Problem](../../.github/ISSUE_TEMPLATE/01-research-problem.yml) dan template PR [problem-review.md](../../.github/PULL_REQUEST_TEMPLATE/problem-review.md).

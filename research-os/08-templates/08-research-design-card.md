@@ -23,7 +23,7 @@ Satu halaman metodologi yang menjawab: *bagaimana persisnya RQ dijawab, dan apa 
 | Case study | "Bagaimana dan mengapa X terjadi dalam konteks nyata C?" | deskripsi mendalam, triangulasi | — |
 | Qualitative | "Apa makna/pola di balik pengalaman P?" | tema dari wawancara/observasi | — |
 
-## Template (salin ke `docs/research-design.md`)
+## Template (salin ke `docs/design-card.md`)
 
 ```markdown
 # Research Design Card — [Research ID] · v[n] · [YYYY-MM-DD]
@@ -61,14 +61,14 @@ Satu halaman metodologi yang menjawab: *bagaimana persisnya RQ dijawab, dan apa 
 | Variabel kontrol | Kurikulum versi sama, kasus sama untuk kedua sistem, prompt tetap, temperature 0, jumlah rekomendasi = 5 |
 | Sampling / dataset | 40 kasus advising sintetis (pilot) + 80 kasus dari DS-2026-001 (evaluasi); stratifikasi semester 3/5/7; split pilot/evaluasi ditetapkan sebelum run; gold label oleh 2 dosen wali |
 | Prosedur | 1. Bekukan kurikulum & aturan → 2. Bangun baseline → 3. Bangun LLM+RAG → 4. Jalankan kedua sistem pada kasus → 5. Hitung metrik otomatis → 6. Dosen wali menilai 20 kasus acak (blind terhadap sistem) → 7. Analisis |
-| Instrumen | Skrip evaluasi `src/eval/`; lembar penilaian dosen wali (Likert + komentar); protokol wawancara singkat 10 menit |
+| Instrumen | Skrip evaluasi `src/evaluate.py`; lembar penilaian dosen wali (Likert + komentar); protokol wawancara singkat 10 menit |
 | Analisis | RQ1: bandingkan proporsi pelanggaran dengan interval kepercayaan bootstrap; RQ2: median skor + agreement antar penilai (Cohen's κ); ambang praktis: selisih ≥ 10 poin persen dianggap berarti — ditetapkan sebelum data |
 | Threats — internal | Gold label subjektif → 2 penilai + κ; urutan penilaian → acak |
 | Threats — eksternal | Satu prodi, satu kurikulum → klaim dibatasi ke konteks serupa; kasus sintetis → validasi dengan 80 kasus nyata |
 | Threats — konstruk | "Relevansi elektif" ≠ "keputusan terbaik" → definisi operasional + triangulasi wawancara |
 | Threats — statistik | n kecil; LLM nondeterministik → 3 run per kasus, laporkan variansi dan interval |
 | Etika | Data transkrip restricted, consent tertulis, anonimisasi sebelum akses; dosen wali sebagai partisipan diberi informed consent; tidak ada keputusan akademik nyata diambil dari sistem |
-| Reproducibility plan | `experiments/config.yaml`, seed 42, `requirements.txt`, skrip `run.sh`, model & versi dicatat, kasus sintetis dirilis; reproduksi oleh peer [Mahasiswa C] pada W10 |
+| Reproducibility plan | `experiments/pilot-01/config.yaml`, seed 42, `requirements.txt`, skrip `run.sh`, model & versi dicatat, kasus sintetis dirilis; reproduksi oleh peer [Mahasiswa C] pada W10 |
 | Riwayat perubahan | v1 2026-10-[dd] draft W7 · v2 2026-10-[dd] setelah red team: tambah 3 run per kasus, definisi operasional relevansi |
 
 ## Kriteria kualitas

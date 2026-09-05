@@ -49,12 +49,12 @@ Hari Jumat, di repositori riset `proj-YYYY-topic` ([TPL-15](../../research-os/08
 | Artefak | Lokasi di repositori | Bentuk bukti | Task |
 |---|---|---|---|
 | Catatan perbandingan 3 basis data dengan satu kata kunci yang sama (jumlah hasil, kualitas metadata, fitur cited-by) + jurnal W3: apa yang paling mengejutkan dari hasil pencarian | `docs/journal/w03.md` | commit di `research/g3-evidence` | OPS-024, OPS-032 |
-| **Search strategy**: §Keywords (3–5 konsep inti, sinonim EN/ID, kombinasi boolean), basis data dan alasannya, rentang tahun, bahasa, kriteria inklusi/eksklusi, kriteria kualitas sumber, cara mencatat hasil, **tanggal pencarian**, nomor Issue literature-gap | `docs/literature/search-strategy.md` (lokasi menurut WBS; [MET-04](../../research-os/04-metopen-research-studio/04-research-pack-specification.md) §4 menyebutnya `docs/search-strategy.md` — pilih satu lokasi, jangan dua salinan) | commit | OPS-025, OPS-026, OPS-031 |
+| **Search strategy**: §Keywords (3–5 konsep inti, sinonim EN/ID, kombinasi boolean), basis data dan alasannya, rentang tahun, bahasa, kriteria inklusi/eksklusi, kriteria kualitas sumber, cara mencatat hasil, **tanggal pencarian**, nomor Issue literature-gap | `docs/literature/search-strategy.md` ([TPL-15](../../research-os/08-templates/15-research-repository-template.md)) | commit | OPS-025, OPS-026, OPS-031 |
 | **Log pencarian**: kolom query · basis data · tanggal · jumlah hasil · jumlah diambil · sumber (`keyword`/`chaining`); minimal 8 query di minimal 2 basis data; entri `sumber=chaining` dari 3–5 sumber kunci | `docs/literature/search-log.csv` | commit | OPS-027, OPS-029 |
 | **Daftar screening**: satu baris per kandidat dengan judul, penulis, tahun, venue, DOI/URL, keputusan include/exclude, alasan (merujuk kriteria), kolom `verified=yes/no`; 30–40 kandidat berstatus include | `docs/literature/screening.csv` | commit | OPS-028, OPS-030 |
 | **`references.bib` terverifikasi**: hanya entri yang DOI/URL-nya dibuka manual dan cocok; diekspor dari reference manager; entri yang dibuang tidak masuk | `references.bib` (root repositori riset) | commit | OPS-030 |
 | Issue `type:literature-gap` berisi 1–3 **dugaan** gap berstatus "belum diverifikasi", tertaut ke Research ID; akan diuji terhadap synthesis matrix di W5 | Issue di repo pusat (form [Literature Gap](../../.github/ISSUE_TEMPLATE/05-literature-gap.yml)); nomor Issue dicatat di `search-strategy.md` | URL Issue + commit | OPS-031 |
-| AI Usage Log W3: entri untuk usulan kata kunci, pra-screening abstrak, format BibTeX, dan **verifikasi sumber** — termasuk referensi usulan AI yang dibuang dan alasannya | `docs/ai-usage-log.md`, ringkasan di `docs/AI-USAGE.md` ([TPL-10](../../research-os/08-templates/10-ai-usage-log-template.md)) | commit | OPS-030, OPS-032 |
+| AI Usage Log W3: entri untuk usulan kata kunci, pra-screening abstrak, format BibTeX, dan **verifikasi sumber** — termasuk referensi usulan AI yang dibuang dan alasannya | `docs/AI-USAGE.md` — log + ringkasan statement ([TPL-10](../../research-os/08-templates/10-ai-usage-log-template.md)) | commit | OPS-030, OPS-032 |
 
 README riset diperbarui: `Current Research Gate: G3 (in progress — W3 Search)`. Tidak ada PR gate dan tidak ada release minggu ini; artefak di atas menjadi bagian *Strategi pencarian* dan *Evidence* pada PR `GATE REVIEW: Evidence Ready` di W5 ([evidence-review.md](../../.github/PULL_REQUEST_TEMPLATE/evidence-review.md)).
 
@@ -108,7 +108,7 @@ Minggu ini **belum menutup gate** — G3 Evidence Ready berlangsung W3–W5 dan 
 - [ ] `docs/literature/screening.csv` berisi 30–40 kandidat *include* dengan alasan; setiap *exclude* punya alasan; sampel 5 exclude sudah dicek ulang.
 - [ ] `references.bib` hanya berisi entri `verified=yes`; 100% DOI/URL dibuka manual; entri yang dibuang tercatat di AI Usage Log atau kolom alasan screening.
 - [ ] Issue `type:literature-gap` terbuka dengan 1–3 dugaan gap berstatus "belum diverifikasi", tertaut ke Research ID, nomornya dicatat di search strategy.
-- [ ] `docs/ai-usage-log.md` memuat entri Stage `Search` untuk kata kunci, pra-screening, dan verifikasi sumber (termasuk yang dibuang); tiap anggota sudah memverifikasi entrinya; `docs/AI-USAGE.md` diperbarui.
+- [ ] `docs/AI-USAGE.md` memuat entri Stage `Search` untuk kata kunci, pra-screening, dan verifikasi sumber (termasuk yang dibuang); tiap anggota sudah memverifikasi entrinya; ringkasan AI Usage Statement di bagian atas file diperbarui.
 - [ ] Dosen membuka 3 sumber acak dari `screening.csv` di gate check: semuanya ada, relevan, dan konsisten dengan kriteria.
 - [ ] README riset: `Current Research Gate: G3 (in progress — W3 Search)`.
 
@@ -118,7 +118,7 @@ Minggu ini **belum menutup gate** — G3 Evidence Ready berlangsung W3–W5 dan 
 
 **Template yang dipakai minggu ini**
 
-- [TPL-10 AI Usage Log Template](../../research-os/08-templates/10-ai-usage-log-template.md) — `docs/ai-usage-log.md` (contoh terisi baris Stage `Search`: usulan kata kunci, referensi AI yang dibuang) dan `docs/AI-USAGE.md`.
+- [TPL-10 AI Usage Log Template](../../research-os/08-templates/10-ai-usage-log-template.md) — `docs/AI-USAGE.md` (contoh terisi baris Stage `Search`: usulan kata kunci, referensi AI yang dibuang).
 - [TPL-15 Research Repository Template](../../research-os/08-templates/15-research-repository-template.md) — lokasi `references.bib`, `docs/`, branch `research/g3-evidence`.
 - [TPL-11 Research Integrity Checklist](../../research-os/08-templates/11-research-integrity-checklist.md) — butir integritas sitasi yang akan ditandatangani di W15; baca sekarang agar tahu apa yang diperiksa.
 - Form Issue [Literature Gap](../../.github/ISSUE_TEMPLATE/05-literature-gap.yml) (OPS-031) dan template PR [evidence-review.md](../../.github/PULL_REQUEST_TEMPLATE/evidence-review.md) (dipakai W5; bagian *Strategi pencarian* bisa diisi dari minggu ini).

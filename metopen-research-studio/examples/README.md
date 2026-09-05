@@ -28,7 +28,7 @@ Riset ilustratif yang dipakai di seluruh repositori: **UIAI-2026-001 — AI-assi
 | Baseline | Draft: rule-based prerequisite checker + heuristik greedy per semester |
 | Metrics | Draft: constraint-violation rate; precision@5 relevansi elektif vs gold dosen wali; skor kegunaan Likert 1–5 — dikunci di W7 |
 | Threats to validity | [belum diisi — target v2] |
-| Ethics / AI note | Data mahasiswa dianonimkan, consent tertulis, tidak masuk GitHub; AI dipakai untuk kata kunci pencarian, pra-baca paper, dan kritik rumusan RQ — log `docs/ai-usage-log.md` entri #1–#9 |
+| Ethics / AI note | Data mahasiswa dianonimkan, consent tertulis, tidak masuk GitHub; AI dipakai untuk kata kunci pencarian, pra-baca paper, dan kritik rumusan RQ — log `docs/AI-USAGE.md` entri #1–#9 |
 | Next evidence | Research Design Card v1 + Data Plan + dataset card — W7, 2026-10-[dd] |
 | Gate saat ini | G4 Question Ready — Review — PR #[n] |
 
@@ -36,7 +36,7 @@ Mengapa ini lolos G4: setiap RQ menunjuk baris matriks tertentu; tiap hipotesis 
 
 ## (b) Research Design Card — format TPL-08, bukti G5 Method Ready (W7–W8)
 
-`docs/research-design.md` — v2 · 2026-10-[dd] (setelah red team W8).
+`docs/design-card.md` — v2 · 2026-10-[dd] (setelah red team W8); rincian tiap bagian di `docs/research-design.md`, data plan di `docs/data-plan.md`.
 
 | Bagian | Isi |
 |---|---|
@@ -55,10 +55,10 @@ Mengapa ini lolos G4: setiap RQ menunjuk baris matriks tertentu; tiap hipotesis 
 | Threats — konstruk | "Relevansi elektif" ≠ "keputusan terbaik" → definisi operasional + triangulasi wawancara |
 | Threats — statistik/kesimpulan | n kecil; LLM nondeterministik → 3 run per kasus, laporkan variansi dan interval |
 | Etika | Transkrip Restricted: consent tertulis, anonimisasi sebelum akses, kunci di luar repo; dosen wali sebagai partisipan diberi informed consent; tidak ada keputusan akademik nyata diambil dari sistem; lihat `docs/ethics.md` |
-| Reproducibility plan | `experiments/config-01.yaml`, seed 42, `requirements.txt`, `run.sh`; model & versi dicatat; kasus sintetis dirilis; reproduksi oleh peer [Mahasiswa C] pada W10 |
+| Reproducibility plan | `experiments/pilot-01/config.yaml`, seed 42, `requirements.txt`, `run.sh`; model & versi dicatat; kasus sintetis dirilis; reproduksi oleh peer [Mahasiswa C] pada W10 |
 | Riwayat perubahan | v1 2026-10-[dd] draft W7 · v2 2026-10-[dd] setelah red team: tambah 3 run per kasus, definisi operasional relevansi, alternatif metode yang ditolak |
 
-## (c) Cuplikan synthesis matrix — 5 dari 15–25 baris, `literature/synthesis-matrix.csv` (G3)
+## (c) Cuplikan synthesis matrix — 5 dari 15–25 baris, `docs/literature/synthesis-matrix.csv` (G3)
 
 Kolom mengikuti [MET-03 W4](../../research-os/04-metopen-research-studio/03-metopen-16-week-blueprint.md). Sumber ditulis placeholder; kolom *Verified* diisi tanggal DOI/URL dibuka, *Quality* diisi setelah OPS-040.
 
@@ -72,7 +72,7 @@ Kolom mengikuti [MET-03 W4](../../research-os/04-metopen-research-studio/03-meto
 
 Pola yang dibaca dari matriks penuh (ilustratif): **konsisten** — rekomendasi berbasis riwayat akademik akurat untuk nilai (M-03 dkk.); **bertentangan** — LLM relevan tetapi rawan halusinasi prasyarat (M-12) vs rule-based patuh tetapi tidak relevan (M-07); **belum diuji** — LLM+RAG vs rule-based pada kurikulum berpaket semester dengan penilaian dosen wali (M-07, M-12, M-19). Gap dan RQ pada (a) diturunkan dari ketiga baris terakhir ini.
 
-## (d) Tiga entri AI Usage Log — format TPL-10, `docs/ai-usage-log.md`
+## (d) Tiga entri AI Usage Log — format TPL-10, `docs/AI-USAGE.md`
 
 | # | Date | Tool (versi) | Stage | Purpose | Prompt / use (ringkas) | Material output? | Verification (S / R / E) | Inclusion in final work | PJ |
 |---|---|---|---|---|---|---|---|---|---|
@@ -80,7 +80,7 @@ Pola yang dibaca dari matriks penuh (ilustratif): **konsisten** — rekomendasi 
 | 7 | 2026-10-[dd] | [coding assistant `[isi]`] | Coding | Debugging parser output LLM | Tempel pesan error + fungsi parser (tanpa data mahasiswa; contoh input sintetis) | Ya | S: — · R: patch dibaca baris per baris; satu perubahan yang tidak perlu ditolak · E: unit test 12 kasus lulus (`tests/test_parse.py`) | Diubah — `src/eval/parse.py` commit `[hash]` | [Mahasiswa B] |
 | 9 | 2026-10-[dd] | [LLM chat, model `[isi]`] | Method | Red team desain eksperimen sebelum W8 | "Bertindaklah sebagai reviewer skeptis: apa kelemahan desain berikut …" (Design Card v1 tanpa data) | Ya | S: — · R: 5 kritik dinilai tim; 2 diterima (nondeterminisme LLM → 3 run per kasus; gold label subjektif → 2 penilai + κ), 3 ditolak dengan alasan (mis. "tambah model kedua" — di luar ruang lingkup semester) · E: dicek terhadap baris M-12, M-19 | Diubah — Design Card v2 bagian Threats; notulen `docs/reviews/midterm-red-team.md` | [Mahasiswa A] |
 
-Yang membuat log ini *Governor-grade*: ditulis pada hari yang sama; kolom verifikasi menyebut **apa yang dicek dan hasilnya** (bukan "sudah diverifikasi"); ada entri **ditolak** dengan alasan; tidak ada data mahasiswa di prompt; lokasi inclusion konkret (file/commit). Statement ringkasnya dirakit di W13 ke `docs/AI-USAGE.md`.
+Yang membuat log ini *Governor-grade*: ditulis pada hari yang sama; kolom verifikasi menyebut **apa yang dicek dan hasilnya** (bukan "sudah diverifikasi"); ada entri **ditolak** dengan alasan; tidak ada data mahasiswa di prompt; lokasi inclusion konkret (file/commit). Ringkasan AI Usage Statement di bagian atas `docs/AI-USAGE.md` diperbarui tiap gate; statement final untuk naskah dirakit di W13 ke `paper/AI-USAGE-STATEMENT.md`.
 
 ## (e) Contoh teks PR "GATE REVIEW: Method Ready" (singkat)
 
@@ -105,9 +105,9 @@ RQ2 (M-19): bagaimana dosen wali menilai relevansi elektif dan kegunaan? — H2:
 
 ## Method — Research Design Card (TPL-08)
 Design science + benchmarking offline (utama), user study kecil dosen wali (pendukung). Unit: kasus advising / penilaian dosen wali.
-Kontrol: kurikulum sama, kasus sama, prompt tetap, temperature 0, top-5. Prosedur 7 langkah → docs/research-design.md v2.
+Kontrol: kurikulum sama, kasus sama, prompt tetap, temperature 0, top-5. Prosedur 7 langkah → docs/design-card.md v2 (rincian: docs/research-design.md).
 
-## Dataset — Data Plan
+## Dataset — Data Plan (docs/data-plan.md)
 Kurikulum (Public). DS-2026-001 transkrip anonim (Restricted; consent; kartu dataset diajukan, PR datasets-registry #[n]).
 40 kasus sintetis untuk pilot (Public, dirilis). Fallback bila akses transkrip tertunda: evaluasi pada kasus sintetis + wawancara dosen wali.
 
@@ -122,9 +122,9 @@ Rule-based prerequisite checker + heuristik greedy per semester — adil karena 
 | Kegunaan (Likert 1–5) | RQ2 | 20 kasus acak, blind terhadap sistem | median ≥ 4 |
 
 ## Experiment Card pilot (TPL-09)
-experiments/EXP-01-pilot.md · subset: 40 kasus sintetis · seed 42 · experiments/config-01.yaml · requirements.txt
+experiments/pilot-01/experiment-card.md (EXP-01) · subset: 40 kasus sintetis · seed 42 · experiments/pilot-01/config.yaml · requirements.txt
 
-## Threats to Validity (awal)
+## Threats to Validity (v1, pra-eksperimen)
 Internal: gold label subjektif → 2 penilai + κ · Eksternal: satu prodi → klaim dibatasi · Konstruk: relevansi ≠ keputusan terbaik → definisi operasional · Statistik: n kecil, LLM nondeterministik → 3 run, interval.
 
 ## Ethics & Privacy (awal)
@@ -137,14 +137,14 @@ Perubahan desain: 3 run per kasus; definisi operasional relevansi; alternatif me
 ## Evidence
 | Bukti wajib G5 (OPS-03) | Link / path | Status |
 |---|---|---|
-| docs/research-design.md (Design Card v2) | [link] | ada |
-| Data Plan + dataset card DS-2026-001 | docs/research-design.md §Sampling; datasets-registry PR #[n] | diajukan |
-| experiments/EXP-01-pilot.md | [link] | pra-registrasi terisi |
+| docs/design-card.md (Design Card v2) + docs/research-design.md | [link] | ada |
+| Data Plan + dataset card DS-2026-001 | docs/data-plan.md; datasets-registry PR #[n] | diajukan |
+| experiments/pilot-01/experiment-card.md | [link] | pra-registrasi terisi |
 | docs/ethics.md | [link] | ada |
 | Slide pitch + notulen red team | presentation/, docs/reviews/ | ada |
 
 ## AI Usage
-docs/ai-usage-log.md entri #1–#12; red team AI (#9): 2 dari 5 kritik diterima; tidak ada referensi AI tanpa verifikasi (#6: 3 dibuang).
+docs/AI-USAGE.md entri #1–#12; red team AI (#9): 2 dari 5 kritik diterima; tidak ada referensi AI tanpa verifikasi (#6: 3 dibuang).
 
 ## Integritas
 - [x] Metrik dan baseline ditetapkan sebelum eksperimen (EXP-01 pra-registrasi)

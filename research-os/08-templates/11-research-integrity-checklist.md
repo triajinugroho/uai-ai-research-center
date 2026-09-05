@@ -20,9 +20,9 @@ Tahap: [Defense G8 / Submission ke [venue] / Rilis artefak [ART-…]]
 - [ ] A3 Data yang dibuang/outlier dilaporkan dengan alasan yang ditetapkan sebelum analisis — Bukti: [results/analysis.md §]
 
 ## B. Analisis
-- [ ] B1 Tidak ada metric switching: metrik & ambang sama dengan pra-registrasi Experiment Card — Bukti: [experiments/EXP-…]
+- [ ] B1 Tidak ada metric switching: metrik & ambang sama dengan pra-registrasi Experiment Card — Bukti: [experiments/pilot-01/experiment-card.md §Pra-registrasi]
 - [ ] B2 Tidak ada seed/run cherry-picking: semua run dilaporkan (mean ± variasi, n) — Bukti: [results/…]
-- [ ] B3 Tidak ada leakage: split per entitas/waktu, tuning hanya di validation, test disentuh sekali — Bukti: [src/…, EXP-…]
+- [ ] B3 Tidak ada leakage: split per entitas/waktu, tuning hanya di validation, test disentuh sekali — Bukti: [src/data.py, src/evaluate.py, experiments/pilot-01/experiment-card.md]
 - [ ] B4 Baseline dijalankan dan dilaporkan pada kondisi yang sama — Bukti: [results/…]
 
 ## C. Sitasi
@@ -35,8 +35,8 @@ Tahap: [Defense G8 / Submission ke [venue] / Rilis artefak [ART-…]]
 - [ ] D2 Tidak ada self-plagiarism dari tugas/laporan lain tanpa sitasi — Bukti: [pernyataan]
 
 ## E. AI
-- [ ] E1 AI Usage Log lengkap sejak W1 dan dicatat hari yang sama — Bukti: [docs/ai-usage-log.md, n entri]
-- [ ] E2 AI Usage Statement ada di docs/AI-USAGE.md, README, dan manuscript; konsisten dengan log — Bukti: [tautan]
+- [ ] E1 AI Usage Log lengkap sejak onboarding S0 (pra-W1) dan dicatat hari yang sama — Bukti: [docs/AI-USAGE.md §Log, n entri]
+- [ ] E2 AI Usage Statement ada di docs/AI-USAGE.md, paper/AI-USAGE-STATEMENT.md, README, dan manuscript; konsisten dengan log — Bukti: [tautan]
 - [ ] E3 Tidak ada referensi, data, angka hasil, atau figur yang dihasilkan AI tanpa verifikasi — Bukti: [log kolom verification; referensi dibuang: n]
 - [ ] E4 Tidak ada data sensitif yang diberikan ke tool AI eksternal — Bukti: [log; pernyataan]
 
@@ -49,7 +49,7 @@ Tahap: [Defense G8 / Submission ke [venue] / Rilis artefak [ART-…]]
 ## G. Reproducibility
 - [ ] G1 README riset memuat cara menjalankan ulang (langkah, perintah) — Bukti: [README §Reproducibility]
 - [ ] G2 Environment terkunci (requirements.txt/environment.yml), seed dan config tersimpan — Bukti: [file]
-- [ ] G3 Minimal satu reproduksi oleh peer berhasil dan dicatat — Bukti: [EXP-… §Reproduksi peer]
+- [ ] G3 Minimal satu reproduksi oleh peer berhasil dan dicatat — Bukti: [docs/reviews/reproduction-pilot-01.md; experiments/pilot-01/experiment-card.md §Reproduksi peer]
 
 ## H. Authorship & kontribusi
 - [ ] H1 Semua penulis memberi kontribusi substantif dan menyetujui versi final; tidak ada guest/ghost author — Bukti: [CITATION.cff, pernyataan kontribusi]
@@ -62,7 +62,7 @@ Tahap: [Defense G8 / Submission ke [venue] / Rilis artefak [ART-…]]
 
 ## J. Hasil negatif
 - [ ] J1 Hasil negatif/tidak sesuai hipotesis dilaporkan, bukan disembunyikan — Bukti: [results/…]
-- [ ] J2 Penyimpangan dari rencana (pra-registrasi) dicatat dengan alasan — Bukti: [EXP-… §Penyimpangan]
+- [ ] J2 Penyimpangan dari rencana (pra-registrasi) dicatat dengan alasan — Bukti: [experiments/pilot-01/experiment-card.md §Penyimpangan dari rencana; results/analysis.md]
 
 ## Keputusan
 Jumlah item: [n] · ✓: [n] · N/A (beralasan): [n] · Gagal: [n]
@@ -92,11 +92,11 @@ Pernyataan: "Kami menyatakan bahwa isi checklist ini benar; kami memahami bahwa 
 
 UIAI-2026-001 · Tahap: Defense G8 · 2026-12-[dd]
 
-- [x] B1 Tidak ada metric switching — Bukti: `experiments/EXP-01-pilot.md`, `EXP-02-eval.md`: metrik violation rate & precision@5, ambang 10 poin persen, sama dengan pra-registrasi.
-- [x] B2 Semua run dilaporkan — Bukti: `results/exp-02.csv`, 80 kasus × 3 run, mean ± sd di `results/analysis.md` Tabel 2.
+- [x] B1 Tidak ada metric switching — Bukti: `experiments/pilot-01/experiment-card.md`, `experiments/main/README.md`: metrik violation rate & precision@5, ambang 10 poin persen, sama dengan pra-registrasi.
+- [x] B2 Semua run dilaporkan — Bukti: `results/main/summary.csv`, 80 kasus × 3 run, mean ± sd di `results/analysis.md` Tabel 2.
 - [x] C2 Referensi terverifikasi — Bukti: `references.bib` 22 entri, kolom `verified=2026-10-[dd]`; 3 usulan AI dibuang (AI Usage Log #6).
 - [x] E4 Tidak ada data sensitif ke tool AI — Bukti: log #7 memakai fungsi tanpa data; sampel sintetis untuk #9.
-- [x] F2 Anonimisasi — Bukti: `src/data/anonymize.py`, audit repo 2026-11-[dd] oleh [Mahasiswa C]: 0 kolom identitas.
+- [x] F2 Anonimisasi — Bukti: `src/data.py` (fungsi anonymize), audit repo 2026-11-[dd] oleh [Mahasiswa C]: 0 kolom identitas.
 - [ ] N/A F3 Persetujuan komite etik — alasan: data internal Prodi dengan consent dan anonimisasi; pemilik data (Kaprodi) menyetujui lewat surat [nomor — isi]; diterima pembimbing.
 - [x] J1 Hasil negatif dilaporkan — Bukti: H1 tidak terdukung pada pilot (LLM+RAG masih melanggar 7,5 %), dibahas di `results/analysis.md` §4.
 

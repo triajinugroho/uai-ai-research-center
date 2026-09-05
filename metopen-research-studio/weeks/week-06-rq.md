@@ -50,14 +50,14 @@ Hari Jumat, di repositori riset `proj-YYYY-topic` ([TPL-15](../../research-os/08
 | Artefak | Lokasi di repositori | Bentuk bukti | Task |
 |---|---|---|---|
 | Latihan sesi: 3 RQ lemah → RQ terukur + jenis kontribusi tiap contoh; jurnal W6: **apa yang berubah dari klaim awal W1 ke RQ sekarang** | `docs/journal/w06.md` | commit | OPS-050, OPS-058 |
-| **§Gap** — tabel `Gap \| Evidence (baris matriks + sumber) \| Claim`; klaim awal `docs/endgame.md` direvisi; jenis gap disebut. Bila tim memakai `docs/gap.md` ([MET-04](../../research-os/04-metopen-research-studio/04-research-pack-specification.md) §4), tabel diisi di satu tempat dan file lain menunjuk ke sana | `docs/research-question.md` §Gap | commit; Issue `type:literature-gap` ditutup dengan tautan ke gap final | OPS-051 |
+| **§Gap** — tabel `Gap \| Evidence (baris matriks + sumber) \| Claim`; klaim awal `docs/endgame.md` direvisi; jenis gap disebut; ini Research Gap final yang dinilai di G4 (kandidatnya ada di `docs/literature-map.md` §Gap Candidates dari W5) | `docs/research-question.md` §Gap | commit; Issue `type:literature-gap` ditutup dengan tautan ke gap final | OPS-051 |
 | **§RQ / Hypothesis** — 1 RQ utama + maks 2 pendukung; tiap RQ: konstruk, konteks, pembanding, batas, jawaban yang mungkin, **hasil yang membatalkan**, tautan gap + nomor baris matriks; hipotesis ditandai (arah, variabel, kriteria penolakan) | `docs/research-question.md` §RQ | commit | OPS-052 |
 | **§Contribution** — jenis kontribusi + satu paragraf "kontribusi ini bermakna karena ___"; konsisten dengan RQ dan endgame | `docs/research-question.md` §Contribution | commit | OPS-053 |
 | **§RQ Check** — checklist per RQ: data yang ada, metrik kandidat, hasil pembatal, waktu; RQ yang gagal direvisi dan perubahannya tercatat | `docs/research-question.md` §RQ Check | commit (riwayat revisi terlihat di log commit) | OPS-054 |
 | **Research One-Pager v1**: field 9–12 (What we know, Gap, RQ, Contribution) wajib; Why diperbarui; field 13–16 (Method/Data/Baseline/Metrics) draft bertanda `tentatif — menunggu G5` | `docs/one-pager.md` | commit dengan tag `one-pager-v1` | OPS-055 |
 | **Issue `type:research-question`** dari form [Research Question](../../.github/ISSUE_TEMPLATE/02-research-question.yml): RQ, hipotesis, baris matriks, kontribusi, jenis kontribusi; tertaut ke Issue `type:problem` dan `type:literature-gap` | GitHub Issue `[UIAI-YYYY-NNN] RQ: …` | nomor Issue dicatat di README riset dan One-Pager | OPS-056 |
 | **PR `GATE REVIEW: Question Ready — UIAI-YYYY-NNN`** dari `research/g4-question` memakai template default | PR; label `gate:G4-question` setelah merge | URL PR; README §Current Research Gate | OPS-057 |
-| AI Usage Log W6 dengan Stage `Gap`/`RQ`: contoh RQ lemah, tantangan konsistensi gap–klaim, variasi RQ, kritik kontribusi, reviewer skeptis, ringkasan One-Pager — dan keputusan manusia atas tiap output | `docs/ai-usage-log.md`, ringkasan di `docs/AI-USAGE.md` ([TPL-10](../../research-os/08-templates/10-ai-usage-log-template.md)) | commit | OPS-058 |
+| AI Usage Log W6 dengan Stage `Gap`/`RQ`: contoh RQ lemah, tantangan konsistensi gap–klaim, variasi RQ, kritik kontribusi, reviewer skeptis, ringkasan One-Pager — dan keputusan manusia atas tiap output | `docs/AI-USAGE.md` — log + ringkasan statement ([TPL-10](../../research-os/08-templates/10-ai-usage-log-template.md)) | commit | OPS-058 |
 
 G4 tidak memiliki release milestone ([OPS-03](../../research-os/06-execution-os/03-research-gates.md) §Peta gate); rilis berikutnya `v0.3 Research Design` dibuat di W8. Setelah PR termerge, README riset: `Current Research Gate: G4 (passed) → G5 (in progress)`.
 
@@ -110,7 +110,7 @@ Minggu ini **menutup gate G4 Question Ready**. Jawab ya/tidak per butir pada Jum
 - [ ] §Contribution menyebut jenis kontribusi dan alasan bermakna; tidak ada frasa "pertama"/"novel" tanpa bukti; tidak melebihi RQ.
 - [ ] `docs/one-pager.md` v1 ter-tag `one-pager-v1`; field 9–12 terisi dari matriks dan `research-question.md`; field 13–16 bertanda `tentatif — menunggu G5`; tidak ada field kosong.
 - [ ] Issue `type:research-question` terbuka dengan Research ID, tertaut ke Issue problem dan literature-gap; nomornya tercatat di README riset dan One-Pager.
-- [ ] `docs/ai-usage-log.md` memuat entri Stage `Gap`/`RQ` untuk setiap penggunaan material; tiap anggota sudah memverifikasi entrinya; `docs/AI-USAGE.md` diperbarui.
+- [ ] `docs/AI-USAGE.md` memuat entri Stage `Gap`/`RQ` untuk setiap penggunaan material; tiap anggota sudah memverifikasi entrinya; ringkasan AI Usage Statement di bagian atas file diperbarui.
 - [ ] Di gate check, tim membacakan satu RQ dan hasil pembatalnya, lalu menunjukkan baris matriksnya tanpa membuka catatan lain.
 - [ ] PR **`GATE REVIEW: Question Ready`** termerge oleh dosen pengampu + mentor; label `gate:G4-question`; README §Current Research Gate diperbarui.
 
@@ -123,7 +123,7 @@ Minggu ini **menutup gate G4 Question Ready**. Jawab ya/tidak per butir pada Jum
 **Template yang dipakai minggu ini**
 
 - [TPL-01 Research One-Pager Template](../../research-os/08-templates/01-research-one-pager-template.md) — `docs/one-pager.md` v1 (field 9 What we know, 10 Gap, 11 RQ/hipotesis, 12 Contribution wajib; 13–16 draft; 19 Next evidence; 20 Gate).
-- [TPL-10 AI Usage Log Template](../../research-os/08-templates/10-ai-usage-log-template.md) — `docs/ai-usage-log.md` (Stage `Gap`/`RQ`) dan `docs/AI-USAGE.md`.
+- [TPL-10 AI Usage Log Template](../../research-os/08-templates/10-ai-usage-log-template.md) — `docs/AI-USAGE.md` (Stage `Gap`/`RQ`).
 - [TPL-15 Research Repository Template](../../research-os/08-templates/15-research-repository-template.md) — lokasi `docs/research-question.md`, `docs/journal/`, branch `research/g4-question`.
 - [TPL-09 Experiment Card](../../research-os/08-templates/09-experiment-card.md) — format hipotesis (arah, variabel, Δ, kriteria penolakan) yang akan dipakai ulang di W8; menulisnya sekarang membuat pilot nanti punya *expected result*.
 - [TPL-04 Research Backlog Template](../../research-os/08-templates/04-research-backlog-template.md) — gap cadangan yang tidak dipakai diparkir sebagai kartu masalah backlog, bukan dibuang.

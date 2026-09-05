@@ -19,7 +19,7 @@ Think → Ask → Ground → Verify → Challenge → Reproduce → Disclose →
 | **Verify** | Tiga lapis: *source* (ada dan mengatakan itu), *reasoning* (valid untuk konteks Anda), *evidence* (hitung/jalankan ulang sendiri). Tulis **apa yang dicek**, bukan "sudah diverifikasi" | Log tanpa kolom verifikasi; angka AI dipakai tanpa dihitung ulang |
 | **Challenge** | Selalu tanya "apa yang salah dari jawabanmu?"; pakai AI sebagai red team; catat kritik yang **ditolak** beserta alasan | Hanya bertanya untuk konfirmasi; tidak pernah ada entri "ditolak" |
 | **Reproduce** | Apa pun yang AI bantu (kode, analisis, tabel) dapat dijalankan ulang dari repositori oleh orang lain tanpa percakapan AI; kode AI diberi tes | Hasil hanya ada di notebook/chat; kode AI tanpa tes |
-| **Disclose** | Catat penggunaan material di AI Usage Log **saat terjadi**; rangkum di `docs/AI-USAGE.md`, bedakan bantuan penulisan vs proses riset | Log diisi belakangan; statement generik "kami menggunakan ChatGPT untuk membantu" |
+| **Disclose** | Catat penggunaan material di AI Usage Log **saat terjadi**; rangkum di bagian statement `docs/AI-USAGE.md` (final untuk naskah: `paper/AI-USAGE-STATEMENT.md`), bedakan bantuan penulisan vs proses riset | Log diisi belakangan; statement generik "kami menggunakan ChatGPT untuk membantu" |
 | **Own** | Anda bertanggung jawab atas setiap kalimat, angka, dan baris kode. Uji diri: bisa dijelaskan tanpa membuka AI? Bila tidak, pelajari atau buang | "AI yang bilang"; tidak bisa menjelaskan kode/analisis sendiri di defense |
 
 
@@ -60,7 +60,7 @@ Aturan praktis data: sebelum menempel apa pun ke prompt, tanyakan "kalau teks in
 
 ## 4. Mengisi AI Usage Log dan AI Usage Statement (TPL-10)
 
-**Log** (`docs/ai-usage-log.md`, dimulai saat agreement ditandatangani di S0/W1): satu baris per penggunaan **material** — output AI yang masuk (utuh/diubah) ke kode, data, analisis, teks, atau keputusan desain. Tidak wajib untuk pemeriksaan ejaan atau terjemahan istilah tunggal.
+**Log** (`docs/AI-USAGE.md`, dimulai saat onboarding S0 — pra-W1 — begitu agreement ditandatangani): satu baris per penggunaan **material** — output AI yang masuk (utuh/diubah) ke kode, data, analisis, teks, atau keputusan desain. Tidak wajib untuk pemeriksaan ejaan atau terjemahan istilah tunggal.
 
 | Kolom | Isi yang benar |
 |---|---|
@@ -73,9 +73,9 @@ Aturan praktis data: sebelum menempel apa pun ke prompt, tanyakan "kalau teks in
 
 Reviewer memeriksa log pada G3 (verifikasi sumber), G6 (kode berbantuan AI), dan G8 (statement lengkap). Log dinilai dari **kejujuran dan kualitas verifikasi**, bukan dari banyak-sedikitnya AI dipakai; entri "ditolak" adalah bukti Anda menilai, bukan menyalin. Contoh tiga entri terisi ada di [examples §(d)](../examples/README.md).
 
-**Statement** (`docs/AI-USAGE.md`, dirakit W13 dari log, difinalkan W16; struktur lengkap di [AIX-04 §4.2](../../research-os/05-ai-augmented-research/04-ai-research-protocol.md)): (1) ringkasan tool dan tahap; (2) **AI dalam proses riset** — tahap, bantuan, verifikasi, rujukan nomor log; (3) **AI dalam penulisan** — bagian mana, jenis bantuan; (4) yang TIDAK dilakukan dengan AI (hasil, tabel, figur, interpretasi, review tim lain, pemilihan metrik/baseline); (5) data — tidak ada data pribadi/partner ke layanan AI; (6) pernyataan tanggung jawab — AI bukan penulis. Statement ini menjadi sumber bagian metode dan pengungkapan AI di proposal/manuscript; penggunaan yang memengaruhi kesimpulan dijelaskan di Methods, bukan hanya di catatan kaki.
+**Statement** (ringkasan di bagian atas `docs/AI-USAGE.md`, diperbarui tiap gate; versi final untuk naskah `paper/AI-USAGE-STATEMENT.md` dirakit W13 dari log dan difinalkan W16; struktur lengkap di [AIX-04 §4.2](../../research-os/05-ai-augmented-research/04-ai-research-protocol.md)): (1) ringkasan tool dan tahap; (2) **AI dalam proses riset** — tahap, bantuan, verifikasi, rujukan nomor log; (3) **AI dalam penulisan** — bagian mana, jenis bantuan; (4) yang TIDAK dilakukan dengan AI (hasil, tabel, figur, interpretasi, review tim lain, pemilihan metrik/baseline); (5) data — tidak ada data pribadi/partner ke layanan AI; (6) pernyataan tanggung jawab — AI bukan penulis. Statement ini menjadi sumber bagian metode dan pengungkapan AI di proposal/manuscript; penggunaan yang memengaruhi kesimpulan dijelaskan di Methods, bukan hanya di catatan kaki.
 
-## 5. AI Research Protocol Agreement (ditandatangani di G1)
+## 5. AI Research Protocol Agreement (ditandatangani saat onboarding S0; bukti wajib G1)
 
 Teks lengkap ada di [AIX-04 §5](../../research-os/05-ai-augmented-research/04-ai-research-protocol.md); salin ke `docs/ai-protocol-agreement.md`, isi nama/NIM, tanda tangani bersama dosen pengampu dan mentor. Intinya:
 

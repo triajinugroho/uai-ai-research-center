@@ -56,10 +56,10 @@ Hari Jumat, di repositori riset `proj-YYYY-topic` ([TPL-15](../../research-os/08
 | **Metode utama / artefak yang diuji**, berjalan dari config dan seed, lulus smoke test pada sampel kecil | `src/method.py` (atau modul artefak) | commit; smoke test tercatat di log | OPS-082 |
 | **Satu perintah** menjalankan pipeline penuh; log per run; hasil JSON/CSV dengan timestamp, seed, git hash | `run.sh` atau `Makefile` (root); `experiments/pilot-01/logs/`; `results/pilot-01/` | commit; menjalankan perintah menghasilkan `results/` dan `logs/` | OPS-083 |
 | **Reproducibility README v0**: langkah 1-2-3 instalasi, cara mendapatkan data (atau metadata bila restricted), perintah run, output yang diharapkan, waktu berjalan, keterbatasan; tabel eksperimen (`EXP-01` pilot → RQ, status, config, kartu) | `experiments/README.md`; bagian *Reproducibility* di `README.md` riset | commit; anggota lain mengikuti tanpa bertanya ([MET-04](../../research-os/04-metopen-research-studio/04-research-pack-specification.md) §3.14) | OPS-084 |
-| AI Usage Log W9: entri Stage `Coding` per modul — tujuan, bagian yang dipakai utuh vs diadaptasi, cara verifikasi (tes/pembacaan), file + commit | `docs/ai-usage-log.md`, ringkasan di `docs/AI-USAGE.md` ([TPL-10](../../research-os/08-templates/10-ai-usage-log-template.md)) | commit; entri merujuk file/commit | OPS-085 |
+| AI Usage Log W9: entri Stage `Coding` per modul — tujuan, bagian yang dipakai utuh vs diadaptasi, cara verifikasi (tes/pembacaan), file + commit | `docs/AI-USAGE.md` — log + ringkasan statement ([TPL-10](../../research-os/08-templates/10-ai-usage-log-template.md)) | commit; entri merujuk file/commit | OPS-085 |
 | **PR internal** `exp/pilot-01` → `research/g6-experiment` dengan checklist kualitas kode (keterbacaan, seed, tanpa hardcode path, tanpa data pribadi, tes lulus) dan komentar reviewer | PR di repositori riset | URL PR internal termerge dengan komentar review | OPS-086 |
 
-README riset diperbarui: `Current Research Gate: G5 passed → G6 (in progress — W9 Repository)`. Bila tim memakai konvensi `experiments/config-01.yaml` + `experiments/EXP-01-<slug>.md` dari TPL-15 alih-alih folder `pilot-01/`, pilih satu dan rujuk secara konsisten dari `experiments/README.md`. Belum ada hasil pilot penuh, figur, atau catatan reproduksi peer minggu ini — semuanya W10.
+README riset diperbarui: `Current Research Gate: G5 passed → G6 (in progress — W9 Repository)`. Tata letak `experiments/pilot-01/` (experiment card, `config.yaml`, `logs/`) dan `results/pilot-01/` mengikuti pohon kanonik TPL-15; eksperimen utama W11 memakai `experiments/main/` dan `results/main/`. Belum ada hasil pilot penuh, figur, atau catatan reproduksi peer minggu ini — semuanya W10.
 
 ## AI Assist
 
@@ -112,7 +112,7 @@ Minggu ini **belum menutup gate**; G6 Experiment Ready ditutup di W10 setelah pi
 - [ ] `src/method.py` berjalan dari config dan seed; smoke test pada sampel kecil lulus.
 - [ ] `bash run.sh` (atau `make pilot`) menjalankan pipeline penuh dan menulis `results/pilot-01/` + `experiments/pilot-01/logs/`.
 - [ ] `experiments/README.md` v0 diikuti anggota lain dari clone bersih tanpa bertanya; bagian *Reproducibility* README riset terisi.
-- [ ] `docs/ai-usage-log.md` memuat entri Stage `Coding` per modul berbantuan AI dengan tanda utuh/diadaptasi dan cara verifikasi; tiap anggota sudah memverifikasi entrinya; `docs/AI-USAGE.md` diperbarui.
+- [ ] `docs/AI-USAGE.md` memuat entri Stage `Coding` per modul berbantuan AI dengan tanda utuh/diadaptasi dan cara verifikasi; tiap anggota sudah memverifikasi entrinya; ringkasan AI Usage Statement di bagian atas file diperbarui.
 - [ ] PR internal `exp/pilot-01` termerge ke `research/g6-experiment` dengan komentar review dan checklist kualitas kode terpenuhi.
 - [ ] README riset menunjukkan `G6 (in progress)`; branch `research/g6-experiment` ada; **metrik dan baseline tidak berubah** dari G5 (bila berubah, alasan dan tanggal tercatat).
 
