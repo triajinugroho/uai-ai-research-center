@@ -55,7 +55,7 @@ Tiga level hasil: **TA Ready** (lolos G5 — minimum semua orang), **Research Re
 1. **Baca dan tanda tangani AI Research Protocol** ([AIX-04](../../research-os/05-ai-augmented-research/04-ai-research-protocol.md)): *Think → Ask → Ground → Verify → Challenge → Reproduce → Disclose → Own*. Mulai AI Usage Log ([TPL-10](../../research-os/08-templates/10-ai-usage-log-template.md)) hari ini.
 2. **Pilih masalah dari backlog** ([`research-backlog/BACKLOG.md`](../../research-backlog/BACKLOG.md)) atau bawa artefak MK sebelumnya (Experiment Card AI/ML, dataset card, korpus NLP, software RPL, problem brief KP). Kalau masalah Anda baru, buka Issue **Research Problem**. Pintu masuk boleh apa saja — Problem, Dataset, Faculty Research, Course Project, Partner, Competition — gate-nya sama.
 3. **Bentuk tim 1–3 orang** dan sepakati peran bergilir: data owner, experiment owner, reproducibility owner. Identifikasi kandidat dosen mentor dari peta dosen ([AIR-03](../../research-os/03-ai-research-ecosystem/03-faculty-research-alignment.md)).
-4. **Buat repositori riset dari [TPL-15](../../research-os/08-templates/15-research-repository-template.md)**: `README.md`, `docs/`, `data/README.md`, `src/`, `notebooks/`, `experiments/`, `results/`, `figures/`, `paper/`, `presentation/`, `AI-USAGE.md`, `references.bib`, `LICENSE`, `CITATION.cff`. Nama: `proj-YYYY-<topik>`.
+4. **Buat repositori riset dari [TPL-15](../../research-os/08-templates/15-research-repository-template.md)**: `README.md`, `docs/` (termasuk `docs/AI-USAGE.md`), `data/README.md`, `src/`, `notebooks/`, `experiments/`, `results/`, `figures/`, `paper/`, `presentation/`, `references.bib`, `LICENSE`, `CITATION.cff`. Nama: `proj-YYYY-<topik>`.
 5. **Buka [Week 01 — Endgame](../../metopen-research-studio/weeks/week-01-endgame.md)** dan kerjakan task-nya. Jangan membaca semua 16 minggu sekaligus; satu minggu, satu halaman.
 
 ## 4. Ritme mingguan (Student Weekly Playbook)
@@ -65,7 +65,7 @@ Backend sistem ini besar (±145 microtask, 17 sprint), tetapi Anda hanya perlu m
 | Bagian | Isinya | Kebiasaan yang diminta |
 |---|---|---|
 | **This Week** | Outcome minggu ini | Baca Senin pagi; tulis di Issue sprint |
-| **Tasks** | 7–10 baby steps (Task ID `OPS-NNN`) | Kerjakan berurutan; commit per task |
+| **Tasks** | 5–10 task (umumnya 7–10) sebagai baby steps (Task ID `OPS-NNN`) | Kerjakan berurutan; commit per task |
 | **Deliverable** | Yang dikumpulkan | Selalu dalam repo, bukan chat |
 | **AI Assist** | AI boleh dipakai untuk apa minggu ini | Catat setiap penggunaan di AI Usage Log |
 | **Human Check** | Yang wajib Anda verifikasi sendiri | Sumber, penalaran, bukti |
@@ -177,7 +177,7 @@ Reviewer menulis apa yang kurang dan bukti apa yang dibutuhkan; Anda merevisi da
 
 ## 11. Checklist "saya siap mulai"
 
-- [ ] Saya sudah membaca AI Research Protocol dan menandatanganinya; `AI-USAGE.md` sudah ada di repo saya.
+- [ ] Saya sudah membaca AI Research Protocol dan menandatanganinya; `docs/AI-USAGE.md` sudah ada di repo saya.
 - [ ] Saya sudah membaca [Glossary](../../research-os/00-master/03-glossary.md) bagian gate, maturity, dan skema ID.
 - [ ] Saya punya masalah (dari backlog/artefak MK/dosen/partner) dan bisa menjelaskannya dalam dua kalimat *tanpa menyebut algoritma*.
 - [ ] Tim 1–3 orang terbentuk; peran bergilir disepakati; akun GitHub semua anggota aktif.

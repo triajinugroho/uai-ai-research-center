@@ -87,7 +87,7 @@ Review gate ditulis di PR `GATE REVIEW: <gate>` ([CONTRIBUTING.md §3](../../CON
 | Lakukan | Hindari |
 |---|---|
 | Mulai dari pertanyaan gate: "Apakah orang di luar tim bisa mengulang masalah ini dalam dua kalimat?" (G2) | "Kurang mendalam", "perbaiki lagi" tanpa menyebut apa |
-| Sebut **bukti yang kurang**, bukan hanya kekurangan: "Belum ada baseline; tambahkan majority-class baseline di `results/baseline.md`" | Meminta perubahan metode sebelum baseline & metrik disepakati |
+| Sebut **bukti yang kurang**, bukan hanya kekurangan: "Belum ada baseline; tambahkan majority-class baseline di `results/pilot-01/summary.md` (+ `baseline.json`)" | Meminta perubahan metode sebelum baseline & metrik disepakati |
 | Pisahkan **blocking** (gagal gate) dari **saran** (boleh nanti) | Menggabungkan 15 komentar tanpa prioritas |
 | Cek integritas dulu: sitasi terverifikasi? AI Usage Log ada? data sensitif tidak di repo? | Menilai tulisan rapi sebagai bukti kualitas |
 | Tulis keputusan eksplisit: "Lulus G5" / "Belum: 2 blocker di atas" | Membiarkan PR menggantung tanpa keputusan |
@@ -137,7 +137,7 @@ Implikasi praktis untuk dosen:
 |---|---|
 | Proposal penelitian internal | Research Pack Metopen yang selaras riset Anda = bahan proposal siap pakai; tim mahasiswa sudah terbentuk (syarat ≥ 2 mahasiswa terpenuhi secara alami) |
 | BKD penelitian & pembimbingan | Mission Control view *Faculty Portfolio* + PR review yang tersimpan = bukti pembimbingan dan review yang terdokumentasi |
-| Publikasi bersama mahasiswa | Pipeline `manuscript-ready → submitted → published` di [`publications/`](../../publications/README.md) dengan `PUB-` |
+| Publikasi bersama mahasiswa | Pipeline `manuscript-ready → submission-ready → submitted → accepted → published` di [`publications/`](../../publications/README.md) dengan `PUB-` |
 | Pelaporan PP-PTS / akreditasi | Artefak kelas → CPMK → bukti terpetakan ([GOV-05](../../research-os/07-governance/05-ppts-and-institutional-evidence.md)) |
 
 GitHub tetap *research tracking system*, bukan sistem kepegawaian; angka BKD tetap dihitung lewat mekanisme resmi.

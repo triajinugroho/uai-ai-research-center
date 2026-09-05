@@ -1,6 +1,6 @@
 # Research-Based Learning — Mata Kuliah → Research Pipeline
 
-**Status** Draft v0.1 (2026-09) · Fase implementasi: **Phase 3 Curriculum Integration** (artefak riil menyusul)
+**Status** Draft v0.1 (2026-09) · Fase implementasi: **GitHub Phase 3 Curriculum Integration** (GOV-02 Phase 2 Integrate AI/ML → Phase 3 Expand technical courses) (artefak riil menyusul)
 **Terkait** [ARC-01 Research Capability Spiral](../research-os/02-academic-architecture/01-research-capability-spiral.md) · [ARC-02 Curriculum Research Map](../research-os/02-academic-architecture/02-curriculum-research-map.md) · [ARC-03 AI Contribution Modes](../research-os/02-academic-architecture/03-ai-contribution-modes.md) · [ARC-04 Build–Prove–Contribute](../research-os/02-academic-architecture/04-build-prove-contribute.md) · [ARC-05 CPL–CPMK–Artifact Alignment](../research-os/02-academic-architecture/05-cpl-cpmk-artifact-alignment.md) · [MST-03 Glossary](../research-os/00-master/03-glossary.md) · [GOVERNANCE.md](../GOVERNANCE.md)
 
 ## 1. Fungsi komponen ini
@@ -100,11 +100,11 @@ Catatan:
 
 | Folder | Isi saat ini | Status |
 |---|---|---|
-| [`courses/ai-ml/`](courses/ai-ml/README.md) | README (identitas, CPMK riset, project guide, rubrik) + [`research-artifact.md`](courses/ai-ml/research-artifact.md) | Phase 3 Curriculum Integration — desain siap; RPS dan artefak riil menyusul |
-| [`courses/research-methods/`](courses/research-methods/README.md) | README + [`research-artifact.md`](courses/research-methods/research-artifact.md); desain penuh di `research-os/04` dan halaman mingguan di `metopen-research-studio/` | Phase 2 Pilot Metopen (semester VII pertama) — artefak riil menyusul |
-| [`courses/data-mining/`](courses/data-mining/README.md) | README + [`research-artifact.md`](courses/data-mining/research-artifact.md) | Phase 3 — artefak riil menyusul |
-| [`courses/nlp/`](courses/nlp/README.md) | README + [`research-artifact.md`](courses/nlp/research-artifact.md) | Phase 3 — nama MK resmi, semester, SKS `[isi]`; artefak riil menyusul |
-| [`courses/software-engineering/`](courses/software-engineering/README.md) | README + [`research-artifact.md`](courses/software-engineering/research-artifact.md) | Phase 3 — artefak riil menyusul |
+| [`courses/ai-ml/`](courses/ai-ml/README.md) | README (identitas, CPMK riset, project guide, rubrik) + [`research-artifact.md`](courses/ai-ml/research-artifact.md) | GitHub Phase 3 / GOV-02 Phase 2 (Integrate AI/ML) — desain siap; RPS dan artefak riil menyusul |
+| [`courses/research-methods/`](courses/research-methods/README.md) | README + [`research-artifact.md`](courses/research-methods/research-artifact.md); desain penuh di `research-os/04` dan halaman mingguan di `metopen-research-studio/` | GitHub Phase 2 / GOV-02 Phase 1 (Pilot Metopen, semester VII pertama) — artefak riil menyusul |
+| [`courses/data-mining/`](courses/data-mining/README.md) | README + [`research-artifact.md`](courses/data-mining/research-artifact.md) | GitHub Phase 3 / GOV-02 Phase 3 (Expand technical courses) — artefak riil menyusul |
+| [`courses/nlp/`](courses/nlp/README.md) | README + [`research-artifact.md`](courses/nlp/research-artifact.md) | GitHub Phase 3 / GOV-02 Phase 3 — nama MK resmi, semester, SKS `[isi]`; artefak riil menyusul |
+| [`courses/software-engineering/`](courses/software-engineering/README.md) | README + [`research-artifact.md`](courses/software-engineering/research-artifact.md) | GitHub Phase 3 / GOV-02 Phase 3 (Expand technical courses) — artefak riil menyusul |
 | [`courses/final-project/`](courses/final-project/README.md) | README + [`research-artifact.md`](courses/final-project/research-artifact.md) | Mengikuti angkatan pertama Metopen Studio; artefak riil menyusul |
 | [`faculty-guide/`](faculty-guide/README.md) | Lecturer Playbook ringkas | Draft v0.1 |
 | [`student-guide/`](student-guide/README.md) | Student Research Playbook ringkas | Draft v0.1 |

@@ -1,6 +1,6 @@
 # Metodologi Penelitian (Metopen) — Course Research Guide
 
-**Status** Draft v0.1 (2026-09) · Phase 2 Pilot Metopen — artefak riil menyusul
+**Status** Draft v0.1 (2026-09) · GitHub Phase 2 / GOV-02 Phase 1 (Pilot Metopen) — artefak riil menyusul
 **Terkait** [Hub Research-Based Learning](../../README.md) · [research-artifact.md](research-artifact.md) · [Metopen Research Studio (View B mahasiswa)](../../../metopen-research-studio/README.md) · [MET-01 Positioning](../../../research-os/04-metopen-research-studio/01-metopen-positioning.md) · [MET-02 Course Outcomes](../../../research-os/04-metopen-research-studio/02-metopen-course-outcomes.md) · [MET-03 16-Week Blueprint](../../../research-os/04-metopen-research-studio/03-metopen-16-week-blueprint.md) · [MET-04 Research Pack](../../../research-os/04-metopen-research-studio/04-research-pack-specification.md) · [MET-06 5E Rubric](../../../research-os/04-metopen-research-studio/06-assessment-and-5e-rubric.md) · [OPS-03 Research Gates](../../../research-os/06-execution-os/03-research-gates.md) · [Final Project (TA)](../final-project/README.md)
 
 ## 1. Di mana desain Metopen berada

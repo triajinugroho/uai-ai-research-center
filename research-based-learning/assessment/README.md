@@ -107,14 +107,14 @@ Tabel ini menghubungkan artefak setiap MK ke CPMK riset (nomor mengacu `courses/
 | MK | Artefak | CPMK riset | Kriteria rubrik / 5E | Bukti yang diaudit | Lokasi bukti |
 |---|---|---|---|---|---|
 | AI/ML | Dataset card v0 | R2 | Metrik & evaluasi (data plan) | Keputusan pengelola registry | `datasets-registry/` |
-| AI/ML | Experiment Card + baseline experiment | R1 | Baseline; Metrik | Tanggal commit card < tanggal hasil; tabel baseline | repo tim `docs/`, `results/` |
+| AI/ML | Experiment Card + baseline experiment | R1 | Baseline; Metrik | Tanggal commit card < tanggal hasil; tabel baseline | repo tim `experiments/pilot-01/`, `results/pilot-01/` |
 | AI/ML | Repo reproducible + peer reproduction | R3 | Reproducibility | Catatan reproduksi peer | `experiments/README.md` |
-| AI/ML | Error analysis + One-Pager v0 + AI Usage Log | R4 | AI disclosure; Explanation | Analisis, one-pager, `AI-USAGE.md` | repo tim; Issue backlog |
+| AI/ML | Error analysis + One-Pager v0 + AI Usage Log | R4 | AI disclosure; Explanation | Analisis, one-pager, `docs/AI-USAGE.md` | repo tim; Issue backlog |
 | Data Mining | Dataset card + evidence map dataset | R1, R2 | Metrik & evaluasi (leakage) | Kartu diverifikasi; ≥ 2 risiko leakage + mitigasi | `datasets-registry/`; `docs/dataset-evidence-map.md` |
 | Data Mining | Baseline + pembanding; error analysis | R3, R4 | Baseline; Reproducibility; AI disclosure | Peer reproduction; `results/analysis.md` | repo tim |
 | NLP | Annotation guideline + agreement | R1 | Metrik & evaluasi (construct) | Nilai agreement + adjudication log | `docs/annotation-guideline.md`, `docs/agreement.md` |
-| NLP | Korpus + dataset card; benchmark | R2, R3 | Reproducibility; Baseline | `DS-` terdaftar; skrip evaluasi tetap; peer reproduction | `datasets-registry/`; `results/benchmark.md` |
-| NLP | Error analysis linguistik + AI Usage Log (pra-anotasi) | R4 | AI disclosure | Tingkat koreksi manusia atas label AI | `AI-USAGE.md` |
+| NLP | Korpus + dataset card; benchmark | R2, R3 | Reproducibility; Baseline | `DS-` terdaftar; skrip evaluasi tetap; peer reproduction | `datasets-registry/`; `results/pilot-01/summary.md` |
+| NLP | Error analysis linguistik + AI Usage Log (pra-anotasi) | R4 | AI disclosure | Tingkat koreksi manusia atas label AI | `docs/AI-USAGE.md` |
 | RPL / Pengujian PL / Proyek PL | Requirement brief; research-grade software + artifact README | R1, R2 | Baseline (alternatif); Reproducibility | Issue backlog dirujuk; peer run tanpa bertanya | repo tim; `research-backlog/` |
 | RPL / Pengujian PL / Proyek PL | Testing evidence; evaluasi pengguna; AI Usage Statement | R3, R4 | Metrik & evaluasi; AI disclosure | `docs/testing-evidence.md`; `docs/user-evaluation.md` + consent | repo tim |
 | Metopen | Problem Brief, Evidence Map, RQ, Contribution | M1 | End; Evidence | PR G2–G4 merged; `UIAI-` diberikan | repo `proj-*`; Mission Control |
@@ -125,5 +125,7 @@ Tabel ini menghubungkan artefak setiap MK ke CPMK riset (nomor mengacu `courses/
 | TA | Analysis + CER + threats final | T2 | Explanation | PR G7 merged | `results/analysis.md` |
 | TA | Laporan TA + manuscript/dataset/artefak | T3 | Contribution (ARC-06) | Sidang lulus; `PUB-`/`DS-`/`ART-` terdaftar | Prodi; `publications/`; `datasets-registry/` |
 | TA | Sidang sebagai defense; Integrity Checklist; handoff ke AI Center | T4 | Execution; Integrity gate | Notulen sidang; checklist; `docs/handoff.md` | repo; Mission Control |
+
+Catatan: `docs/dataset-evidence-map.md`, `docs/annotation-guideline.md`, `docs/agreement.md`, `docs/testing-evidence.md`, `docs/user-evaluation.md` adalah file khusus MK di luar struktur minimum TPL-15; bila riset lanjut ke Metopen, isinya dipindahkan ke struktur TPL-15 (lihat catatan di `research-artifact.md` tiap MK).
 
 Tabel ini diperbarui bersama `research-artifact.md` tiap MK. Bila sebuah artefak tidak punya baris di sini, ia belum menjadi bukti OBE — tambahkan atau hapus artefaknya.
