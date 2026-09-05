@@ -18,7 +18,7 @@ Salin bagian **A** ke `publications/YYYY/PUB-YYYY-NNN-slug.md`, ganti judul H1 d
 | **CRediT (ringkas)** | `[Nama 1]`: conceptualization, methodology, software, investigation, writing – original draft · `[Nama 2]`: supervision, validation, writing – review & editing · … |
 | **Research Project** | `UIAI-YYYY-NNN` — link ke kartu backlog / README riset |
 | **Venue** | `[nama venue]` (`[jurnal/konferensi/workshop]`, `[indexing]`) — harus ada di venue registry [TPL-06](../../research-os/08-templates/06-publication-venue-registry-template.md) |
-| **Status** | Draft / Submitted / Under Review / Accepted / Published / Rejected-Withdrawn |
+| **Status** | Draft / Internal Review / Submission Ready / Submitted / Under Review / Revision / Accepted / Published / Rejected-Withdrawn |
 | **DOI** | `[DOI atau —]` |
 | **Artifact** | `ART-YYYY-NNN` / none |
 | **Dataset** | `DS-YYYY-NNN` / none |
@@ -66,7 +66,7 @@ Salin bagian **A** ke `publications/YYYY/PUB-YYYY-NNN-slug.md`, ganti judul H1 d
 
 | Field | Isi |
 |---|---|
-| **AI Usage Statement (singkat)** | `[AI dipakai untuk apa (mis. brainstorming keyword, debugging kode, penyuntingan bahasa); apa yang TIDAK dipakai AI; semua keluaran diverifikasi manusia; log lengkap di AI-USAGE.md repo riset]` |
+| **AI Usage Statement (singkat)** | `[AI dipakai untuk apa (mis. brainstorming keyword, debugging kode, penyuntingan bahasa); apa yang TIDAK dipakai AI; semua keluaran diverifikasi manusia; log lengkap di docs/AI-USAGE.md repo riset]` |
 | **Integrity checklist done** | `[ya — tanggal, ditandatangani oleh]` ([TPL-11](../../research-os/08-templates/11-research-integrity-checklist.md)) |
 | **Ethics / privacy** | `[protokol etik/consent bila ada data manusia; Dataset ID dengan Privacy-nya]` |
 | **Conflict of interest** | `[none / jelaskan]` |

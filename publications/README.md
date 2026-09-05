@@ -10,7 +10,7 @@ Folder ini adalah **database metadata karya ilmiah** UAI AI Research Center: pap
 |---|---|
 | Institutional memory | setiap karya tercatat dengan `PUB-YYYY-NNN`/`ART-YYYY-NNN` dan terhubung ke Research ID |
 | Traceability | kartu publikasi menunjuk ke dataset (`DS-*`), artefak (`ART-*`), kode, dan Research Pack yang menjadi buktinya |
-| Pipeline publikasi | status Draft → Submitted → Under Review → Accepted → Published tampak di satu tabel dan di view *Publication Pipeline* Mission Control |
+| Pipeline publikasi | status Draft → Internal Review → Submission Ready → Submitted → Under Review → Revision → Accepted → Published (atau Rejected/Withdrawn) tampak di satu tabel dan di view *Publication Pipeline* Mission Control |
 | Pelaporan | bahan BKD, akreditasi, PP-PTS, dan Faculty Portfolio ([GOV-05](../research-os/07-governance/05-ppts-and-institutional-evidence.md)) |
 | Integritas | AI Usage Statement, checklist integritas, dan status etika venue tercatat bersama karya |
 
@@ -48,14 +48,19 @@ Sebelum PUB ID diberikan, naskah cukup dilacak sebagai release `v0.8 Manuscript 
 
 | Status | Arti | Bukti |
 |---|---|---|
-| **Draft** | naskah ditulis; manuscript-ready → submission-ready ([MET-05](../research-os/04-metopen-research-studio/05-publication-backward-design.md)) | Issue Publication, kartu |
-| **Submitted** | dikirim ke venue; checklist integritas lengkap | tanggal submission; release `v1.1 Submitted` |
-| **Under Review** | menunggu/merevisi berdasarkan review | ringkasan komentar reviewer di kartu |
-| **Accepted** | diterima; menunggu terbit | surat/notifikasi (tidak diunggah; cukup tanggal) |
+| **Draft** | naskah ditulis (kematangan *manuscript-ready*, [MET-05](../research-os/04-metopen-research-studio/05-publication-backward-design.md)) | Issue Publication, kartu |
+| **Internal Review** | peer review internal (PR `manuscript-review.md`, [TPL-12](../research-os/08-templates/12-peer-review-template.md)) + revisi | PR review |
+| **Submission Ready** | checklist integritas [TPL-11](../research-os/08-templates/11-research-integrity-checklist.md) ditandatangani; venue dari registry; format venue terpenuhi (*submission-ready*) | checklist, kartu |
+| **Submitted** | dikirim ke venue | tanggal submission; release `v1.1 Submitted` |
+| **Under Review** | menunggu keputusan venue | tanggal |
+| **Revision** | merevisi berdasarkan review (major/minor) | ringkasan komentar reviewer + response di kartu |
+| **Accepted** | diterima; menunggu terbit | notifikasi (tidak diunggah; cukup tanggal) |
 | **Published** | terbit; DOI ada | DOI; release `v2.0 Published` |
-| **Rejected / Withdrawn** | ditolak/ditarik; kartu tetap ada, dicatat venue berikutnya | catatan di kartu |
+| **Rejected / Withdrawn** | ditolak/ditarik; kartu tetap, venue berikutnya dicatat | catatan di kartu |
 
-Kematangan riset padanannya: *Publication Ready* saat Draft/Submitted; *Impact Ready* bila karya berubah menjadi HKI/prototype/solusi.
+Status ini sama dengan dropdown form Issue *Publication* dan view *Publication Pipeline* Mission Control ([GOVERNANCE.md §9](../GOVERNANCE.md)).
+
+Kematangan riset padanannya: *Publication Ready* saat Draft s.d. Submitted; *Impact Ready* bila karya berubah menjadi HKI/prototype/solusi.
 
 ## 5. Knowledge graph sederhana
 

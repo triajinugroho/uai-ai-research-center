@@ -19,7 +19,7 @@ Artefak (`ART-*`) tidak memiliki kartu terpisah di folder tahun; ia dicatat pada
 |---|---|---|
 | — | belum ada | — |
 
-*Belum ada publikasi terdaftar pada 2026.* Angkatan pilot Metopen dimulai Phase 2; naskah pertama diperkirakan masuk pipeline 2027 ([Roadmap 2026–2030](../../research-roadmap/2026-2030/README.md)).
+*Belum ada publikasi terdaftar pada 2026.* Angkatan pilot Metopen dimulai pada GitHub Phase 2 / GOV-02 Phase 1 (Pilot Metopen, semester ganjil 2026/2027); naskah pertama diperkirakan masuk pipeline 2027 ([Roadmap 2026–2030](../../research-roadmap/2026-2030/README.md)).
 
 ## Petunjuk membuat kartu
 

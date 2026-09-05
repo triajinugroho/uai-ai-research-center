@@ -18,7 +18,7 @@ Nomor berurutan per tahun, tidak pernah dipakai ulang (termasuk untuk naskah yan
 | PUB ID | Title | Authors | Research Project | Venue | Status | DOI | Artifact | Dataset | Code |
 |---|---|---|---|---|---|---|---|---|---|
 | *contoh* PUB-2026-000 | Evaluating Indonesian RAG on University Regulation Documents *(contoh ilustratif)* | `[isi: mahasiswa]`, `[isi: dosen]` | [UIAI-2026-002](../research-backlog/problems/UIAI-2026-002-indonesian-rag-evaluation.md) | `[isi: venue dari TPL-06]` | Draft | — | *contoh* ART-2026-000 | [DS-2026-003](../datasets-registry/datasets/DS-2026-003-indonesian-nlp.md) | `proj-2026-indonesian-rag-evaluation` @ `[tag]` |
-| `[PUB-YYYY-NNN]` | `[judul]` | `[penulis]` | `[UIAI-YYYY-NNN]` | `[venue]` | `[Draft/Submitted/Under Review/Accepted/Published]` | `[DOI]` | `[ART-… / none]` | `[DS-… / none]` | `[repo@tag]` |
+| `[PUB-YYYY-NNN]` | `[judul]` | `[penulis]` | `[UIAI-YYYY-NNN]` | `[venue]` | `[Draft/Internal Review/Submission Ready/Submitted/Under Review/Revision/Accepted/Published/Rejected-Withdrawn]` | `[DOI]` | `[ART-… / none]` | `[DS-… / none]` | `[repo@tag]` |
 
 ### Penjelasan kolom
 
@@ -29,7 +29,7 @@ Nomor berurutan per tahun, tidak pernah dipakai ulang (termasuk untuk naskah yan
 | **Authors** | urutan penulis sesuai naskah; nama riil → `[isi]` sampai submission |
 | **Research Project** | Research ID; link ke kartu backlog/README riset |
 | **Venue** | nama venue dari venue registry ([TPL-06](../research-os/08-templates/06-publication-venue-registry-template.md)) |
-| **Status** | Draft · Submitted · Under Review · Accepted · Published · Rejected/Withdrawn |
+| **Status** | Draft · Internal Review · Submission Ready · Submitted · Under Review · Revision · Accepted · Published · Rejected/Withdrawn (sama dengan form Issue *Publication*; kematangan naskah MET-05: manuscript-ready = Draft/Internal Review, submission-ready = Submission Ready) |
 | **DOI** | DOI/URL resmi setelah terbit; "—" sebelum itu |
 | **Artifact** | `ART-YYYY-NNN` atau "none" |
 | **Dataset** | `DS-YYYY-NNN` atau "none" |
@@ -81,10 +81,14 @@ Review tabel ini pada roadmap review tahunan; hapus venue yang statusnya berubah
 | Status | Jumlah |
 |---|---|
 | Draft | 0 |
+| Internal Review | 0 |
+| Submission Ready | 0 |
 | Submitted | 0 |
 | Under Review | 0 |
+| Revision | 0 |
 | Accepted | 0 |
 | Published | 0 |
+| Rejected/Withdrawn | 0 |
 | Artefak released | 0 |
 
 Baris contoh tidak dihitung.

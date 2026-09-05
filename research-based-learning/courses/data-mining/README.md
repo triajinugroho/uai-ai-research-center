@@ -1,6 +1,6 @@
 # Data Mining — Course Research Guide
 
-**Status** Draft v0.1 (2026-09) · Phase 3 Curriculum Integration — artefak riil menyusul
+**Status** Draft v0.1 (2026-09) · GitHub Phase 3 Curriculum Integration (GOV-02 Phase 3 Expand technical courses) — artefak riil menyusul
 **Terkait** [Hub Research-Based Learning](../../README.md) · [research-artifact.md](research-artifact.md) · [ARC-01 Capability Spiral](../../../research-os/02-academic-architecture/01-research-capability-spiral.md) · [ARC-02 Curriculum Research Map](../../../research-os/02-academic-architecture/02-curriculum-research-map.md) · [ARC-03 AI Contribution Modes](../../../research-os/02-academic-architecture/03-ai-contribution-modes.md) · [ARC-05 CPL–CPMK–Artifact](../../../research-os/02-academic-architecture/05-cpl-cpmk-artifact-alignment.md) · [AI/ML](../ai-ml/README.md) · [Assessment](../../assessment/README.md)
 
 ## 1. Identitas mata kuliah
