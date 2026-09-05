@@ -6,7 +6,7 @@
 
 ## Cara pakai
 
-Satu halaman metodologi yang menjawab: *bagaimana persisnya RQ dijawab, dan apa yang bisa membuat jawabannya salah?* Diisi tim pada W7 (setelah G4 lulus), disimpan sebagai `docs/research-design.md` di repositori riset, dan dipertahankan pada Design Defense / Red Team Review W8. Menjadi bukti wajib G5 Method Ready bersama Experiment Card ([TPL-09](09-experiment-card.md)) dan `docs/ethics.md`. Kartu ini diperbarui setelah pilot (G6) dan setelah analisis (G7) bila desain berubah; setiap perubahan dicatat di bagian riwayat. Uji utamanya: orang lain dapat menjalankan desain ini tanpa bertanya ke tim.
+Satu halaman metodologi yang menjawab: *bagaimana persisnya RQ dijawab, dan apa yang bisa membuat jawabannya salah?* Diisi tim pada W7 (setelah G4 lulus), disimpan sebagai `docs/design-card.md` di repositori riset (ringkasan satu halaman dari `docs/research-design.md` yang memuat rincian pemilihan metode, variabel, baseline, metrik, dan Threats to Validity v1; OPS-066), dan dipertahankan pada Design Defense / Red Team Review W8. Menjadi bukti wajib G5 Method Ready bersama Experiment Card ([TPL-09](09-experiment-card.md)) dan `docs/ethics.md`. Kartu ini diperbarui setelah pilot (G6) dan setelah analisis (G7) bila desain berubah; setiap perubahan dicatat di bagian riwayat. Uji utamanya: orang lain dapat menjalankan desain ini tanpa bertanya ke tim.
 
 ## Computing Research Methods Map (pilih satu utama, boleh satu pendukung)
 

@@ -1,6 +1,6 @@
 # Data Mining — Research Artifact Specification
 
-**Status** Draft v0.1 (2026-09) · Phase 3 Curriculum Integration — artefak riil menyusul
+**Status** Draft v0.1 (2026-09) · GitHub Phase 3 Curriculum Integration (GOV-02 Phase 3 Expand technical courses) — artefak riil menyusul
 **Terkait** [README Data Mining](README.md) · [Hub Research-Based Learning](../../README.md) · [datasets-registry](../../../datasets-registry/README.md) · [ARC-06 Research Output Taxonomy](../../../research-os/02-academic-architecture/06-research-output-taxonomy.md) · [OPS-03 Research Gates](../../../research-os/06-execution-os/03-research-gates.md)
 
 Asset utama Data Mining adalah **pengetahuan tentang dataset** — evidence map dataset dan error analysis — bukan model. Artefak **wajib** menjadi bagian penilaian; **opsional** memperkuat rekomendasi handoff.

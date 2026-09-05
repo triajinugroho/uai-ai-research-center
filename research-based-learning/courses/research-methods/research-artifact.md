@@ -18,12 +18,12 @@ Asset Metopen adalah **UAI Informatics Research Pack** — spesifikasi lengkap d
 | **Baseline & Metrics + Experiment Card** | Wajib | `docs/research-design.md` §Baseline & Metrics; `experiments/pilot-01/experiment-card.md` | [TPL-09](../../../research-os/08-templates/09-experiment-card.md) | — | Baseline sederhana, metrik selaras RQ, prosedur mencegah leakage; ditetapkan sebelum pilot | Repo | G5 |
 | **Threats to Validity (awal → diperbarui)** | Wajib | v1 di `docs/research-design.md` §Threats (G5) → v2 di `results/analysis.md` §Threats (G7) | — | — | Internal, eksternal, konstruk, statistik; diperbarui setelah pilot | Repo | G5, G7 |
 | **Ethics & Privacy** | Wajib | `docs/ethics.md` | [MET-07](../../../research-os/04-metopen-research-studio/07-research-integrity-and-ethics.md) | — | Consent, anonimisasi, bias, batas penggunaan AI | Repo | G5 |
-| **Design Defense (pitch + notulen red team)** | Wajib | `presentation/w08-pitch.pdf`, `docs/red-team-notes.md` | [TPL-13](../../../research-os/08-templates/13-research-defense-template.md) (versi mid) | — | Kritik red team dicatat dan dijawab | Repo | G5 |
+| **Design Defense (pitch + notulen red team)** | Wajib | `presentation/midterm-pitch.pdf`, `docs/reviews/midterm-red-team.md` | [TPL-13](../../../research-os/08-templates/13-research-defense-template.md) (versi mid) | — | Kritik red team dicatat dan dijawab | Repo | G5 |
 | **Pilot Experiment + Reproducibility package** | Wajib | `src/`, `notebooks/`, `experiments/` (+README), `results/`, `figures/`, environment, seed | [TPL-15](../../../research-os/08-templates/15-research-repository-template.md) | — | Pilot end-to-end (baseline + ≥ 1 pembanding); peer mereproduksi angka baseline | Repo; release v0.5 | G6 |
 | **Analysis + Claim–Evidence–Reasoning** | Wajib | `results/analysis.md`, figur final | — | — | Setiap klaim menunjuk tabel/figur; hasil negatif dilaporkan; tidak ada klaim kausal dari korelasi | Repo | G7 |
-| **AI Usage Log + AI Usage Statement** | Wajib | `AI-USAGE.md` | [TPL-10](../../../research-os/08-templates/10-ai-usage-log-template.md) | — | Semua penggunaan AI yang memengaruhi kesimpulan tercatat & terverifikasi | Repo; lampiran Pack | Setiap gate (integrity) |
-| **Proposal TA (atau manuscript bila endgame paper)** | Wajib | `paper/proposal-ta.md` / `paper/manuscript.md` | struktur MET-04; [MET-05](../../../research-os/04-metopen-research-studio/05-publication-backward-design.md) untuk paper | `PUB-YYYY-NNN` bila naskah didaftarkan di `publications/` | Lolos peer review [TPL-12](../../../research-os/08-templates/12-peer-review-template.md) + revisi | Pembimbing TA; `publications/` bila paper | G8 |
-| **Research Pitch / Defense** | Wajib | `presentation/defense.pdf` + rekaman/notulen | [TPL-13](../../../research-os/08-templates/13-research-defense-template.md) | — | 7–10 menit; lulus penguji | Repo | G8 |
+| **AI Usage Log + AI Usage Statement** | Wajib | `docs/AI-USAGE.md` (log + statement ringkas); statement final naskah di `paper/AI-USAGE-STATEMENT.md` | [TPL-10](../../../research-os/08-templates/10-ai-usage-log-template.md) | — | Semua penggunaan AI yang memengaruhi kesimpulan tercatat & terverifikasi | Repo; lampiran Pack | Setiap gate (integrity) |
+| **Proposal TA (atau manuscript bila endgame paper)** | Wajib | `paper/proposal.md` (Proposal TA / manuscript) + `paper/proposal-v0.8.pdf` (W13, release v0.8) → `paper/proposal-v1.0.pdf` (W16, release v1.0) | struktur MET-04; [MET-05](../../../research-os/04-metopen-research-studio/05-publication-backward-design.md) untuk paper | `PUB-YYYY-NNN` bila naskah didaftarkan di `publications/` | Lolos peer review [TPL-12](../../../research-os/08-templates/12-peer-review-template.md) + revisi | Pembimbing TA; `publications/` bila paper | G8 |
+| **Research Pitch / Defense** | Wajib | `presentation/defense-final.pdf` + `docs/reviews/defense-minutes.md` (rekaman/notulen) | [TPL-13](../../../research-os/08-templates/13-research-defense-template.md) | — | 7–10 menit; lulus penguji | Repo | G8 |
 | **Research Integrity Checklist** | Wajib | `docs/integrity-checklist.md` ditandatangani | [TPL-11](../../../research-os/08-templates/11-research-integrity-checklist.md) | — | Semua butir lulus | Repo; pengampu | G8 (gate lulus/gagal) |
 | **Handoff ke TA / mentor / AI Center** | Wajib | `docs/handoff.md` | [TPL-14](../../../research-os/08-templates/14-research-handoff-template.md) | — | What exists, missing evidence, next steps, owner (calon pembimbing) | [TA](../final-project/README.md); Mission Control (Course = `Metopen` → `TA`) | G8 |
 | **Release `v1.0 Research Pack`** | Wajib | GitHub Release | — | — | Semua komponen di atas ada; tidak ada yang kosong | Mission Control (Maturity ≥ TA Ready) | G8 |
@@ -35,7 +35,7 @@ Asset Metopen adalah **UAI Informatics Research Pack** — spesifikasi lengkap d
 Sama dengan *definition of done* G8 di [OPS-03](../../../research-os/06-execution-os/03-research-gates.md): Research Pack lengkap, peer review lulus, defense lulus, Integrity Checklist ditandatangani, handoff terisi, release v1.0 dibuat. Ditambah, untuk komponen ini:
 
 - [ ] Mission Control: field Course `Metopen`, Maturity minimal **TA Ready**, Next Evidence terisi untuk TA.
-- [ ] Bila dataset baru: `DS-` terdaftar. Bila naskah: `PUB-` terdaftar dengan status `manuscript-ready`.
+- [ ] Bila dataset baru: `DS-` terdaftar. Bila naskah: `PUB-` terdaftar (status registry **Draft**; kematangan *manuscript-ready*).
 - [ ] Artefak Build yang dipakai (dari AI/ML, Data Mining, NLP, RPL) dirujuk di README riset sebagai *provenance*.
 
 ## 3. Tingkat kematangan keluaran
@@ -53,6 +53,6 @@ Metopen (sem. VII)
 ├─ Research Pack v1.0 + Proposal TA + handoff ─► TA (sem. VIII): mulai dari G6, bukan dari nol
 ├─ Research ID UIAI-YYYY-NNN ──────────────────► research-backlog/ (Issue divalidasi), Mission Control
 ├─ dataset card ───────────────────────────────► datasets-registry/ (DS-)
-├─ manuscript (bila endgame paper) ────────────► publications/ (PUB-, status manuscript-ready)
+├─ manuscript (bila endgame paper) ────────────► publications/ (PUB-, status Draft = manuscript-ready)
 └─ Research Pack yang tidak dilanjutkan mahasiswa ─► AI Center / riset dosen lewat handoff (what exists, missing evidence)
 ```

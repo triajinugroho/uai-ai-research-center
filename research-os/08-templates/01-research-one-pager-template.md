@@ -6,13 +6,13 @@
 
 ## Cara pakai
 
-Satu halaman yang merangkum seluruh riset: siapa pun yang membacanya dalam tiga menit harus bisa menjelaskan ulang masalah, klaim, dan cara membuktikannya. Diisi oleh tim mahasiswa (1–3 orang), disimpan di repositori riset sebagai `docs/one-pager.md`, dan ditautkan dari Issue backlog serta README riset. Dibuat bertahap: **v0** pada W2 sebagai bukti wajib G2 Problem Ready, **v1** pada W6 untuk G4 Question Ready, **v2** pada W7–W8 untuk G5 Method Ready dan dibawa ke Design Defense. Reviewer memakai halaman ini sebagai pintu masuk PR `GATE REVIEW`; admin riset menyalin baris **Gate saat ini** dan **Next evidence** ke Mission Control ([TPL-02](02-research-mission-tracker-template.md)). Batas: ±400 kata di luar tabel; rincian pindah ke `docs/`.
+Satu halaman yang merangkum seluruh riset: siapa pun yang membacanya dalam tiga menit harus bisa menjelaskan ulang masalah, klaim, dan cara membuktikannya. Diisi oleh tim mahasiswa (1–3 orang), disimpan di repositori riset sebagai `docs/one-pager.md`, dan ditautkan dari Issue backlog serta README riset. Dibuat bertahap: **v0** pada W2 sebagai bukti wajib G2 Problem Ready (identitas/endgame dirintis di W1, OPS-012; dilengkapi OPS-020), **v1** pada W6 untuk G4 Question Ready (OPS-055; field Method/Data/Baseline/Metrics/Threats diisi dari Design Card setelah G5 lulus, W7–W8, tanpa mengganti nomor versi, dan dibawa ke pitch W8), **v2** pada W12 untuk G7 Claim Ready memuat hasil, klaim, dan keterbatasan (OPS-110), dibawa ke Research Defense W16 (G8). Reviewer memakai halaman ini sebagai pintu masuk PR `GATE REVIEW`; admin riset menyalin baris **Gate saat ini** dan **Next evidence** ke Mission Control ([TPL-02](02-research-mission-tracker-template.md)). Batas: ±400 kata di luar tabel; rincian pindah ke `docs/`.
 
 ## Field wajib per versi
 
-| # | Field | v0 (G2) | v1 (G4) | v2 (G5) |
+| # | Field | v0 (G2, W2) | v1 (G4, W6; diperbarui setelah G5) | v2 (G7, W12) |
 |---|---|---|---|---|
-| 1 | Research ID | sementara `UIAI-YYYY-…` → resmi saat G2 lulus | wajib | wajib |
+| 1 | Research ID | sementara `UIAI-YYYY-TBD` → resmi saat PR G2 di-merge | wajib | wajib |
 | 2 | Judul kerja | wajib | wajib (boleh berubah) | wajib |
 | 3 | Tim | wajib | wajib | wajib |
 | 4 | Mentor | kandidat | wajib | wajib |
@@ -21,19 +21,22 @@ Satu halaman yang merangkum seluruh riset: siapa pun yang membacanya dalam tiga 
 | 7 | Problem & why it matters | wajib | wajib | wajib |
 | 8 | Stakeholder & keputusan yang berubah | wajib | wajib | wajib |
 | 9 | What we know (3 poin + sitasi) | ≥1 poin, sumber terverifikasi | 3 poin dari synthesis matrix | 3 poin |
-| 10 | Gap | draft | wajib, ditelusuri ke matriks | wajib |
-| 11 | RQ / hipotesis | draft | wajib | wajib |
-| 12 | Contribution | draft | wajib (jenis + mengapa bermakna) | wajib |
-| 13 | Method | — | draft | wajib (rujuk TPL-08) |
-| 14 | Data | — | draft | wajib (rujuk TPL-05) |
-| 15 | Baseline | — | draft | wajib |
-| 16 | Metrics | — | draft | wajib |
-| 17 | Threats to validity | — | — | wajib (4 jenis) |
-| 18 | Ethics / AI note | AI Usage Log dimulai | wajib ringkas | wajib |
-| 19 | Next evidence | wajib | wajib | wajib |
-| 20 | Gate saat ini | wajib | wajib | wajib |
+| 10 | Gap | `[menunggu G3–G4]` | wajib, ditelusuri ke matriks | wajib |
+| 11 | RQ / hipotesis | `[menunggu G3–G4]` | wajib | wajib |
+| 12 | Contribution | expected contribution tentatif (OPS-020); final `[menunggu G4]` | wajib (jenis + mengapa bermakna) | wajib (direvisi agar tidak melebihi bukti) |
+| 13 | Method | `[menunggu G5]` | tentatif; setelah G5 lulus: wajib (rujuk TPL-08 / TPL-05) | wajib (yang aktual) |
+| 14 | Data | `[menunggu G5]` | tentatif; setelah G5 lulus: wajib (rujuk TPL-08 / TPL-05) | wajib (yang aktual) |
+| 15 | Baseline | `[menunggu G5]` | tentatif; setelah G5 lulus: wajib (rujuk TPL-08 / TPL-05) | wajib (yang aktual) |
+| 16 | Metrics | `[menunggu G5]` | tentatif; setelah G5 lulus: wajib (rujuk TPL-08 / TPL-05) | wajib (yang aktual) |
+| 17 | Threats to validity | — | setelah G5 lulus: wajib (4 jenis, Threats v1 di docs/research-design.md) | wajib (Threats v2 pasca-hasil, results/analysis.md) |
+| 18 | Results (angka utama ± variasi, rujuk results/main/summary.csv) | — | — | wajib |
+| 19 | Claim (CER ringkas per RQ, rujuk tabel CER results/analysis.md) | — | — | wajib; hasil negatif dilaporkan |
+| 20 | Limitations (batas generalisasi + future work) | — | — | wajib |
+| 21 | Ethics / AI note | AI Usage Log dimulai | wajib ringkas | wajib |
+| 22 | Next evidence | wajib | wajib | wajib |
+| 23 | Gate saat ini | wajib | wajib | wajib |
 
-Aturan: field yang belum wajib ditulis `[belum diisi — target vN]`, bukan dikosongkan; field wajib yang kosong = gate tidak dapat direview.
+Aturan: field yang belum wajib ditulis `[menunggu Gn — target vN]` (mis. `[menunggu G3–G5 — target v1]`), bukan dikosongkan; field wajib yang kosong = gate tidak dapat direview.
 
 ## Template (salin ke `docs/one-pager.md`)
 
@@ -42,7 +45,7 @@ Aturan: field yang belum wajib ditulis `[belum diisi — target vN]`, bukan diko
 
 | Field | Isi |
 |---|---|
-| Research ID | [UIAI-YYYY-NNN] |
+| Research ID | [UIAI-YYYY-TBD sampai PR G2 di-merge → UIAI-YYYY-NNN] |
 | Judul kerja | [judul; boleh berubah sampai G4] |
 | Tim | [nama 1 (@github)], [nama 2], [nama 3] |
 | Mentor | [nama dosen] — [klaster C1–C4] |
@@ -59,12 +62,15 @@ Aturan: field yang belum wajib ditulis `[belum diisi — target vN]`, bukan diko
 | Baseline | [pembanding paling sederhana yang masuk akal] |
 | Metrics | [metrik selaras RQ + prosedur evaluasi anti-leakage] |
 | Threats to validity | Internal: [...] · Eksternal: [...] · Konstruk: [...] · Statistik: [...] |
-| Ethics / AI note | [consent/anonimisasi/persetujuan etik; AI dipakai untuk apa; log di docs/ai-usage-log.md] |
+| Results | [v0–v1: menunggu G7 — target v2 · v2: angka utama ± variasi per RQ, rujuk results/main/summary.csv] |
+| Claim | [v0–v1: menunggu G7 — target v2 · v2: CER ringkas per RQ, rujuk tabel CER results/analysis.md; hasil negatif dilaporkan] |
+| Limitations | [v0–v1: menunggu G7 — target v2 · v2: batas generalisasi + future work] |
+| Ethics / AI note | [consent/anonimisasi/persetujuan etik; AI dipakai untuk apa; log di docs/AI-USAGE.md] |
 | Next evidence | [bukti konkret berikutnya + tanggal] |
 | Gate saat ini | [G1–G8] — [Lulus / Review / Active] — PR #[n] |
 ```
 
-## Contoh terisi (v2, G5)
+## Contoh terisi (v1 diperbarui untuk G5, W8; field hasil menunggu v2)
 
 | Field | Isi |
 |---|---|
@@ -85,7 +91,10 @@ Aturan: field yang belum wajib ditulis `[belum diisi — target vN]`, bukan diko
 | Baseline | Rule-based prerequisite checker + heuristik greedy per semester |
 | Metrics | Constraint-violation rate; precision@5 relevansi elektif vs gold dosen wali; skor kegunaan (Likert 5) — split kasus pilot/evaluasi ditetapkan sebelum run |
 | Threats to validity | Internal: gold label subjektif → 2 dosen wali + agreement. Eksternal: 1 prodi → klaim dibatasi. Konstruk: "relevansi" ≠ "kebenaran" → definisi operasional. Statistik: n kecil → laporkan interval, bukan hanya rata-rata. |
-| Ethics / AI note | Data mahasiswa dianonimkan, consent tertulis, tidak masuk GitHub; AI dipakai untuk coding support dan kritik desain, dicatat di `docs/ai-usage-log.md` |
+| Results | [menunggu G7 — target v2] |
+| Claim | [menunggu G7 — target v2] |
+| Limitations | [menunggu G7 — target v2] |
+| Ethics / AI note | Data mahasiswa dianonimkan, consent tertulis, tidak masuk GitHub; AI dipakai untuk coding support dan kritik desain, dicatat di `docs/AI-USAGE.md` |
 | Next evidence | Experiment Card pilot 40 kasus + notulen red team W8 — [YYYY-MM-DD] |
 | Gate saat ini | G5 Method Ready — Review — PR #[n] |
 
