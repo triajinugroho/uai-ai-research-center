@@ -76,19 +76,19 @@ Dari: tim Metopen [Mahasiswa A], [Mahasiswa B] → Ke: TA [Mahasiswa A] dengan p
 | Artefak | Lokasi | Status | Gate/bukti | Catatan |
 |---|---|---|---|---|
 | Problem Brief, stakeholder statement | `docs/problem.md` | final | G2 ✓ | problem owner: Kaprodi |
-| Literature map + synthesis matrix | `docs/literature-map.md`, `references.bib` (22 entri terverifikasi) | final | G3 ✓ | 3 usulan AI dibuang |
+| Literature map + synthesis matrix | `docs/literature-map.md`, `docs/literature/synthesis-matrix.csv`, `references.bib` (22 entri terverifikasi) | final | G3 ✓ | 3 usulan AI dibuang |
 | RQ1–RQ2, H1–H2, contribution | `docs/research-question.md` | final | G4 ✓ | RQ2 definisi operasional v2 |
-| Design Card v2, EXP-01, EXP-02 | `docs/research-design.md`, `experiments/` | final | G5 ✓, G6 ✓ (reproduksi [Mahasiswa C] 2026-10-[dd]) | 3 run per kasus |
-| Kode baseline + LLM+RAG, environment | `src/`, `requirements.txt`, `experiments/config-0[1-2].yaml`, seed 42 | berjalan | G6 ✓ | model [nama/versi] dicatat |
+| Design Card v2, Data Plan, Experiment Cards pilot-01 & main | `docs/design-card.md`, `docs/research-design.md`, `docs/data-plan.md`, `experiments/pilot-01/experiment-card.md`, `experiments/main/` | final | G5 ✓, G6 ✓ (reproduksi [Mahasiswa C] 2026-10-[dd]) | 3 run per kasus |
+| Kode baseline + LLM+RAG, environment | `src/`, `requirements.txt`, `run.sh`, `experiments/pilot-01/config.yaml`, `experiments/main/`, seed 42 | berjalan | G6 ✓ | model [nama/versi] dicatat |
 | Data | DS-2026-001 (restricted, institutional server); `data/README.md`; sampel sintetis 40 kasus | akses perlu diperbarui untuk TA | — | consent 120 mahasiswa tersimpan di Prodi |
-| Hasil & analisis | `results/analysis.md`, `results/exp-0[1-2].csv`, `figures/` | final | G7 ✓ | H1 tidak terdukung pada pilot |
-| Research Pack + proposal TA | `paper/proposal-ta.md`, release v1.0 | final | G8 ✓ | defense lulus dengan revisi minor |
-| AI Usage Log & Statement, ethics | `docs/ai-usage-log.md` (14 entri), `docs/AI-USAGE.md`, `docs/ethics.md` | final | — | |
+| Hasil & analisis | `results/analysis.md`, `results/pilot-01/`, `results/main/summary.csv`, `figures/` | final | G7 ✓ | H1 tidak terdukung pada pilot |
+| Research Pack + proposal TA | `docs/research-pack.md`, `paper/proposal.md`, `paper/proposal-v1.0.pdf`, release v1.0 | final | G8 ✓ | defense lulus dengan revisi minor |
+| AI Usage Log & Statement, ethics | `docs/AI-USAGE.md` (log 14 entri + statement), `paper/AI-USAGE-STATEMENT.md`, `docs/ethics.md` | final | — | |
 | Integrity Checklist | `docs/integrity-checklist.md` | PASS | — | ditandatangani 2026-12-[dd] |
 
 Missing evidence: (1) evaluasi 80 kasus nyata dengan post-check aturan SKS — untuk klaim RQ1 di TA — ±3 minggu; (2) user study 6 dosen wali dengan κ — untuk RQ2 — ±4 minggu; (3) perbandingan 2 model LLM — untuk threats konstruk — ±2 minggu.
 
-Next steps: 1. Perbarui akses DS-2026-001 atas nama TA → G5 warisan dikonfirmasi → 2027-01-[dd] · 2. EXP-03 evaluasi 80 kasus → G6/G7 TA → 2027-02-[dd] · 3. User study → G7 → 2027-03-[dd] · 4. Manuscript untuk [konferensi nasional — isi] → v0.8 → 2027-04-[dd].
+Next steps: 1. Perbarui akses DS-2026-001 atas nama TA → G5 warisan dikonfirmasi → 2027-01-[dd] · 2. Eksperimen evaluasi 80 kasus nyata (`experiments/main/` TA) → G6/G7 TA → 2027-02-[dd] · 3. User study → G7 → 2027-03-[dd] · 4. Manuscript untuk [konferensi nasional — isi] → v0.8 → 2027-04-[dd].
 
 Owner: penerus [Mahasiswa A] · pembimbing [Dosen C3] · pemilik data Kaprodi [isi]. Risiko: biaya API LLM (mitigasi: kuota Prodi/model lokal); pergantian kurikulum 2027 (bekukan versi kurikulum). Keputusan menunggu: apakah [Mahasiswa B] menjadi ko-penulis paper — mentor — sebelum 2027-01-[dd]. Kontak & akses: repo `proj-2026-ai-academic-advising` (pembimbing sudah write); API key di vault Prodi. Tanda tangan: [Mahasiswa A], [Mahasiswa B], [Dosen C3], [dosen pengampu] — artefak diverifikasi ✓.
 

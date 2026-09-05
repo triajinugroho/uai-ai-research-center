@@ -198,7 +198,26 @@ Kegagalan integritas membatalkan gate terlepas dari kualitas lain ([MET-07](07-r
 | 13 | Research Defense | 12% | Explanation / End |
 | | **Total** | **100%** | |
 
-Cara bobot ini diturunkan menjadi komponen nilai (milestone portfolio, defense, peer review, partisipasi sprint) ada di [MET-06](06-assessment-and-5e-rubric.md).
+### Rekonsiliasi bobot CPMK → komponen nilai MET-06
+
+Bobot CPMK di atas adalah bobot untuk RPS (proporsi kemampuan yang dinilai). Nilai akhir **tidak** dihitung per CPMK, melainkan dari empat komponen [MET-06](06-assessment-and-5e-rubric.md) §2: **A Milestone Portfolio 60%** (End 10 · Evidence 15 · Experiment 15 · Explanation 10 · Execution 10), **B Research Defense 15%**, **C Peer Review 10%**, **D Partisipasi Sprint 15%**. Tabel berikut merekonsiliasi keduanya: angka = poin dari 100 yang ditampung tiap komponen (alokasi indikatif; penyusun RPS boleh menggeser antar sel selama jumlah baris dan kolom tidak berubah). Kolom D menampung porsi "disiplin sprint" CPMK (deliverable tepat waktu, gate check, AI Usage Log); CPMK-11 adalah prasyarat lulus/gagal, bukan poin. Angka yang sama dipakai di MET-06 §2.1.
+
+| CPMK | Bobot | A End (10) | A Evidence (15) | A Experiment (15) | A Explanation (10) | A Execution (10) | B Defense (15) | C Peer Review (10) | D Partisipasi (15) |
+|---|---|---|---|---|---|---|---|---|---|
+| 01 Problem | 8 | 5 | | | | | 3 | | |
+| 02 Discovery | 6 | | 5 | | | | | | 1 |
+| 03 Synthesis | 8 | | 4 | | | | | 4 | |
+| 04 Gap | 6 | | 6 | | | | | | |
+| 05 RQ | 6 | 4 | | | | | | | 2 |
+| 06 Hypothesis | 4 | 1 | | 3 | | | | | |
+| 07 Methods | 12 | | | 10 | | | | | 2 |
+| 08 Experiment | 12 | | | 2 | | 8 | | | 2 |
+| 09 Validity | 8 | | | | 6 | | 2 | | |
+| 10 AI-Assisted | 6 | | | | | 2 | | | 4 |
+| 11 Integrity | gate | — | — | — | — | — | — | — | — |
+| 12 Writing | 12 | | | | 4 | | | 6 | 2 |
+| 13 Defense | 12 | | | | | | 10 | | 2 |
+| **Jumlah** | **100** | **10** | **15** | **15** | **10** | **10** | **15** | **10** | **15** |
 
 ## 5. Peta CPMK × 16 minggu × gate
 
