@@ -23,19 +23,19 @@ Mahasiswa tidak "belajar membuat proposal" selama satu semester. Mereka menjalan
 | 30–90 | **Studio** | Tim mengerjakan microtask sprint; dosen/mentor berkeliling; peer critique terstruktur di 15 menit terakhir |
 | 90–100 | **Gate check** | Setiap tim melaporkan status satu kalimat ("Riset ini menuju ___ lewat pintu ___"), blocker, dan rencana sisa sprint; dosen mencatat di tracker |
 
-Pekerjaan di luar kelas mengikuti sprint mingguan [OPS-02](../06-execution-os/02-weekly-sprints.md): 7–10 microtask per sprint, terlihat oleh mahasiswa lewat [OPS-05](../06-execution-os/05-student-weekly-playbook.md) dan halaman mingguan di `metopen-research-studio/weeks/`.
+Pekerjaan di luar kelas mengikuti sprint mingguan [OPS-02](../06-execution-os/02-weekly-sprints.md): 5–10 microtask per sprint (umumnya 7–10), terlihat oleh mahasiswa lewat [OPS-05](../06-execution-os/05-student-weekly-playbook.md) dan halaman mingguan di `metopen-research-studio/weeks/`.
 
 ### 1.3 Tabel ringkasan
 
 | Sprint | Minggu | Tema | Konsep inti (30%) | Deliverable utama | Gate | Release |
 |---|---|---|---|---|---|---|
-| S0 | pra-W1 | Onboarding | Cara kerja studio, GitHub, protokol AI | Akun, repo latihan, kuis protokol | — | — |
-| S1 | W1 | Endgame | Research thinking; project vs research; entry door | `docs/endgame.md`, repo riset, agreement | G1 | — |
+| S0 | pra-W1 | Onboarding | Cara kerja studio, GitHub, protokol AI | Akun, tim & entry door awal, repo riset dari TPL-15, `docs/AI-USAGE.md` dimulai, agreement, kuis protokol | — | — |
+| S1 | W1 | Endgame | Research thinking; project vs research; entry door | `docs/endgame.md`, repo riset dituntaskan (README riset, Issue awal), agreement | G1 | — |
 | S2 | W2 | Problem | Problem-first; stakeholder; problem worth solving | Problem Brief, One-Pager v0 | G2 | v0.1 |
 | S3 | W3 | Search | Landscape literatur; basis data; citation chaining; kualitas sumber | Search strategy, `references.bib` awal | G3 (mulai) | — |
 | S4 | W4 | Evidence | Membaca paper strategis; synthesis matrix | Synthesis matrix v1 | G3 | — |
-| S5 | W5 | Gap | Dari matriks ke pola; jenis gap; Gap–Claim–Evidence | Literature Evidence Map, Research Gap | G3 (lulus) | v0.2 |
-| S6 | W6 | RQ | Anatomi RQ; hipotesis falsifiable; jenis kontribusi | RQ/Hypothesis, Contribution Statement | G4 | — |
+| S5 | W5 | Gap | Dari matriks ke pola; jenis gap; Gap–Claim–Evidence | Literature Evidence Map + Gap Candidates (`docs/literature-map.md`) | G3 (lulus) | v0.2 |
+| S6 | W6 | RQ | Anatomi RQ; hipotesis falsifiable; jenis kontribusi | Research Gap final, RQ/Hypothesis, Contribution Statement (`docs/research-question.md`) | G4 | — |
 | S7 | W7 | Method | Computing Research Methods Map; desain; metrik & baseline; validity | Research Design Card, Data Plan, Baseline & Metrics | G5 (mulai) | — |
 | S8 | W8 | Design Defense | Pitching desain; red team thinking | Pitch, notulen red team, desain revisi | G5 (lulus) | v0.3 |
 | S9 | W9 | Repository | Reproducibility package; data governance | Repo eksperimen siap, dataset card | G6 (mulai) | — |
@@ -44,8 +44,8 @@ Pekerjaan di luar kelas mengikuti sprint mingguan [OPS-02](../06-execution-os/02
 | S12 | W12 | Contribution | Claim–Evidence–Reasoning; hasil negatif; "so what" | CER table, Threats v2, Contribution revisi | G7 (lulus) | — |
 | S13 | W13 | Manuscript | IMRaD computing; struktur proposal; sitasi; AI dalam penulisan | Proposal TA / manuscript draft | G8 (mulai) | v0.8 |
 | S14 | W14 | Peer Review | Etika reviewer; TPL-12 | 2 review ditulis, review diterima | G8 | — |
-| S15 | W15 | Revision | Response to reviewers; integrity checklist; handoff | Proposal v1.0 draft, TPL-11, TPL-14 | G8 | — |
-| S16 | W16 | Defense | Research defense | Defense, Research Pack v1.0, handoff | G8 (lulus) | v1.0 |
+| S15 | W15 | Revision | Response to reviewers; integrity checklist; handoff | Proposal v0.9 (revisi pasca peer review), TPL-11, TPL-14 | G8 | — |
+| S16 | W16 | Defense | Research defense | Defense, proposal v1.0 final, Research Pack v1.0, handoff | G8 (lulus) | v1.0 |
 
 ### 1.4 Konvensi bagian per minggu
 
@@ -57,9 +57,9 @@ Setiap minggu di bawah memuat: **Objective · Concept (30%) · Activity (70%) ·
 
 **Objective.** Semua mahasiswa masuk W1 dengan alat, akun, dan pemahaman aturan main yang sama.
 
-**Isi.** Membaca [Student Guide](../../research-based-learning/student-guide/README.md), [OPS-05](../06-execution-os/05-student-weekly-playbook.md), dan [AIX-04](../05-ai-augmented-research/04-ai-research-protocol.md); membuat akun GitHub; latihan branch/PR pada repo latihan; instalasi Python/notebook environment dan reference manager; kuis singkat protokol AI dan integritas (lulus ≥80%, boleh diulang); mengisi preferensi klaster/domain dan kandidat entry door; penyegaran opsional statistik dasar dan git untuk yang membutuhkan.
+**Isi.** Membaca [Student Guide](../../research-based-learning/student-guide/README.md), [OPS-05](../06-execution-os/05-student-weekly-playbook.md), dan [AIX-04](../05-ai-augmented-research/04-ai-research-protocol.md); membuat akun GitHub dan bergabung ke team `@students`; menandatangani AI Research Protocol Agreement; membentuk tim awal 1–3 orang (`docs/team.md`) dan memilih kandidat entry door/masalah serta preferensi klaster/domain; **membuat repositori riset dari [TPL-15](../08-templates/15-research-repository-template.md)** (struktur standar, README riset dengan Research ID sementara `UIAI-YYYY-TBD`) dan **memulai AI Usage Log** di `docs/AI-USAGE.md` ([TPL-10](../08-templates/10-ai-usage-log-template.md)); latihan branch/PR dilakukan langsung di repositori riset itu; instalasi Python/notebook environment dan reference manager; kuis singkat protokol AI dan integritas (lulus ≥80%, boleh diulang); penyegaran opsional statistik dasar dan git untuk yang membutuhkan.
 
-**Deliverable.** Akun GitHub aktif di team `@students`, PR latihan merged, kuis lulus, form preferensi terisi. Task ID resmi: lihat OPS-01 Sprint S0.
+**Deliverable.** Akun GitHub aktif di team `@students`, agreement tertandatangani, `docs/team.md`, repositori riset berstruktur standar (commit awal), `docs/AI-USAGE.md` dengan minimal 1 entri, PR latihan merged, kuis lulus. Repositori dan log ini **dituntaskan** sebagai bukti G1 di W1. Task ID resmi: lihat OPS-01 Sprint S0.
 
 ---
 
@@ -69,13 +69,13 @@ Setiap minggu di bawah memuat: **Objective · Concept (30%) · Activity (70%) ·
 
 **Concept (30%).** Perbedaan *project*, *implementation*, *engineering*, dan *research*. Alur research thinking sepuluh langkah ([MET-01](01-metopen-positioning.md) §4). Tiga layer outcome (TA Ready / Research Ready / Publication Ready). Enam entry door. Peta 8 gate dan 16 artefak Research Pack sebagai "peta semester". Contoh endgame lemah ("membuat aplikasi X") vs kuat ("menguji apakah X mengungguli baseline B pada konteks K").
 
-**Activity (70%).** Pembentukan tim 1–3 orang (disarankan 2). Memilih entry door dari kandidat backlog/riset dosen/dataset/proyek MK. Menulis `docs/endgame.md`. Membuat repositori dari [TPL-15](../08-templates/15-research-repository-template.md). Membuka Issue `type:problem` awal. Menandatangani **AI Research Protocol Agreement** dan memulai AI Usage Log ([TPL-10](../08-templates/10-ai-usage-log-template.md)). Self-assessment awal level AI competency ([AIX-02](../05-ai-augmented-research/02-ai-research-competency-framework.md)).
+**Activity (70%).** Menuntaskan tim 1–3 orang (disarankan 2) dan entry door yang dipilih di S0 dari kandidat backlog/riset dosen/dataset/proyek MK. Menulis `docs/endgame.md`. Melengkapi repositori riset yang dibuat di S0 dari [TPL-15](../08-templates/15-research-repository-template.md) (README riset, struktur standar). Membuka Issue `type:problem` awal. Melampirkan **AI Research Protocol Agreement** (ditandatangani di S0) dan melanjutkan AI Usage Log `docs/AI-USAGE.md` ([TPL-10](../08-templates/10-ai-usage-log-template.md)). Self-assessment awal level AI competency ([AIX-02](../05-ai-augmented-research/02-ai-research-competency-framework.md)).
 
 **AI use.** Boleh: eksplorasi istilah bidang, memetakan sub-area topik, brainstorming kandidat endgame. Tidak boleh: meminta AI "memilihkan topik TA" tanpa mengecek backlog/dosen; memasukkan data pribadi anggota tim ke layanan AI.
 
-**Microtasks.** (1) Bentuk tim dan bagi peran awal; (2) telusuri ≥3 kandidat problem dari backlog/roadmap; (3) pilih entry door dan kandidat mentor; (4) buat repo dari template dan isi README riset minimal; (5) tulis `docs/endgame.md`; (6) tanda tangani agreement, buat AI Usage Log; (7) buka Issue `type:problem`. Task ID resmi: lihat OPS-01 Sprint S1.
+**Microtasks.** (1) Tuntaskan tim dan pembagian peran awal; (2) telusuri ≥3 kandidat problem dari backlog/roadmap; (3) pilih entry door dan kandidat mentor; (4) lengkapi repo riset (dibuat di S0) dan isi README riset minimal; (5) tulis `docs/endgame.md`; (6) lampirkan agreement, perbarui AI Usage Log; (7) buka Issue `type:problem`. Task ID resmi: lihat OPS-01 Sprint S1.
 
-**Deliverable.** `docs/endgame.md`, repositori standar, Issue awal, agreement, AI Usage Log entri pertama.
+**Deliverable.** `docs/endgame.md`, repositori standar, Issue awal, agreement, AI Usage Log W1 (dimulai di S0).
 
 **Gate.** G1 Endgame Ready. **Human check.** Dosen memastikan endgame memuat klaim pengetahuan yang ingin dibuktikan, bukan hanya artefak yang ingin dibuat.
 
@@ -91,7 +91,7 @@ Setiap minggu di bawah memuat: **Objective · Concept (30%) · Activity (70%) ·
 
 **Microtasks.** (1) Tulis rantai "mengapa" hingga lima level; (2) identifikasi stakeholder dan keputusan yang berubah; (3) tulis Problem Brief; (4) petakan ke klaster dan domain; (5) isi One-Pager v0; (6) peer test dua kalimat dan perbaiki; (7) buka PR G2. Task ID resmi: lihat OPS-01 Sprint S2.
 
-**Deliverable.** `docs/problem.md`, One-Pager v0, PR G2, Research ID `UIAI-YYYY-NNN`, release v0.1 Problem Validated.
+**Deliverable.** `docs/problem.md`, One-Pager v0, PR G2, Research ID resmi `UIAI-YYYY-NNN` (ditetapkan maintainers saat PR G2 di-merge; sebelumnya `UIAI-YYYY-TBD`), release v0.1 Problem Validated.
 
 **Gate.** G2 Problem Ready. **Human check.** Reviewer luar tim mengulang masalah dalam dua kalimat tanpa menyebut algoritma.
 
@@ -101,13 +101,13 @@ Setiap minggu di bawah memuat: **Objective · Concept (30%) · Activity (70%) ·
 
 **Concept (30%).** Landscape literatur computing: jurnal, konferensi, preprint, thesis, grey literature — dan cara menimbang kualitasnya. Basis data: Google Scholar, Scopus, Semantic Scholar, dan sejenisnya. Backward/forward citation chaining. Kriteria inklusi/eksklusi. Reference management dan `references.bib`. AI untuk *literature intelligence*: berguna untuk menemukan, tidak pernah dipercaya untuk mengutip.
 
-**Activity (70%).** Menyusun `docs/search-strategy.md` (kata kunci, sinonim, string pencarian, basis data, kriteria). Menjalankan pencarian dan citation chaining. Screening judul/abstrak. Memverifikasi keberadaan setiap sumber (DOI/URL dibuka). Menyiapkan reference manager dan `references.bib`.
+**Activity (70%).** Menyusun `docs/literature/search-strategy.md` (kata kunci, sinonim, string pencarian, basis data, kriteria). Menjalankan pencarian dan citation chaining (log di `docs/literature/search-log.csv`). Screening judul/abstrak (`docs/literature/screening.csv`). Memverifikasi keberadaan setiap sumber (DOI/URL dibuka). Menyiapkan reference manager dan `references.bib`.
 
 **AI use.** Boleh: kandidat kata kunci dan sinonim; tool deep research/literature search untuk menemukan kandidat; ringkasan abstrak sebagai pra-screening. Tidak boleh: memasukkan referensi dari AI tanpa membuka sumber aslinya; menganggap "ringkasan AI" sebagai telah membaca paper.
 
 **Microtasks.** (1) Tulis kata kunci dan string pencarian; (2) tentukan basis data dan kriteria inklusi/eksklusi; (3) jalankan pencarian, catat jumlah hasil; (4) citation chaining dari 3–5 paper kunci; (5) screening ke 15–25 sumber; (6) verifikasi DOI/URL setiap sumber, catat di AI Usage Log bila lewat AI; (7) isi `references.bib`. Task ID resmi: lihat OPS-01 Sprint S3.
 
-**Deliverable.** `docs/search-strategy.md`, daftar kandidat tersaring, `references.bib` awal.
+**Deliverable.** `docs/literature/search-strategy.md`, `docs/literature/search-log.csv`, `docs/literature/screening.csv` (daftar kandidat tersaring), `references.bib` awal.
 
 **Gate.** G3 Evidence Ready (mulai). **Human check.** Dosen spot-check 3 sumber acak: ada, relevan, dan kriteria pencarian benar-benar dipakai.
 
@@ -117,7 +117,7 @@ Setiap minggu di bawah memuat: **Objective · Concept (30%) · Activity (70%) ·
 
 **Concept (30%).** Membaca paper computing secara strategis: abstract → figures/tables → method → limitations → introduction terakhir. Membedakan klaim dari bukti. Kolom synthesis matrix: problem, metode, data, metrik, hasil, keterbatasan, relevansi. Critical appraisal: apakah baseline ada, apakah data representatif, apakah hasilnya direproduksi orang lain.
 
-**Activity (70%).** Membagi sumber antar anggota; membaca dan mengisi `literature/synthesis-matrix.csv`; menandai pertentangan dan konsistensi awal; mencatat kualitas bukti tiap sumber. Peer cross-check: anggota lain memeriksa 2 baris matriks terhadap PDF.
+**Activity (70%).** Membagi sumber antar anggota; membaca dan mengisi `docs/literature/synthesis-matrix.csv`; menandai pertentangan dan konsistensi awal; mencatat kualitas bukti tiap sumber. Peer cross-check: anggota lain memeriksa 2 baris matriks terhadap PDF.
 
 **AI use.** Boleh: menjelaskan istilah/teknik yang belum dikenal; membantu mengekstrak struktur paper sebagai pra-baca. Tidak boleh: mengisi baris matriks dari output AI tanpa membuka bagian paper yang dirujuk; memasukkan PDF berlisensi terbatas ke layanan AI yang melanggar ketentuan.
 
@@ -129,33 +129,33 @@ Setiap minggu di bawah memuat: **Objective · Concept (30%) · Activity (70%) ·
 
 ## W5 — Gap
 
-**Objective.** Literature Evidence Map final dan Research Gap yang dapat ditelusuri ke baris matriks; G3 lulus.
+**Objective.** Literature Evidence Map final dengan 2–3 Gap Candidates yang dapat ditelusuri ke baris matriks dan diuji kelayakannya; G3 lulus. Research Gap **final** ditetapkan di W6 dan dinilai di G4.
 
 **Concept (30%).** Dari matriks ke pola: apa yang konsisten, apa yang bertentangan, apa yang belum diuji. Jenis gap: empiris, metodologis, kontekstual, replikasi, artefak/dataset. Gap–Claim–Evidence alignment. Mengapa "belum ada yang meneliti di UAI/Indonesia" bukan gap kecuali ada alasan konteks yang mengubah hasil. Menggambar evidence map (tabel tema × sumber atau diagram).
 
-**Activity (70%).** Menulis `docs/literature-map.md` (narasi pola + tabel/diagram). Menulis Research Gap dengan rujukan baris. Membuka Issue `type:literature-gap`. PR `GATE REVIEW: Evidence Ready`. Release v0.2.
+**Activity (70%).** Menulis `docs/literature-map.md` (narasi pola + tabel/diagram, §Gap Candidates, §Feasibility). Menulis 2–3 kandidat gap dengan rujukan baris dan menguji kelayakannya untuk semester + TA. Membuka/memperbarui Issue `type:literature-gap` (status: kandidat). PR `GATE REVIEW: Evidence Ready`. Release v0.2.
 
 **AI use.** Boleh: meminta AI menantang gap ("apa sub-area yang mungkin terlewat?") lalu memverifikasi lewat pencarian ulang. Tidak boleh: menerima klaim AI bahwa "belum ada penelitian tentang X".
 
-**Microtasks.** (1) Kelompokkan baris matriks ke tema; (2) tulis pola konsisten/bertentangan/belum diuji; (3) gambar evidence map; (4) tulis gap dengan rujukan baris; (5) tantang gap via AI dan pencarian ulang; (6) buka Issue gap; (7) buka PR G3 dan buat release v0.2. Task ID resmi: lihat OPS-01 Sprint S5.
+**Microtasks.** (1) Kelompokkan baris matriks ke tema; (2) tulis pola konsisten/bertentangan/belum diuji; (3) gambar evidence map; (4) tulis 2–3 kandidat gap dengan rujukan baris dan uji kelayakan; (5) tantang kandidat gap via AI dan pencarian ulang; (6) buka/perbarui Issue gap; (7) buka PR G3 dan buat release v0.2. Task ID resmi: lihat OPS-01 Sprint S5.
 
-**Deliverable.** Literature Evidence Map, Research Gap, `references.bib` final, PR G3.
+**Deliverable.** Literature Evidence Map (`docs/literature-map.md` termasuk §Gap Candidates + §Feasibility), `references.bib` final, PR G3.
 
 **Gate.** G3 Evidence Ready (lulus). **Human check.** Gagal bila satu saja referensi tidak dapat diverifikasi keberadaannya.
 
 ## W6 — RQ
 
-**Objective.** RQ dan/atau hipotesis yang spesifik, dapat difalsifikasi, dan terjangkau dalam semester + TA; kontribusi dinyatakan.
+**Objective.** Research Gap final ditetapkan dari kandidat W5 (Gap–Claim–Evidence alignment); RQ dan/atau hipotesis yang spesifik, dapat difalsifikasi, dan terjangkau dalam semester + TA; kontribusi dinyatakan.
 
 **Concept (30%).** Anatomi RQ: konstruk, konteks, pembanding, batas. Hipotesis yang bisa salah: arah, variabel, kriteria penolakan. Jenis kontribusi: empiris, artefak, metode, dataset, replikasi, studi kasus. Scoping: satu RQ utama, maksimal dua RQ pendukung. RQ tidak valid sebelum G3 selesai.
 
-**Activity (70%).** Menulis `docs/research-question.md` (RQ, hipotesis, kontribusi). Menelusuri setiap RQ ke gap dan baris matriks. Research One-Pager v1. Issue `type:research-question`. PR `GATE REVIEW: Question Ready`.
+**Activity (70%).** Menetapkan Research Gap final dari kandidat W5 dengan tabel Gap–Evidence (baris matriks)–Claim, lalu menulis `docs/research-question.md` (gap final, RQ, hipotesis, kontribusi). Menelusuri setiap RQ ke gap dan baris matriks. Research One-Pager v1. Issue `type:research-question`. PR `GATE REVIEW: Question Ready`.
 
 **AI use.** Boleh: brainstorming hipotesis alternatif; meminta AI mencari cara hipotesis bisa salah. Tidak boleh: memakai RQ buatan AI yang tidak bisa ditelusuri ke matriks.
 
-**Microtasks.** (1) Tulis 3 kandidat RQ; (2) pilih satu, uji spesifik/answerable/bounded; (3) tulis hipotesis dan kriteria penolakan; (4) tulis Contribution Statement; (5) tautkan RQ ke gap dan baris matriks; (6) perbarui One-Pager v1; (7) buka Issue RQ dan PR G4. Task ID resmi: lihat OPS-01 Sprint S6.
+**Microtasks.** (1) Tetapkan Research Gap final dari kandidat W5 (tabel Gap–Evidence–Claim); (2) tulis 3 kandidat RQ; (3) pilih satu, uji spesifik/answerable/bounded; (4) tulis hipotesis dan kriteria penolakan; (5) tulis Contribution Statement; (6) tautkan RQ ke gap dan baris matriks; (7) perbarui One-Pager v1; (8) buka Issue RQ dan PR G4. Task ID resmi: lihat OPS-01 Sprint S6.
 
-**Deliverable.** RQ/Hypothesis, Contribution Statement, One-Pager v1, PR G4.
+**Deliverable.** Research Gap final, RQ/Hypothesis, Contribution Statement (`docs/research-question.md`), One-Pager v1, PR G4.
 
 **Gate.** G4 Question Ready. **Human check.** Mentor menanyakan "baris mana di matriks yang membuat RQ ini perlu?" untuk setiap RQ.
 
@@ -194,7 +194,7 @@ Lalu: variabel, konstruk, kontrol, sampling, confounder, bias. Measurement & eva
 
 **Objective.** Desain dipertahankan di Mid-semester Research Pitch / Red Team Review dan direvisi; G5 lulus.
 
-**Concept (30%).** Cara mem-pitch desain riset dalam 5–7 menit: masalah → gap → RQ → desain → bukti yang diharapkan → ancaman. Red team thinking: tugas penonton adalah mencari cara riset ini gagal. Menerima kritik sebagai bagian normal sains (amanah epistemik).
+**Concept (30%).** Cara mem-pitch desain riset dalam 7–10 menit ([TPL-13](../08-templates/13-research-defense-template.md)): masalah → gap → RQ → desain → bukti yang diharapkan → ancaman. Red team thinking: tugas penonton adalah mencari cara riset ini gagal. Menerima kritik sebagai bagian normal sains (amanah epistemik).
 
 **Activity (70%).** Setiap tim pitch; red team (peer dari tim lain + dosen/mentor lain) mengajukan pertanyaan terstruktur (metrik? baseline? leakage? representativitas? etika?). Notulen red team. Revisi desain di studio. PR `GATE REVIEW: Method Ready`. Release v0.3. Self-assessment AI competency kedua.
 
@@ -212,7 +212,7 @@ Lalu: variabel, konstruk, kontrol, sampling, confounder, bias. Measurement & eva
 
 **Concept (30%).** Research repository sebagai artefak yang dapat diperiksa. Reproducibility package minimum. Data governance: data mentah sensitif tidak masuk GitHub ([SECURITY.md](../../SECURITY.md)), kartu dataset, lisensi per komponen ([LICENSING.md](../../LICENSING.md)). Struktur `experiments/` dan logging. Git hygiene: commit kecil, pesan bermakna, branch `research/g6-experiment`.
 
-**Activity (70%).** Menyiapkan `src/`, `notebooks/`, `experiments/config`, `requirements.txt`/`environment.yml`, `run.sh`, `data/README.md`, `.gitignore`. Memuat data (subset) dan sanity check. Menulis stub baseline. Kode berbantuan AI direview dan diuji, dicatat di log.
+**Activity (70%).** Menyiapkan `src/`, `notebooks/`, `experiments/pilot-01/config.yaml`, `requirements.txt`/`environment.yml`, `run.sh`, `data/README.md`, `.gitignore`. Memuat data (subset) dan sanity check. Menulis stub baseline. Kode berbantuan AI direview dan diuji, dicatat di log.
 
 **AI use.** Boleh: coding support, debugging, penjelasan error, membuat skrip utilitas. Tidak boleh: memasukkan data pribadi/partner ke AI; meng-commit kode AI yang tidak dibaca dan diuji.
 
@@ -276,13 +276,13 @@ Lalu: variabel, konstruk, kontrol, sampling, confounder, bias. Measurement & eva
 
 **Concept (30%).** Scientific argumentation and writing: menulis dari artefak, bukan dari nol. Struktur IMRaD untuk computing dan pemetaannya ke proposal TA ([MET-05](05-publication-backward-design.md)). Citation integrity. AI dalam penulisan: penyuntingan bahasa dan struktur diperbolehkan dan diungkap; hasil dan klaim tidak.
 
-**Activity (70%).** Menulis draft proposal/manuscript di `paper/`; `AI-USAGE.md`; Reproducibility README; release v0.8 Manuscript Draft.
+**Activity (70%).** Menulis draft proposal/manuscript di `paper/proposal.md`; AI Usage Statement (`paper/AI-USAGE-STATEMENT.md`, dirangkum dari log `docs/AI-USAGE.md`); Reproducibility README; release v0.8 Manuscript Draft (`paper/proposal-v0.8.pdf`).
 
 **AI use.** Boleh: penyuntingan bahasa, umpan balik struktur, pengecekan konsistensi istilah; semuanya dicatat. Tidak boleh: menulis bagian hasil/diskusi dari AI; menambah sitasi yang tidak ada di `references.bib` yang terverifikasi.
 
-**Microtasks.** (1) Petakan artefak Research Pack ke bagian proposal; (2) tulis Introduction & Related Work dari Problem Brief dan Evidence Map; (3) tulis Method dari design card; (4) tulis Pilot Results & Threats; (5) tulis `AI-USAGE.md`; (6) tulis Reproducibility README; (7) release v0.8. Task ID resmi: lihat OPS-01 Sprint S13.
+**Microtasks.** (1) Petakan artefak Research Pack ke bagian proposal; (2) tulis Introduction & Related Work dari Problem Brief dan Evidence Map; (3) tulis Method dari design card; (4) tulis Pilot Results & Threats; (5) tulis AI Usage Statement (`paper/AI-USAGE-STATEMENT.md`); (6) tulis Reproducibility README; (7) release v0.8. Task ID resmi: lihat OPS-01 Sprint S13.
 
-**Deliverable.** Proposal/manuscript draft v0.8, `AI-USAGE.md`, Reproducibility README.
+**Deliverable.** Proposal/manuscript draft v0.8, AI Usage Statement, Reproducibility README.
 
 **Gate.** G8 Contribution Ready (mulai). **Human check.** Dosen membaca satu bagian dan memeriksa setiap sitasi ada di `references.bib`.
 
@@ -314,7 +314,7 @@ Lalu: variabel, konstruk, kontrol, sampling, confounder, bias. Measurement & eva
 
 **Microtasks.** (1) Klasifikasikan komentar reviewer; (2) revisi proposal; (3) tulis response letter; (4) lengkapi artefak Research Pack yang kurang; (5) isi dan tandatangani TPL-11; (6) tulis handoff; (7) latihan defense. Task ID resmi: lihat OPS-01 Sprint S15.
 
-**Deliverable.** Proposal v1.0 draft, response letter, TPL-11, handoff draft.
+**Deliverable.** Proposal v0.9 (revisi pasca peer review), `paper/response-to-reviewers.md`, TPL-11, handoff draft.
 
 **Gate.** G8 (berlanjut). **Human check.** Dosen memeriksa checklist integritas terhadap repositori (bukan hanya tanda tangan).
 
@@ -330,7 +330,7 @@ Lalu: variabel, konstruk, kontrol, sampling, confounder, bias. Measurement & eva
 
 **Microtasks.** (1) Finalisasi slide defense; (2) defense; (3) catat pertanyaan dan jawaban; (4) perbaikan minor pasca defense; (5) release v1.0; (6) merge PR G8; (7) handoff final dan perbarui Mission Control. Task ID resmi: lihat OPS-01 Sprint S16.
 
-**Deliverable.** Research Pack v1.0, rekaman/notulen defense, handoff, status maturity (TA Ready / Research Ready / Publication Ready).
+**Deliverable.** Research Pack v1.0 (termasuk proposal v1.0 final, `paper/proposal-v1.0.pdf`), rekaman/notulen defense, handoff, status maturity (TA Ready / Research Ready / Publication Ready).
 
 **Gate.** G8 Contribution Ready (lulus). **Human check.** Dosen pembimbing TA dapat memulai bimbingan dari Research Pack tanpa mengulang dari nol.
 

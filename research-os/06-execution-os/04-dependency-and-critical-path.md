@@ -42,7 +42,7 @@ S10 OPS-088 PILOT ─ OPS-091 REPRODUKSI PEER ─ OPS-092 perbaiki README ─ OP
       │
 S11 OPS-097 EKSPERIMEN PENUH ─ OPS-098 statistik ─ OPS-099 error analysis ─ OPS-100 figur jujur ─ OPS-102 analysis.md
       │
-S12 OPS-106 TABEL CER ─ OPS-107 threats v1 ─ OPS-108 contribution v2 ─ OPS-110 one-pager v2
+S12 OPS-106 TABEL CER ─ OPS-107 threats v2 ─ OPS-108 contribution v2 ─ OPS-110 one-pager v2
       ─ OPS-111 PR G7 ══════════════════════════════════════════════════════════ ▶ G7 Claim Ready
       │
 S13 OPS-116 hasil & pembahasan ─ OPS-119 rakit Research Pack ─ OPS-120 release v0.8

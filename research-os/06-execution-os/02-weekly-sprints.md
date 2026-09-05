@@ -6,7 +6,7 @@
 
 ## Mengapa mahasiswa tidak melihat 145 task sekaligus
 
-Research WBS ([OPS-01](01-research-wbs-master.md)) berisi 145 microtask. Kalau seluruhnya diperlihatkan pada minggu pertama, yang terjadi bukan kejelasan, melainkan kelumpuhan: mahasiswa membaca task W13 "tulis manuscript" pada saat mereka belum tahu masalahnya apa. Karena itu WBS **dipotong menjadi 17 sprint** — satu sprint onboarding (S0) dan enam belas sprint mingguan (S1–S16) yang mengikuti blueprint Metopen. Setiap sprint hanya berisi **5–10 task**, semuanya mengejar satu Research Gate, dan semuanya selesai dalam satu minggu.
+Research WBS ([OPS-01](01-research-wbs-master.md)) berisi 145 microtask. Kalau seluruhnya diperlihatkan pada minggu pertama, yang terjadi bukan kejelasan, melainkan kelumpuhan: mahasiswa membaca task W13 "tulis manuscript" pada saat mereka belum tahu masalahnya apa. Karena itu WBS **dipotong menjadi 17 sprint** — satu sprint onboarding (S0) dan enam belas sprint mingguan (S1–S16) yang mengikuti blueprint Metopen. Setiap sprint hanya berisi **5–10 task (umumnya 7–10)**, semuanya mengejar satu Research Gate, dan semuanya selesai dalam satu minggu.
 
 Prinsipnya sama dengan *production line*: mahasiswa tidak "belajar membuat proposal" selama satu semester; mereka menjalankan satu mini research cycle sprint demi sprint, dan proposal TA lahir sebagai konsekuensinya. Backend-nya (WBS, dependency, gate) kompleks; frontend-nya (halaman mingguan) ringan.
 
@@ -14,7 +14,7 @@ Aturan pembagian:
 
 1. Satu sprint = satu minggu kalender = satu halaman di `metopen-research-studio/weeks/`.
 2. Satu sprint hanya mengejar **satu gate**. Gate G3 (Evidence) mendapat tiga sprint (S3–S5); G8 (Contribution) mendapat empat sprint (S13–S16) karena bobot penulisan, review, revisi, dan defense.
-3. Setiap sprint memiliki satu task **sesi studio** (konsep ±30%), beberapa task **produksi artefak** (studio ±70%), satu task **AI Usage Log + jurnal**, dan — pada sprint gate — satu task **PR GATE REVIEW**.
+3. Setiap sprint S1–S15 memiliki satu task **sesi studio** (konsep ±30%) — S0 onboarding dan S16 defense tidak —, beberapa task **produksi artefak** (studio ±70%), satu task **AI Usage Log + jurnal**, dan — pada sprint gate — satu task **PR GATE REVIEW**.
 4. Task tidak boleh dipindah ke sprint lebih awal bila dependency-nya belum ada ([OPS-04](04-dependency-and-critical-path.md)); boleh mundur satu sprint dengan konsekuensi yang dijelaskan di bagian *Jika terlambat*.
 
 ## Peta 17 sprint → 8 gate
@@ -77,7 +77,7 @@ Beban jam pada tabel di bawah adalah **total jam tim** (1–3 orang) menurut kol
 | OPS-014 | Perbarui AI Usage Log dan jurnal mingguan W1 |
 
 **Deliverable:** `docs/endgame.md`, Issue `type:problem`, One-Pager v0 (parsial), PR `GATE REVIEW: Endgame Ready`.
-**Definition of done:** PR G1 termerge; endgame memuat minimum/target/aspirasi dan klaim awal; kandidat mentor teridentifikasi.
+**Definition of done:** PR G1 dibuka, direview dosen pengampu, dan di-merge (merge = G1 lulus); endgame memuat minimum/target/aspirasi dan klaim awal; kandidat mentor teridentifikasi.
 
 ## S2 — W2 Problem (Gate G2) · 9 task · 14h
 
@@ -91,11 +91,11 @@ Beban jam pada tabel di bawah adalah **total jam tim** (1–3 orang) menurut kol
 | OPS-018 | Tulis Stakeholder & Impact Statement |
 | OPS-019 | Selaraskan masalah dengan klaster dan domain roadmap |
 | OPS-020 | Lengkapi Research One-Pager v0 |
-| OPS-021 | Perbarui Issue backlog dan minta Research ID resmi |
+| OPS-021 | Perbarui Issue backlog dan ajukan permohonan Research ID resmi |
 | OPS-022 | Siapkan PR GATE REVIEW: Problem Ready (problem-review.md) |
 | OPS-023 | Perbarui AI Usage Log dan jurnal mingguan W2 |
 
-**Deliverable:** `docs/problem.md` (Problem Brief + Stakeholder & Impact), One-Pager v0, Research ID `UIAI-YYYY-NNN`, release `v0.1 Problem Validated`.
+**Deliverable:** `docs/problem.md` (Problem Brief + Stakeholder & Impact), One-Pager v0, Research ID `UIAI-YYYY-NNN` (ditetapkan @maintainers saat PR G2 di-merge), release `v0.1 Problem Validated`.
 **Definition of done:** PR G2 termerge oleh dosen + 1 peer; orang di luar tim dapat menjelaskan ulang masalah dalam dua kalimat; tidak ada nama algoritma di Problem Brief.
 
 ## S3 — W3 Search (Gate G3) · 9 task · 16.5h
@@ -190,7 +190,7 @@ Beban jam pada tabel di bawah adalah **total jam tim** (1–3 orang) menurut kol
 | OPS-067 | Tulis Threats to Validity awal (4 jenis validitas) |
 | OPS-068 | Perbarui AI Usage Log dan jurnal mingguan W7 |
 
-**Deliverable:** `docs/research-design.md`, `docs/data-plan.md`, `docs/design-card.md` ([TPL-08](../08-templates/08-research-design-card.md)), dataset card di `datasets-registry/` ([TPL-05](../08-templates/05-dataset-registry-template.md)), threats v0.
+**Deliverable:** `docs/research-design.md`, `docs/data-plan.md`, `docs/design-card.md` ([TPL-08](../08-templates/08-research-design-card.md)), dataset card di `datasets-registry/` ([TPL-05](../08-templates/05-dataset-registry-template.md)), threats v1 (`docs/research-design.md` §Threats).
 **Definition of done:** metrik dan baseline **terkunci dengan tanggal commit** sebelum W9; design card tanpa field kosong; dataset card diajukan.
 
 ## S8 — W8 Design Defense (Gate G5) · 9 task · 16.5h
@@ -284,7 +284,7 @@ Beban jam pada tabel di bawah adalah **total jam tim** (1–3 orang) menurut kol
 | OPS-111 | Siapkan PR GATE REVIEW: Claim Ready |
 | OPS-112 | Perbarui AI Usage Log dan jurnal mingguan W12 |
 
-**Deliverable:** tabel CER di `results/analysis.md`, threats v1, contribution v2, Limitations & Future Work, One-Pager v2.
+**Deliverable:** tabel CER di `results/analysis.md`, threats v2 (`results/analysis.md` §Threats), contribution v2, Limitations & Future Work, One-Pager v2.
 **Definition of done:** PR G7 termerge oleh dosen + mentor; tidak ada klaim kausal dari korelasi; tidak ada improvement tanpa baseline. Lolos G7 = status **Research Ready**.
 
 ## S13 — W13 Manuscript (Gate G8) · 9 task · 19.5h
@@ -338,7 +338,7 @@ Beban jam pada tabel di bawah adalah **total jam tim** (1–3 orang) menurut kol
 | OPS-135 | Finalkan slide defense dan lembar ringkas untuk penguji |
 | OPS-136 | Perbarui AI Usage Log dan jurnal mingguan W15 |
 
-**Deliverable:** proposal v0.9, Research Pack tersinkron, `docs/integrity-checklist.md` ([TPL-11](../08-templates/11-research-integrity-checklist.md)) tertandatangani, `presentation/defense-final.pdf`, catatan rehearsal.
+**Deliverable:** proposal v0.9 (revisi pasca peer review, `paper/proposal.md`), Research Pack tersinkron, `docs/integrity-checklist.md` ([TPL-11](../08-templates/11-research-integrity-checklist.md)) tertandatangani, `presentation/defense-final.pdf`, catatan rehearsal.
 **Definition of done:** tabel tanggapan berstatus selesai dan dikonfirmasi reviewer; setiap butir checklist merujuk bukti; rehearsal minimal 2 kali dengan timer. **Defense tidak boleh dijadwalkan sebelum checklist ditandatangani.**
 
 ## S16 — W16 Defense (Gate G8) · 9 task · 12.5h
@@ -357,7 +357,7 @@ Beban jam pada tabel di bawah adalah **total jam tim** (1–3 orang) menurut kol
 | OPS-144 | Buat release v1.0 Research Pack |
 | OPS-145 | Tulis refleksi akhir semester dan rencana semester VIII |
 
-**Deliverable:** `docs/reviews/defense-minutes.md`, `docs/handoff.md` ([TPL-14](../08-templates/14-research-handoff-template.md)), registry diperbarui, PR G8 termerge, release `v1.0 Research Pack`, refleksi akhir.
+**Deliverable:** `docs/reviews/defense-minutes.md`, `docs/handoff.md` ([TPL-14](../08-templates/14-research-handoff-template.md)), registry diperbarui, proposal v1.0 (`paper/proposal-v1.0.pdf`), PR G8 termerge, release `v1.0 Research Pack`, refleksi akhir.
 **Definition of done:** dosen pembimbing TA dapat memulai bimbingan dari Research Pack tanpa mengulang dari nol; release v1.0 memuat seluruh komponen MET-04; Issue menunjukkan gate G8.
 
 ---
