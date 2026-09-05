@@ -35,7 +35,7 @@ Semua task Sprint S2 dari Research WBS ([OPS-01](../../research-os/06-execution-
 | OPS-018 | Tulis Stakeholder & Impact Statement | Bagian Stakeholder & Impact di docs/problem.md | 1.5h | Menawarkan stakeholder yang mungkin terlewat; tim memverifikasi relevansinya | Tim memastikan tiap stakeholder nyata, bukan hipotetis |
 | OPS-019 | Selaraskan masalah dengan klaster dan domain roadmap | Bagian Alignment di docs/problem.md | 1h | - | Dosen mengonfirmasi klaster dan domain |
 | OPS-020 | Lengkapi Research One-Pager v0 | docs/one-pager.md v0 | 1h | Meringkas problem brief menjadi 3 kalimat; tim mengedit | Tim memeriksa One-Pager tidak mendahului bukti literatur |
-| OPS-021 | Perbarui Issue backlog dan minta Research ID resmi | Issue diperbarui; Research ID resmi | 0.5h | - | @maintainers memberikan ID; tim memeriksa konsistensi ID di semua file |
+| OPS-021 | Perbarui Issue backlog dan ajukan permohonan Research ID resmi | Issue diperbarui; permohonan Research ID tercatat | 0.5h | - | @maintainers menetapkan ID saat G2 merge; tim memeriksa konsistensi ID di semua file |
 | OPS-022 | Siapkan PR GATE REVIEW: Problem Ready (problem-review.md) | PR GATE REVIEW: Problem Ready | 1.5h | - | Dosen + peer memeriksa masalah problem-first dan dapat dijelaskan ulang |
 | OPS-023 | Perbarui AI Usage Log dan jurnal mingguan W2 | AI Usage Log W2 + jurnal | 0.5h | - | Setiap anggota memverifikasi entri log miliknya |
 
