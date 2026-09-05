@@ -1,6 +1,6 @@
 # Glossary — Kamus Istilah & Konvensi UAI AI Research Center
 
-> **ID** MST-03 · **Paket** 00 Master · **Tier** 1 (Core) · **Status** Draft v0.1 (2026-09)
+> **ID** MST-03 · **Paket** 00 Master / Executive Navigation · **Tier** 1 (Core) · **Status** Draft v0.1 (2026-09)
 > **Audiens** Semua: pimpinan, dosen, mahasiswa, reviewer, admin riset
 > **Terkait** [MST-00 README](00-readme.md) · [OPS-03 Research Gates](../06-execution-os/03-research-gates.md) · [GOVERNANCE.md](../../GOVERNANCE.md)
 

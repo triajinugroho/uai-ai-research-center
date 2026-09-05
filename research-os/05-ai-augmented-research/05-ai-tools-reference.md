@@ -39,7 +39,7 @@ Format tiap kategori: fungsi dalam riset → kriteria memilih → contoh tool �
 - **Fungsi.** Menemukan paper primer secara sistematis dengan kata kunci, filter, dan citation chaining.
 - **Kriteria memilih.** Cakupan bidang computing; metadata lengkap (DOI, venue, tahun); filter dan ekspor `.bib`; akses institusi bila berbayar.
 - **Contoh (bisa berubah).** Google Scholar, Semantic Scholar, Scopus (bila kampus berlangganan), OpenAlex, arXiv, ACM Digital Library/IEEE Xplore (akses sesuai langganan), Garuda/SINTA untuk jurnal nasional.
-- **Risiko & verifikasi.** Preprint tanpa review; duplikasi versi; metadata salah. Verifikasi: catat string pencarian dan tanggal di `docs/search-strategy.md`; cek versi terbit; ekspor ke reference manager, bukan disalin manual.
+- **Risiko & verifikasi.** Preprint tanpa review; duplikasi versi; metadata salah. Verifikasi: catat string pencarian dan tanggal di `docs/literature/search-strategy.md` dan `docs/literature/search-log.csv`; cek versi terbit; ekspor ke reference manager, bukan disalin manual.
 - **Tahap.** Search, Gap.
 
 ### 2.4 Citation intelligence (peta sitasi & konteks kutipan)
@@ -95,7 +95,7 @@ Format tiap kategori: fungsi dalam riset → kriteria memilih → contoh tool �
 - **Fungsi.** Menyusun manuscript/proposal, mengelola sitasi, menyunting bahasa dan struktur, menjaga konsistensi istilah.
 - **Kriteria memilih.** Dukungan BibTeX/format venue; kolaborasi tim; riwayat versi; kebijakan data untuk draft yang belum terbit (INTERNAL).
 - **Contoh (bisa berubah).** LaTeX (Overleaf atau lokal), Markdown + Pandoc, pengolah kata standar; pemeriksa bahasa (mis. Grammarly, Writefull, LanguageTool); asisten umum untuk umpan balik struktur.
-- **Risiko & verifikasi.** Teks halus yang menyimpang dari hasil; sitasi "ditambahkan" AI; draft belum terbit terkirim ke layanan yang menyimpan data. Verifikasi: bagian hasil/diskusi ditulis dari CER; sitasi hanya dari `references.bib`; pengungkapan di `AI-USAGE.md`; hormati kebijakan AI venue.
+- **Risiko & verifikasi.** Teks halus yang menyimpang dari hasil; sitasi "ditambahkan" AI; draft belum terbit terkirim ke layanan yang menyimpan data. Verifikasi: bagian hasil/diskusi ditulis dari CER; sitasi hanya dari `references.bib`; pengungkapan di `docs/AI-USAGE.md`; hormati kebijakan AI venue.
 - **Tahap.** Writing, Publication.
 
 ### 2.11 Peer review support (bantuan review)

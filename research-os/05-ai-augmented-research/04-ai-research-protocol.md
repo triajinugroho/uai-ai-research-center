@@ -49,7 +49,7 @@ Kelas ini **bukan** *AI-free Research Methods* — itu tidak realistis. Tetapi j
 **Apa.** Tiga lapis: (1) *source* — ada dan mengatakan itu; (2) *reasoning* — logikanya valid untuk konteks Anda (asumsi uji, kecocokan metode dengan RQ); (3) *evidence* — bukti Anda sendiri mendukungnya (hitung ulang, jalankan ulang).
 **Mengapa.** Kesalahan AI terjadi di ketiga lapis: sumber palsu, penalaran yang benar secara umum tetapi salah di konteks Anda, dan angka yang "dihitung" tanpa data.
 **Cara praktis.** Kolom *Verification* di AI Usage Log wajib diisi sebelum output dipakai; angka apa pun dari AI dihitung ulang dengan skrip; kode AI dijalankan dengan tes/sanity check; penjelasan statistik dicek asumsinya terhadap data Anda.
-**Contoh.** AI menyarankan uji-t berpasangan untuk membandingkan F1 dua model antar 5 fold. Verifikasi penalaran: apakah fold berpasangan? ya. Apakah 5 pengamatan cukup dan distribusinya wajar? diragukan → laporkan mean ± SD dan interval, uji hanya sebagai pelengkap dengan catatan. Verifikasi bukti: hitung dengan `src/analysis/compare.py`, bukan dengan angka yang AI "perkirakan".
+**Contoh.** AI menyarankan uji-t berpasangan untuk membandingkan F1 dua model antar 5 fold. Verifikasi penalaran: apakah fold berpasangan? ya. Apakah 5 pengamatan cukup dan distribusinya wajar? diragukan → laporkan mean ± SD dan interval, uji hanya sebagai pelengkap dengan catatan. Verifikasi bukti: hitung dengan `src/analysis.py` (fungsi `compare`), bukan dengan angka yang AI "perkirakan".
 **Pelanggaran umum.** Log tanpa kolom verifikasi; "sudah saya cek" tanpa jejak; memverifikasi sumber tetapi tidak penalaran.
 
 ### 2.5 Challenge — menantang output dan diri sendiri
@@ -70,10 +70,10 @@ Kelas ini **bukan** *AI-free Research Methods* — itu tidak realistis. Tetapi j
 
 ### 2.7 Disclose — mengungkap secara spesifik
 
-**Apa.** Mencatat penggunaan AI yang material di AI Usage Log ([TPL-10](../08-templates/10-ai-usage-log-template.md)) saat terjadi, dan merangkumnya di `AI-USAGE.md` (AI Usage Statement) dengan membedakan bantuan **penulisan** dan bantuan **proses riset**.
+**Apa.** Mencatat penggunaan AI yang material di AI Usage Log ([TPL-10](../08-templates/10-ai-usage-log-template.md)) saat terjadi, dan merangkumnya di `docs/AI-USAGE.md` (AI Usage Statement; versi final untuk naskah di `paper/AI-USAGE-STATEMENT.md`) dengan membedakan bantuan **penulisan** dan bantuan **proses riset**.
 **Mengapa.** Pengungkapan membuat riset dapat diaudit, memenuhi kebijakan venue, dan melindungi Anda: yang diungkap adalah praktik; yang disembunyikan adalah pelanggaran.
 **Cara praktis.** Log hanya untuk penggunaan material (yang memengaruhi artefak/kesimpulan), bukan setiap pertanyaan istilah; entri ditulis saat itu juga; statement diperbarui tiap gate.
-**Contoh.** Entri log: `2026-10-14 · [tool kategori: coding assistant] · tujuan: implementasi stratified split · input: deskripsi skema (tanpa data) · output: fungsi split_stratified() · verifikasi: tes proporsi & ID unik lulus (commit a1b2c3) · keputusan: dipakai dengan modifikasi seed handling`.
+**Contoh.** Entri log (kolom TPL-10): `#07 · 2026-10-14 · [tool kategori: coding assistant, versi] · Coding · implementasi stratified split · prompt: deskripsi skema (tanpa data) · material output: Ya — fungsi split_stratified() · verifikasi: E — tes proporsi & ID unik lulus (commit a1b2c3) · inclusion: Diubah (seed handling) — src/data.py · PJ: [nama]`.
 **Pelanggaran umum.** Log diisi belakangan dari ingatan; statement generik ("kami menggunakan ChatGPT untuk membantu"); AI pada kode/analisis tidak dicatat karena "cuma bantu".
 
 ### 2.8 Own — memikul tanggung jawab penuh
@@ -105,19 +105,24 @@ Rincian per tahap riset: [AIX-03](03-ai-across-research-value-stream.md). Katego
 
 ### 4.1 AI Usage Log (per penggunaan material) — [TPL-10](../08-templates/10-ai-usage-log-template.md)
 
+Kolom mengikuti TPL-10 persis agar log dapat diaudit lintas tim:
+
 | Kolom | Isi |
 |---|---|
+| # | Nomor urut entri (dirujuk dari AI Usage Statement: "log #12–#15") |
 | Date | Tanggal penggunaan (ditulis saat itu) |
-| Tool | Kategori + nama tool/versi bila diketahui |
-| Stage | Tahap riset (Problem/Search/.../Writing) |
+| Tool (versi) | Kategori + nama tool/versi/model bila diketahui |
+| Stage | Tahap riset (Problem · Search · Read · Synthesis · Gap · RQ · Method · Coding · Experiment · Analysis · Writing · Review · Publication) |
 | Purpose | Tujuan spesifik |
 | Prompt / use | Ringkasan prompt atau cara pakai; **tanpa** data sensitif |
-| Material output | Apa yang dihasilkan dan dianggap material |
-| Verification | Sumber/penalaran/bukti — apa yang dicek, hasilnya, tautan commit/file |
-| Decision | Dipakai / dipakai dengan modifikasi / ditolak (alasan) |
-| Included in final work | Ya/tidak; di artefak mana |
+| Material output? | Ya/Tidak — apa yang dihasilkan dan dianggap material |
+| Verification | Source / reasoning / evidence — apa yang dicek, hasilnya, tautan commit/file |
+| Inclusion in final work | Ya (dipakai utuh) / Diubah (dipakai dengan modifikasi) / Tidak (ditolak — tulis alasannya); lokasi file/section/commit |
+| PJ | Penanggung jawab entri (manusia yang memverifikasi) |
 
-### 4.2 AI Usage Statement (`AI-USAGE.md`) — struktur
+Keputusan *dipakai / diubah / ditolak* dicatat di kolom **Inclusion in final work**; entri "Tidak (ditolak)" beserta alasannya adalah bukti bahwa tim menilai (§2.5).
+
+### 4.2 AI Usage Statement (`docs/AI-USAGE.md`; versi final untuk naskah: `paper/AI-USAGE-STATEMENT.md`) — struktur
 
 ```
 # AI Usage Statement — UIAI-YYYY-NNN

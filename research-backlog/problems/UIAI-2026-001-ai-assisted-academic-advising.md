@@ -6,7 +6,7 @@
 |---|---|
 | **Research ID** | UIAI-2026-001 |
 | **Judul** | AI-assisted academic advising for Indonesian universities |
-| **Cluster** | C3 Human-Centered & Responsible AI (primer) · C4 Applied AI (sekunder) — label `cluster:human-ai` |
+| **Cluster** | C3 Human-Centered & Responsible AI (primer) · C4 Applied AI for Human Flourishing (sekunder) — label `cluster:human-ai` |
 | **Domain** | Education |
 | **Problem owner** | `[isi: dosen wali / unit layanan akademik UAI]` |
 | **Potential dataset** | [DS-2026-001 Student Learning](../../datasets-registry/datasets/DS-2026-001-student-learning.md) (Restricted; anonimisasi + consent) |

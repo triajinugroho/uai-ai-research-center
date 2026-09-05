@@ -5,8 +5,8 @@
 | Field | Nilai |
 |---|---|
 | **Research ID** | UIAI-2026-002 |
-| **Judul** | Evaluasi retrieval-augmented generation (RAG) berbahasa Indonesia untuk dokumen akademik dan regulasi kampus |
-| **Cluster** | C1 AI Models, Data & Knowledge (primer) · C2 AI Systems (sekunder: keandalan/keamanan) — label `cluster:models` |
+| **Judul** | Evaluasi RAG berbahasa Indonesia untuk dokumen akademik & regulasi kampus |
+| **Cluster** | C1 AI Models, Data & Knowledge (primer) · C2 AI Systems, Software & Security (sekunder: keandalan/keamanan) — label `cluster:models` |
 | **Domain** | Education (dokumen akademik) / Government (regulasi; kampus sebagai proxy layanan publik) |
 | **Problem owner** | `[isi: unit layanan akademik / bagian hukum-regulasi kampus]` |
 | **Potential dataset** | [DS-2026-003 Indonesian NLP](../../datasets-registry/datasets/DS-2026-003-indonesian-nlp.md) (korpus publik) + dokumen kampus publik `[isi]` |

@@ -57,8 +57,8 @@ Klaster ini meneliti **bagaimana sistem AI dibangun, diuji, diamankan, dan diope
 | Basis Data (sem. III) | data engineering, skema | F |
 | Struktur Data & Analisis Algoritma (sem. III–IV) | efisiensi, kompleksitas | F |
 | AI & Machine Learning (sem. V) | model yang di-deploy | E |
-| Kerja Praktik (sem. VI) | masalah sistem nyata dari industri | Problem/Partner entry |
-| Metodologi Penelitian / TA | empirical SE study, benchmarking | Prove / Contribute |
+| Kerja Praktik (sem. VI) | masalah sistem nyata dari industri | E (problem discovery; entry door Problem/Partner) |
+| Metodologi Penelitian / TA | empirical SE study, benchmarking | R (Prove / Contribute) |
 
 Detail: [research-based-learning/courses/software-engineering](../../research-based-learning/courses/software-engineering/README.md).
 

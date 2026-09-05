@@ -134,7 +134,7 @@ Peran: **Prove** dan **Contribute**. Detail di [ARC-04](04-build-prove-contribut
 | 15.00–15.45 | Sesi 6 — Gallery walk & komitmen | Setiap kelompok memaparkan 2 baris terbaik; dosen lain memberi satu masukan; pengisian folder `research-based-learning/courses/` dimulai | Draft README per MK |
 | 15.45–16.00 | Penutupan | Kaprodi: keputusan (mode per MK disahkan sementara), tindak lanjut, tenggat penyerahan RPS revisi | Notulen keputusan + daftar tindak lanjut |
 
-**Pasca-workshop (≤ 3 minggu):** tim kurikulum mengonsolidasikan peta final ke dokumen ini (PR `docs/curriculum-map`), dosen menyerahkan RPS revisi, koordinator Metopen memperbarui daftar MK sumber handoff.
+**Pasca-workshop (≤ 3 minggu):** tim kurikulum mengonsolidasikan peta final ke dokumen ini (PR dari branch `docs/curriculum-map`), dosen menyerahkan RPS revisi, koordinator Metopen memperbarui daftar MK sumber handoff.
 
 **Aturan main workshop:** tidak ada MK yang dipaksa menjadi mode R; tidak ada tugas baru bila tugas lama bisa diarahkan; setiap keputusan mode dapat ditinjau ulang setiap semester.
 

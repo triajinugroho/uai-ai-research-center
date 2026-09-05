@@ -65,7 +65,7 @@ Pewawancara mengisi *AI Relation*, klaster, dan *Possible Research* **bersama** 
 
 **Langkah 6 — Pemutakhiran.** Setiap tahun (bersamaan dengan review roadmap) atau ketika dosen baru bergabung.
 
-Waktu total untuk 15–20 dosen: sekitar 4–6 minggu kalender, 30 menit per dosen ditambah satu sesi validasi per klaster.
+Waktu total untuk `[isi: jumlah dosen Prodi]` dosen: 30 menit wawancara per dosen ditambah satu sesi validasi per klaster — sekitar 4–6 minggu kalender bila wawancara dijalankan paralel per klaster.
 
 ## 4. Contoh adjacency untuk kepakaran umum
 
@@ -88,7 +88,7 @@ Pola umumnya: kepakaran *infrastruktur* → C2; kepakaran *manusia/nilai* → C3
 
 - **BKD.** Setiap riset ber-Research ID dengan dosen sebagai owner/mentor tercatat di Faculty Portfolio (view Mission Control) — bukti kegiatan penelitian dan pembimbingan yang dapat ditarik per semester tanpa mengisi ulang formulir dari nol. GitHub tetap research tracking system, bukan sistem kepegawaian ([GOVERNANCE.md §9](../../GOVERNANCE.md)); angka BKD resmi tetap diproses unit universitas.
 - **Skema penelitian internal UAI.** Beberapa skema mensyaratkan atau mendorong keterlibatan mahasiswa — pada call yang ditemukan, minimal dua mahasiswa aktif — dan mengarahkan topik selaras Renstra Penelitian.[^1] Pipeline ini memenuhi keduanya secara alami: *Possible Research* dosen menjadi masalah backlog → dikerjakan mahasiswa di MK mode R/Metopen/TA → hasil gate menjadi *preliminary result* proposal → dua mahasiswa Metopen/TA menjadi anggota tim. Dosen tidak perlu mencari mahasiswa dadakan menjelang tenggat proposal.
-- **Publikasi bersama.** Riset mahasiswa yang lolos G7–G8 di bawah mentor menghasilkan manuscript dengan dosen sebagai penulis sesuai kontribusi (aturan authorship di [AIR-04 §5](04-cross-faculty-ai-model.md) berlaku juga untuk dosen–mahasiswa).
+- **Publikasi bersama.** Riset mahasiswa yang lolos G7–G8 di bawah mentor menghasilkan manuscript dengan dosen sebagai penulis sesuai kontribusi (aturan authorship di [AIR-04 §4.3](04-cross-faculty-ai-model.md) berlaku juga untuk dosen–mahasiswa).
 
 ## 6. Peran yang dapat diambil dosen
 

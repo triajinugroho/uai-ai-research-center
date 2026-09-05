@@ -45,7 +45,7 @@ Riset tidak lahir sekali jadi; ia direvisi berdasarkan review. PR yang ditolak a
 ## 4. Aturan integritas (wajib)
 
 - Tidak ada fabrikasi/falsifikasi data, tidak ada plagiarisme, tidak ada sitasi yang tidak dibaca atau tidak dapat diverifikasi.
-- Setiap penggunaan AI yang memengaruhi kesimpulan (desain, pemilihan data, kode, analisis, penulisan) dicatat di **AI Usage Log** ([TPL-10](research-os/08-templates/10-ai-usage-log-template.md)) dan diungkap di `AI-USAGE.md`; ikuti [AI Research Protocol (AIX-04)](research-os/05-ai-augmented-research/04-ai-research-protocol.md).
+- Setiap penggunaan AI yang memengaruhi kesimpulan (desain, pemilihan data, kode, analisis, penulisan) dicatat di **AI Usage Log** ([TPL-10](research-os/08-templates/10-ai-usage-log-template.md)) dan diungkap di `docs/AI-USAGE.md`; ikuti [AI Research Protocol (AIX-04)](research-os/05-ai-augmented-research/04-ai-research-protocol.md).
 - Data pribadi/sensitif tidak pernah di-commit ([SECURITY.md](SECURITY.md)). Dataset didaftarkan sebagai **metadata** di `datasets-registry/`.
 - Sebelum defense/submission, isi [Research Integrity Checklist (TPL-11)](research-os/08-templates/11-research-integrity-checklist.md).
 
@@ -55,16 +55,17 @@ Riset tidak lahir sekali jadi; ia direvisi berdasarkan review. PR yang ditolak a
 - **Markdown**: heading berjenjang, tabel untuk data terstruktur, link relatif.
 - **Kode**: sertakan `requirements.txt`/`environment.yml`, seed tetap, skrip `run.sh`/`Makefile` untuk mereproduksi hasil.
 - **Lisensi**: ikuti [LICENSING.md](LICENSING.md) — Apache-2.0 untuk kode, CC BY 4.0 untuk dokumen; dataset dan aset ber-HKI diputuskan lewat review.
-- **Dokumen research-os**: pertahankan blok metadata (ID, paket, tier, status, audiens, terkait). Ubah `research-wbs.csv` lalu jalankan `python3 tools/build_wbs.py`; jangan mengedit `01-research-wbs-master.md` langsung.
+- **Dokumen research-os**: pertahankan blok metadata (ID, paket, tier, status, audiens, terkait). Ubah `research-wbs.csv` lalu jalankan `python3 tools/build_wbs.py` dan `python3 tools/sync_weeks.py` (tabel task halaman mingguan studio juga dirender dari CSV); jangan mengedit `01-research-wbs-master.md` langsung.
 
 ## 6. Sebelum membuka PR ke `main` repo ini
 
 ```bash
 python3 tools/check_links.py
 python3 tools/build_wbs.py --check
+python3 tools/sync_weeks.py --check
 ```
 
-Keduanya harus lulus. Workflow `docs-check` menjalankan hal yang sama di CI.
+Ketiganya harus lulus. Workflow `docs-check` menjalankan hal yang sama di CI.
 
 ## 7. Pertanyaan
 

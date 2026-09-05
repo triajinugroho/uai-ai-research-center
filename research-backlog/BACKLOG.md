@@ -25,7 +25,7 @@ Nomor diberikan berurutan per tahun oleh `@maintainers` dan **tidak pernah dipak
 
 | Kolom | Nilai yang diperbolehkan | Sumber |
 |---|---|---|
-| **Research ID** | `UIAI-YYYY-NNN`, link ke `problems/` | diberikan `@maintainers` saat validasi |
+| **Research ID** | `UIAI-YYYY-NNN`, link ke `problems/` | ditetapkan `@maintainers` saat PR GATE REVIEW: Problem Ready (G2) di-merge; sebelumnya `UIAI-YYYY-TBD` |
 | **Judul** | Judul masalah (boleh berubah; ID tidak) | Issue |
 | **Cluster** | C1 AI Models, Data & Knowledge · C2 AI Systems, Software & Security · C3 Human-Centered & Responsible AI · C4 Applied AI for Human Flourishing; sekunder dalam kurung | label `cluster:*` |
 | **Domain** | Education · Halal · Health · Food · Government · Business · Social Impact | field Mission Control |

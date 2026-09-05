@@ -36,7 +36,7 @@ Semua dokumen di bawah hanyalah implementasi dari formula itu.
 | 07 Governance & Implementation | [`07-governance/`](07-governance/) | GOV | 1 | [Governance Model](07-governance/01-governance-model.md) · [Implementation Roadmap](07-governance/02-implementation-roadmap.md) · [KPI](07-governance/03-kpi-and-measurement.md) · [Risk Register](07-governance/04-risk-register.md) · [PP-PTS Evidence](07-governance/05-ppts-and-institutional-evidence.md) |
 | 08 Templates & Toolkit | [`08-templates/`](08-templates/) | TPL | 3 | 15 template executable: one-pager, tracker, leaderboard, backlog, dataset & venue registry, faculty map, design card, experiment card, AI usage log, integrity checklist, peer review, defense, handoff, repository template |
 
-Total 57 dokumen. Tier 1 (±10) wajib dibaca pembuat kebijakan; Tier 2 (±15) untuk tim kurikulum/dosen; Tier 3 (±30) sebagian besar template.
+Total 57 dokumen. Tier 1 (17) wajib dibaca pembuat kebijakan; Tier 2 (21) untuk tim kurikulum/dosen; Tier 3 (19) sebagian besar template (hitungan per blok metadata; estimasi awal dokumen sumber ±10/±15/±30).
 
 ## Urutan baca yang disarankan
 

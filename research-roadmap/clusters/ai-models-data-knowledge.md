@@ -58,8 +58,8 @@ Tiga sub-area:
 | NLP | korpus, tokenisasi, model bahasa, RAG | R |
 | Basis Data (sem. III) | skema data, knowledge graph | F |
 | Statistika & Statistika Terapan (sem. I–II) | inferensi, ketidakpastian evaluasi | F |
-| Metodologi Penelitian (sem. VII) | desain evaluasi, threats to validity | Prove |
-| Tugas Akhir (sem. VIII) | kontribusi | Contribute |
+| Metodologi Penelitian (sem. VII) | desain evaluasi, threats to validity | R (Prove) |
+| Tugas Akhir (sem. VIII) | kontribusi | R (Contribute) |
 
 Detail per mata kuliah: [research-based-learning/courses](../../research-based-learning/README.md).
 

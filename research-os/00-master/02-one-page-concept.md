@@ -32,7 +32,7 @@ Satu halaman. Jika hanya ini yang dibaca, pembaca tetap memahami keseluruhan sis
 │  METOPEN — PROVE (Research Studio, sem VII, 2 SKS, 16 minggu)           │
 │  G1 Endgame → G2 Problem → G3 Evidence → G4 Question → G5 Method →      │
 │  G6 Experiment → G7 Claim → G8 Contribution                             │
-│  Output: RESEARCH PACK v1.0 (16 komponen) + Proposal TA + Pitch         │
+│  Output: RESEARCH PACK v1.0 (16 komponen, termasuk Proposal TA & Pitch) │
 └───────────────────────────────────┬─────────────────────────────────────┘
                                     ▼
 ┌─────────────────────────────────────────────────────────────────────────┐

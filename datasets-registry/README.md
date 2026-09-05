@@ -43,7 +43,7 @@ Issue "Dataset" (type:dataset)  ──►  Review privasi & lisensi  ──►  
 | 2. Review privasi & lisensi | pengelola registry (`@maintainers`/pengelola yang ditunjuk) + komite etik untuk data manusia | ikuti decision tree dataset di [LICENSING.md](../LICENSING.md): ownership → privacy → consent → partner agreement → lisensi; tetapkan kelas `Public / Restricted / Confidential` |
 | 3. Dataset ID | pengelola registry | `DS-YYYY-NNN` berurutan per tahun, tidak dipakai ulang |
 | 4. Kartu + indeks | pengusul | buat `datasets/DS-YYYY-NNN-slug.md` dari [TPL-05](../research-os/08-templates/05-dataset-registry-template.md); tambah baris di [REGISTRY.md](REGISTRY.md); PR direview pengelola |
-| 5. Pemakaian | tim riset | rujuk Dataset ID di Research One-Pager, Data Plan (G5), README riset, dan kartu publikasi |
+| 5. Pemakaian | tim riset | rujuk Dataset ID di Research One-Pager, Data Plan (`docs/data-plan.md`, G5), README riset, dan kartu publikasi |
 
 Kartu wajib ada **sebelum G5 Method Ready** untuk setiap dataset yang dipakai riset ([OPS-03](../research-os/06-execution-os/03-research-gates.md)); field Privacy harus terisi ([SECURITY.md](../SECURITY.md) §4).
 

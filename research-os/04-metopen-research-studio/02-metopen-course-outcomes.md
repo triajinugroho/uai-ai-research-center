@@ -61,7 +61,7 @@ Format tiap CPMK: rumusan capaian → indikator → artefak Research Pack → mi
 
 | Indikator | Artefak | Minggu / Gate | Bobot |
 |---|---|---|---|
-| Strategi pencarian ditulis: kata kunci, basis data, citation chaining, kriteria inklusi/eksklusi | `docs/search-strategy.md` | W3 / G3 | 6% |
+| Strategi pencarian ditulis: kata kunci, basis data, citation chaining, kriteria inklusi/eksklusi | `docs/literature/search-strategy.md` | W3 / G3 | 6% |
 | 15–25 sumber primer terverifikasi (DOI/URL) | `references.bib` | W3–W4 / G3 | |
 | Sumber temuan AI dicatat dan diverifikasi | AI Usage Log | W3 / G3 | |
 
@@ -71,7 +71,7 @@ Format tiap CPMK: rumusan capaian → indikator → artefak Research Pack → mi
 
 | Indikator | Artefak | Minggu / Gate | Bobot |
 |---|---|---|---|
-| Matriks berisi kolom problem, metode, data, metrik, hasil, keterbatasan, relevansi | `literature/synthesis-matrix.csv` | W4–W5 / G3 | 8% |
+| Matriks berisi kolom problem, metode, data, metrik, hasil, keterbatasan, relevansi | `docs/literature/synthesis-matrix.csv` | W4–W5 / G3 | 8% |
 | Bagian "pola" menyebut apa yang konsisten, bertentangan, belum diuji | Literature Evidence Map | W5 / G3 | |
 | Setiap baris matriks dapat dicocokkan dengan isi paper (bukan abstrak AI) | Spot-check reviewer | W5 / G3 | |
 
@@ -81,8 +81,9 @@ Format tiap CPMK: rumusan capaian → indikator → artefak Research Pack → mi
 
 | Indikator | Artefak | Minggu / Gate | Bobot |
 |---|---|---|---|
-| Gap merujuk baris/sumber tertentu, bukan naratif "belum ada di UAI" | Research Gap | W5 / G3→G4 | 6% |
-| Jenis gap dinyatakan (empiris, metodologis, kontekstual, replikasi, artefak) | Research Gap | W5 | |
+| Gap merujuk baris/sumber tertentu, bukan naratif "belum ada di UAI" | Gap Candidates (`docs/literature-map.md` §Gap Candidates) → Research Gap final (`docs/research-question.md` §Gap) | W5–W6 / G3 (kandidat) → G4 (final) | 6% |
+| Jenis gap dinyatakan (empiris, metodologis, kontekstual, replikasi, artefak) | Gap Candidates | W5 / G3 | |
+| Gap final dipilih dari kandidat lewat uji kelayakan semester + TA dan tabel Gap–Evidence–Claim | Research Gap final | W6 / G4 | |
 
 ### CPMK-05 Research Question
 
@@ -153,7 +154,7 @@ Format tiap CPMK: rumusan capaian → indikator → artefak Research Pack → mi
 |---|---|---|---|
 | Lolos Research Integrity check pada setiap gate | Review gate | G1–G8 | **Gate lulus/gagal, bukan skor** |
 | Research Integrity Checklist ditandatangani | TPL-11 | W15 / G8 | |
-| Ethics & Privacy terisi; data sensitif tidak di-commit | `docs/ethics.md`, `ETHICS.md` | W7, W9 / G5–G6 | |
+| Ethics & Privacy terisi; data sensitif tidak di-commit | `docs/ethics.md` | W7, W9 / G5–G6 | |
 
 Kegagalan integritas membatalkan gate terlepas dari kualitas lain ([MET-07](07-research-integrity-and-ethics.md), [MET-06](06-assessment-and-5e-rubric.md)).
 
@@ -208,7 +209,7 @@ Cara bobot ini diturunkan menjadi komponen nilai (milestone portfolio, defense, 
 | 01 Problem | ● | ● | | | | ○ | | ○ | | | | | ○ | | | | G1, G2 |
 | 02 Discovery | | ○ | ● | ○ | | | | | | | | | | | | | G3 |
 | 03 Synthesis | | | ○ | ● | ● | | | | | | | | | | | | G3 |
-| 04 Gap | | | | ○ | ● | ○ | | | | | | | | | | | G3, G4 |
+| 04 Gap | | | | ○ | ● | ● | | | | | | | | | | | G3, G4 |
 | 05 RQ | | | | | ○ | ● | ○ | ○ | | | | ○ | | | | | G4 |
 | 06 Hypothesis | | | | | | ● | ● | | | | | | | | | | G4, G5 |
 | 07 Methods | | | | | | | ● | ● | ○ | | | | | | | | G5 |

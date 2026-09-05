@@ -61,7 +61,7 @@ Cara membaca: masalah industri paling sering dicocokkan dengan dosen sebagai men
 
 **Langkah 3 — Pencocokan.** Research lead klaster mencocokkan masalah dengan: (a) dosen dari Faculty Research Map yang *Possible Research*-nya berdekatan → calon mentor/owner; (b) MK mode R/E yang semester berikutnya bisa memakainya sebagai menu proyek → field *Course*; (c) mahasiswa Metopen/TA yang mencari topik → lewat menu masalah W1–W2; (d) dataset di registry yang relevan; (e) fakultas mitra bila lintas disiplin ([AIR-04](04-cross-faculty-ai-model.md)). Hasil: Issue diperbarui dengan *Faculty Mentor*, *Course*, *Entry Door*, dan ditandai `status:ready`.
 
-**Langkah 4 — Research ID.** Ketika tim terbentuk dan lolos **G2 Problem Ready**, `@maintainers` memberi `UIAI-YYYY-NNN`; Issue, repositori, dan Mission Control diperbarui. Sebelum itu dipakai ID sementara sesuai konvensi [CONTRIBUTING.md §2](../../CONTRIBUTING.md).
+**Langkah 4 — Research ID.** Ketika tim terbentuk dan PR `GATE REVIEW: Problem Ready` (**G2**) di-merge, `@maintainers` menetapkan ID resmi `UIAI-YYYY-NNN`; judul Issue, README riset, dan Mission Control diperbarui. Sebelum itu dipakai ID sementara `UIAI-YYYY-TBD` sesuai [CONTRIBUTING.md §2](../../CONTRIBUTING.md).
 
 **Langkah 5 — Pipeline.** Riset berjalan lewat G3–G8 ([OPS-03](../06-execution-os/03-research-gates.md)); pusat riset memantau lewat Mission Control, menyediakan compute/data/reviewer, dan menjaga komunikasi dengan problem owner (minimal di G5 dan G8).
 
@@ -81,7 +81,7 @@ Cara membaca: masalah industri paling sering dicocokkan dengan dosen sebagai men
 
 ## 7. SLA sederhana
 
-Angka di bawah adalah komitmen layanan awal (Phase 2–4); disesuaikan setelah volume diketahui.
+Angka di bawah adalah komitmen layanan awal (fase GitHub 2–4: Pilot Metopen → AI Center Launch, [GOVERNANCE.md §10](../../GOVERNANCE.md); = GOV-02 Phase 1–4); disesuaikan setelah volume diketahui.
 
 | Layanan | Komitmen | Penanggung jawab |
 |---|---|---|
@@ -102,7 +102,7 @@ Angka di bawah adalah komitmen layanan awal (Phase 2–4); disesuaikan setelah v
 
 Di antara prioritas sama, dahulukan masalah yang: memakai dataset yang sudah terdaftar (*reuse before create*), lintas fakultas dengan komponen lengkap ([AIR-04 §2](04-cross-faculty-ai-model.md)), atau melanjutkan riset yang sudah punya handoff.
 
-## 9. Contoh alur: satu masalah industri hingga TA dan paper
+## 9. Contoh alur (ilustratif): satu masalah industri hingga TA dan paper
 
 **Permintaan.** Sebuah UMKM pangan binaan (lewat unit kerja sama UAI) mengeluh: pra-audit halal memakan waktu karena harus memeriksa satu per satu bahan pada label produk pemasok. Mereka bertanya, "Bisakah AI membantu?"
 
@@ -114,7 +114,7 @@ Di antara prioritas sama, dahulukan masalah yang: memakai dataset yang sudah ter
 
 **Build (semester V).** Tim AI/ML membuat Experiment Card: tugas ekstraksi daftar bahan dari foto label; baseline OCR + pencocokan kata kunci; metrik presisi/recall per bahan kritis; split per pemasok untuk mencegah leakage. Hasil: baseline sudah cukup baik untuk bahan umum, gagal pada bahan turunan dan label rusak. Handoff #1 terisi.
 
-**Prove (semester VII, Metopen).** Satu mahasiswa melanjutkan; G2 Problem Ready → **`UIAI-2026-021`**. Evidence map 20 sumber tentang ekstraksi informasi label dan sistem verifikasi halal; gap: hampir tidak ada evaluasi pada label produk lokal dan pada bahan turunan. RQ: "Seberapa akurat pipeline ekstraksi+penalaran bahan pada label produk UMKM Indonesia dibanding pemeriksaan manual, dan pada kelas bahan apa ia gagal?" G5 dengan reviewer C4 dan C1; validasi domain oleh dosen Teknologi Pangan; pilot pada 200 label; G8 dengan Research Pack dan proposal TA.
+**Prove (semester VII, Metopen).** Satu mahasiswa melanjutkan; G2 Problem Ready → **`UIAI-2026-021`** (ID ilustratif). Evidence map 20 sumber tentang ekstraksi informasi label dan sistem verifikasi halal; gap: hampir tidak ada evaluasi pada label produk lokal dan pada bahan turunan. RQ: "Seberapa akurat pipeline ekstraksi+penalaran bahan pada label produk UMKM Indonesia dibanding pemeriksaan manual, dan pada kelas bahan apa ia gagal?" G5 dengan reviewer C4 dan C1; validasi domain oleh dosen Teknologi Pangan; pilot pada 200 label; G8 dengan Research Pack dan proposal TA.
 
 **Contribute (semester VIII, TA).** Eksperimen penuh, studi kecil dengan dua auditor internal UMKM (apakah waktu pra-audit berkurang, kesalahan apa yang tetap lolos). Output: laporan TA; prototype `ART-2027-004` (kode Apache-2.0; data restricted); manuscript `PUB-2027-006` untuk seminar/jurnal bidang sistem informasi/halal dengan penulis mahasiswa, mentor Informatika, dosen Teknologi Pangan; research brief untuk UMKM dan unit kerja sama.
 

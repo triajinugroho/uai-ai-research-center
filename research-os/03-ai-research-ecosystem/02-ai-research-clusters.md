@@ -62,7 +62,7 @@ Aturan praktis: klaster ditentukan oleh **kontribusi utama** riset (apa yang bar
 
 **Outputs.** Benchmark, dataset dengan pedoman anotasi, model dengan model card, paper empiris/replikasi, software evaluasi.
 
-**Contoh Research ID hipotetis.** `UIAI-2026-003` "Benchmark klasifikasi tiket layanan akademik Bahasa Indonesia" (primer C1, sekunder C4/Education); `UIAI-2026-011` "Grounding evaluation RAG dokumen akademik" (primer C1, sekunder C2).
+**Contoh Research ID.** `UIAI-2026-002` "Evaluasi RAG berbahasa Indonesia untuk dokumen akademik & regulasi kampus" (primer C1, sekunder C2; lihat [research-backlog/BACKLOG.md](../../research-backlog/BACKLOG.md)); ilustratif: `UIAI-2026-011` "Benchmark klasifikasi tiket layanan akademik Bahasa Indonesia" (primer C1, sekunder C4/Education).
 
 ## 4. C2 — AI Systems, Software & Security
 
@@ -87,7 +87,7 @@ Aturan praktis: klaster ditentukan oleh **kontribusi utama** riset (apa yang bar
 
 **Outputs.** Software/tools (test harness, pipeline), benchmark sistem, paper empirical SE, prototype sistem, laporan keamanan.
 
-**Contoh Research ID hipotetis.** `UIAI-2026-008` "Ketahanan chatbot layanan akademik terhadap prompt injection" (primer C2, sekunder C3); `UIAI-2026-014` "Reproducibility eksperimen ML mahasiswa: studi empiris" (primer C2, sekunder C3/Education).
+**Contoh Research ID (ilustratif).** `UIAI-2026-016` "Ketahanan chatbot layanan akademik terhadap prompt injection" (primer C2, sekunder C3); `UIAI-2026-014` "Reproducibility eksperimen ML mahasiswa: studi empiris" (primer C2, sekunder C3/Education).
 
 ## 5. C3 — Human-Centered & Responsible AI
 
@@ -113,7 +113,7 @@ Aturan praktis: klaster ditentukan oleh **kontribusi utama** riset (apa yang bar
 
 **Outputs.** Paper empiris/user study, instrumen dan protokol evaluasi, kebijakan/brief institusional, dataset interaksi (restricted), prototype antarmuka.
 
-**Contoh Research ID hipotetis.** `UIAI-2026-017` "Stabilitas dan fairness deteksi dini mahasiswa berisiko" (primer C3, sekunder C4/Education; lihat [ARC-04 §10](../02-academic-architecture/04-build-prove-contribute.md)); `UIAI-2026-019` "Perilaku verifikasi mahasiswa terhadap output AI dalam Metopen" (primer C3).
+**Contoh Research ID.** `UIAI-2026-001` "AI-assisted academic advising for Indonesian universities" (primer C3, sekunder C4/Education; lihat [research-backlog/BACKLOG.md](../../research-backlog/BACKLOG.md)); ilustratif: `UIAI-2026-017` "Stabilitas dan fairness deteksi dini mahasiswa berisiko" (primer C3, sekunder C4/Education; lihat [ARC-04 §10](../02-academic-architecture/04-build-prove-contribute.md)), `UIAI-2026-019` "Perilaku verifikasi mahasiswa terhadap output AI dalam Metopen" (primer C3).
 
 ## 6. C4 — Applied AI for Human Flourishing
 
@@ -139,7 +139,7 @@ Aturan praktis: klaster ditentukan oleh **kontribusi utama** riset (apa yang bar
 
 **Outputs.** Prototype terevaluasi, research brief untuk mitra, paper aplikasi, dataset domain (sering restricted), HKI, adopsi mitra.
 
-**Contoh Research ID hipotetis.** `UIAI-2026-021` "Asisten verifikasi informasi halal untuk UMKM" (primer C4/Halal, sekunder C1); `UIAI-2026-025` "Estimasi porsi makanan lokal dari citra dengan evaluasi ahli gizi" (primer C4/Health, sekunder C1).
+**Contoh Research ID.** `UIAI-2026-003` "Klasifikasi citra produk/label halal" (primer C4/Halal, sekunder C1; lihat [research-backlog/BACKLOG.md](../../research-backlog/BACKLOG.md)); ilustratif: `UIAI-2026-021` "Asisten verifikasi informasi halal untuk UMKM" (primer C4/Halal, sekunder C1), `UIAI-2026-025` "Estimasi porsi makanan lokal dari citra dengan evaluasi ahli gizi" (primer C4/Health, sekunder C1).
 
 ## 7. Ringkasan lintas klaster
 

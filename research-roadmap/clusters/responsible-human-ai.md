@@ -55,8 +55,8 @@ Klaster ini meneliti **hubungan manusia dan AI**: bagaimana orang berinteraksi d
 | Etika Profesi (sem. VI) | tata kelola, integritas, etika AI | E |
 | AI & Machine Learning (sem. V) | fairness, explainability sebagai evaluasi tambahan | E |
 | Statistika & Statistika Terapan | desain survei/eksperimen, inferensi | F |
-| Metodologi Penelitian (sem. VII) | user study, survey, case study, qualitative methods; AI protocol | Prove |
-| Tugas Akhir | kontribusi empiris | Contribute |
+| Metodologi Penelitian (sem. VII) | user study, survey, case study, qualitative methods; AI protocol | R (Prove) |
+| Tugas Akhir | kontribusi empiris | R (Contribute) |
 
 Lintas fakultas: Psikologi (pengukuran, perilaku), Hukum (privasi, regulasi), Komunikasi (persepsi), studi Islam (etika) — sumber: dokumen diskusi; verifikasi ketersediaan mitra sebelum dokumen formal.
 

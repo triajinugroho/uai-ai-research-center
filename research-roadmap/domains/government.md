@@ -1,6 +1,6 @@
 # Domain — Government (Pemerintahan & Layanan Publik)
 
-> **Status** Draft v0.1 (2026-09) · **Terkait** [Roadmap README](../README.md) · [Roadmap 2026–2030](../2026-2030/README.md) · [C1 AI Models, Data & Knowledge](../clusters/ai-models-data-knowledge.md) · [C2 AI Systems & Security](../clusters/ai-systems-security.md) · [C3 Human-Centered & Responsible AI](../clusters/responsible-human-ai.md) · [alignment/indonesia.md](../alignment/indonesia.md)
+> **Status** Draft v0.1 (2026-09) · **Terkait** [Roadmap README](../README.md) · [Roadmap 2026–2030](../2026-2030/README.md) · [C1 AI Models, Data & Knowledge](../clusters/ai-models-data-knowledge.md) · [C2 AI Systems, Software & Security](../clusters/ai-systems-security.md) · [C3 Human-Centered & Responsible AI](../clusters/responsible-human-ai.md) · [alignment/indonesia.md](../alignment/indonesia.md)
 
 | Field | Nilai |
 |---|---|

@@ -67,12 +67,12 @@ Sprint S0 (onboarding, sebelum W1) tidak punya halaman mingguan: akun GitHub, ti
 | W4 | Evidence | S4 | G3 | Synthesis matrix 15–25 sumber, daftar metrik/baseline lazim | [week-04-evidence.md](weeks/week-04-evidence.md) |
 | W5 | Gap | S5 | G3 | `docs/literature-map.md` (pola + kandidat gap), PR G3, release v0.2 | [week-05-gap.md](weeks/week-05-gap.md) |
 | W6 | RQ | S6 | G4 | `docs/research-question.md` (gap final, RQ, contribution), One-Pager v1, PR G4 | [week-06-rq.md](weeks/week-06-rq.md) |
-| W7 | Method | S7 | G5 | Research Design Card, Data Plan, baseline & metrik terkunci, dataset card, threats v0 | [week-07-method.md](weeks/week-07-method.md) |
+| W7 | Method | S7 | G5 | Research Design Card, Data Plan, baseline & metrik terkunci, dataset card, Threats to Validity v1 | [week-07-method.md](weeks/week-07-method.md) |
 | W8 | Design Defense | S8 | G5 | `docs/ethics.md`, Experiment Card pilot, pitch, notulen red team, PR G5, release v0.3 | [week-08-design-defense.md](weeks/week-08-design-defense.md) |
 | W9 | Repository | S9 | G6 | Environment + seed, `src/`, `run.sh`, `experiments/README.md` v0 | [week-09-repository.md](weeks/week-09-repository.md) |
 | W10 | Pilot | S10 | G6 | Hasil pilot di `results/`, catatan reproduksi peer, PR G6, release v0.5 | [week-10-pilot.md](weeks/week-10-pilot.md) |
 | W11 | Analysis | S11 | G7 | `results/analysis.md` v0, figur jujur, ketidakpastian antar seed | [week-11-analysis.md](weeks/week-11-analysis.md) |
-| W12 | Contribution | S12 | G7 | Tabel CER, threats v1, contribution v2, One-Pager v2, PR G7 | [week-12-contribution.md](weeks/week-12-contribution.md) |
+| W12 | Contribution | S12 | G7 | Tabel CER, Threats to Validity v2, Contribution Statement v2, One-Pager v2, PR G7 | [week-12-contribution.md](weeks/week-12-contribution.md) |
 | W13 | Manuscript | S13 | G8 | Proposal TA / manuscript draft, AI Usage Statement, indeks Research Pack, release v0.8 | [week-13-manuscript.md](weeks/week-13-manuscript.md) |
 | W14 | Peer Review | S14 | G8 | 2 review untuk tim lain, response to reviewers, PR G8 dibuka | [week-14-peer-review.md](weeks/week-14-peer-review.md) |
 | W15 | Revision | S15 | G8 | Proposal v0.9, Research Integrity Checklist ditandatangani, rehearsal | [week-15-revision.md](weeks/week-15-revision.md) |
@@ -97,7 +97,7 @@ Gate menjawab *apakah sesuatu layak dilanjutkan*, bukan *kapan dikumpulkan*. Gat
 
 ## 7. Cara memakai halaman mingguan
 
-Setiap halaman di `weeks/` memakai enam bagian tetap ([OPS-05](../research-os/06-execution-os/05-student-weekly-playbook.md)): **This Week** (satu kalimat outcome) · **Tasks** (7–10 baby steps dengan Task ID `OPS-NNN` dan effort) · **Deliverable** (apa yang harus ada di repositori hari Jumat) · **AI Assist** (AI boleh untuk apa, tidak boleh untuk apa) · **Human Check** (apa yang wajib diverifikasi manusia) · **Done When** (ya/tidak).
+Setiap halaman di `weeks/` memakai enam bagian tetap ([OPS-05](../research-os/06-execution-os/05-student-weekly-playbook.md)): **This Week** (satu kalimat outcome) · **Tasks** (5–10 task — umumnya 7–10 — dengan Task ID `OPS-NNN` dan effort) · **Deliverable** (apa yang harus ada di repositori hari Jumat) · **AI Assist** (AI boleh untuk apa, tidak boleh untuk apa) · **Human Check** (apa yang wajib diverifikasi manusia) · **Done When** (ya/tidak).
 
 **Senin, 10 menit (sprint planning)**
 1. Buka halaman minggu ini; baca *This Week* keras-keras dalam tim.
@@ -105,7 +105,7 @@ Setiap halaman di `weeks/` memakai enam bagian tetap ([OPS-05](../research-os/06
 3. Lihat *Deliverable*; buat file kosongnya sekarang bila belum ada.
 4. Baca *AI Assist* dan *Human Check* sekali: itu kontrak minggu ini.
 
-**Selama minggu**: setiap commit menyebut Task ID (`Add search strategy v1 (OPS-026)`); setiap pemakaian AI yang material dicatat di `docs/ai-usage-log.md` **saat itu juga**; task selesai hanya bila bukti ada di repositori dan Human Check sudah dilakukan.
+**Selama minggu**: setiap commit menyebut Task ID (`Add search strategy v1 (OPS-026)`); setiap pemakaian AI yang material dicatat di AI Usage Log `docs/AI-USAGE.md` **saat itu juga**; task selesai hanya bila bukti ada di repositori dan Human Check sudah dilakukan.
 
 **Jumat, 15 menit (gate check)**
 1. Buka *Done When*; jawab ya/tidak per butir. Jujur.
@@ -161,7 +161,7 @@ Tiga larangan mutlak: (1) data pribadi/partner/RESTRICTED masuk ke layanan AI; (
 1. **Baca protokol AI dan tanda tangani agreement.** Baca [AIX-04](../research-os/05-ai-augmented-research/04-ai-research-protocol.md) (teks agreement di §5) dan [OPS-05](../research-os/06-execution-os/05-student-weekly-playbook.md); simpan agreement sebagai `docs/ai-protocol-agreement.md`.
 2. **Pilih problem.** Telusuri [research backlog](../research-backlog/README.md) (bank masalah dengan Research ID), riset dosen, dataset di [datasets-registry](../datasets-registry/README.md), atau proyek mata kuliah Anda. Semua pintu masuk melewati gate yang sama.
 3. **Bentuk tim 1–3 orang** (disarankan 2) dengan peran eksplisit: lead, data/experiment owner, documentation/reviewer owner. Tulis di `docs/team.md`.
-4. **Buat repositori riset dari [TPL-15](../research-os/08-templates/15-research-repository-template.md)** (`proj-YYYY-topik`, visibilitas awal private): README riset, `docs/`, `data/README.md`, `src/`, `experiments/`, `results/`, `paper/`, `presentation/`. Mulai `docs/ai-usage-log.md` dengan entri pertama.
+4. **Buat repositori riset dari [TPL-15](../research-os/08-templates/15-research-repository-template.md)** (`proj-YYYY-topik`, visibilitas awal private): README riset, `docs/`, `data/README.md`, `src/`, `experiments/`, `results/`, `paper/`, `presentation/` (pohon lengkap di TPL-15). Mulai AI Usage Log `docs/AI-USAGE.md` dengan entri pertama (OPS-005/OPS-006, masih di S0 — pra-W1).
 5. **Buka [Week 01 — Endgame](weeks/week-01-endgame.md)** pada Senin pertama dan ikuti ritme Senin 10 menit / Jumat 15 menit.
 
 ## 12. Struktur folder studio

@@ -14,9 +14,9 @@ Indeks semua dataset yang memiliki Dataset ID. Data fisik **tidak** ada di repo 
 
 | Dataset ID | Name | Domain | Source | Modality | Size | License | Privacy | Owner | Related Projects | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
-| [DS-2026-001](datasets/DS-2026-001-student-learning.md) | Student Learning Records (teranonimisasi) *(contoh ilustratif)* | Education | UAI | Tabular | `[isi]` | no public license | **Restricted** | `[isi]` | UIAI-2026-001 | contoh ilustratif — belum ada data riil |
-| [DS-2026-002](datasets/DS-2026-002-halal-products.md) | Halal Product Packaging Images *(contoh ilustratif)* | Halal | UAI / Partner | Image (+ teks label) | `[isi]` | CC BY 4.0 (bagian publik, setelah review) | Public / Partner (Restricted) | `[isi]` | UIAI-2026-003 | contoh ilustratif — belum ada data riil |
-| [DS-2026-003](datasets/DS-2026-003-indonesian-nlp.md) | Indonesian Text Corpus (publik) *(contoh ilustratif)* | General / Education / Government | Public | Text | `[isi]` | `[isi: lisensi korpus asli]` | Public | `[isi]` | UIAI-2026-002 | contoh ilustratif — belum ada data riil |
+| [DS-2026-001](datasets/DS-2026-001-student-learning.md) | Student Learning Records (anonymized) *(contoh ilustratif)* | Education | UAI | Tabular | `[isi]` | no public license | **Restricted** | `[isi]` | UIAI-2026-001 | contoh ilustratif — belum ada data riil |
+| [DS-2026-002](datasets/DS-2026-002-halal-products.md) | Halal Product Packaging Images (with label annotations) *(contoh ilustratif)* | Halal | UAI / Partner | Image (+ teks label) | `[isi]` | CC BY 4.0 (bagian publik, setelah review) | Public / Partner (Restricted) | `[isi]` | UIAI-2026-003 | contoh ilustratif — belum ada data riil |
+| [DS-2026-003](datasets/DS-2026-003-indonesian-nlp.md) | Indonesian Text Corpus — `[isi: nama korpus publik yang dipilih]` *(contoh ilustratif)* | General / Education / Government | Public | Text | `[isi]` | `[isi: lisensi korpus asli]` | Public | `[isi]` | UIAI-2026-002 | contoh ilustratif — belum ada data riil |
 | `[DS-YYYY-NNN]` | `[nama]` | `[domain]` | `[Public/UAI/Partner]` | `[modalitas]` | `[isi]` | `[isi]` | `[Public/Restricted/Confidential]` | `[isi]` | `[UIAI-…]` | `[draft/active/deprecated]` |
 
 ## Penjelasan kolom

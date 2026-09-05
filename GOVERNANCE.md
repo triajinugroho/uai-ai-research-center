@@ -89,7 +89,7 @@ Penambahan topic baru diusulkan lewat PR ke dokumen ini.
 
 ### 6.3 Branch & release
 
-- Branch riset: `research/g1-endgame`, `research/g2-problem`, … `research/g8-contribution`; branch kerja lain: `feat/…`, `exp/…`, `paper/…`.
+- Branch riset: `research/g1-endgame`, `research/g2-problem`, … `research/g8-contribution`; branch kerja lain: `feat/…`, `exp/…`, `paper/…`, `docs/…` (perubahan dokumen/framework).
 - Release = milestone riset: `v0.1` Problem Validated, `v0.2` Evidence Ready, `v0.3` Research Design, `v0.5` Pilot Experiment, `v0.8` Manuscript Draft, `v1.0` Research Pack, `v1.1` Submitted, `v2.0` Published.
 
 ## 7. Issue sebagai unit riset

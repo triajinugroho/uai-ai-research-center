@@ -12,7 +12,7 @@ Dokumen ini adalah bahan rapat pimpinan: 2–4 halaman, dibaca dalam 15 menit, d
 
 Program Studi Informatika UAI sudah memiliki modal yang cukup: statistika di semester I–II, basis data dan HCI di semester III, algoritma, RPL, dan data mining di semester IV, AI & Machine Learning 4 SKS di semester V, proyek perangkat lunak dan kerja praktik di semester VI, Metodologi Penelitian 2 SKS di semester VII, dan Tugas Akhir 4 SKS di semester VIII (*sumber: dokumen diskusi; verifikasi sebelum dokumen formal*). Masalahnya bukan kekurangan materi. Masalahnya adalah **fragmentasi**: kemampuan teknis tidak berubah menjadi pengetahuan baru yang *evidence-based*.
 
-Enam fragmentasi yang terlihat:
+Tujuh fragmentasi yang terlihat:
 
 | # | Fragmentasi | Gejala |
 |---|---|---|
@@ -21,7 +21,8 @@ Enam fragmentasi yang terlihat:
 | 3 | **Faculty–student research fragmented** | Riset dosen dan riset mahasiswa berjalan di jalur terpisah; mahasiswa jarang menjadi bagian riset dosen secara terstruktur. |
 | 4 | **Dataset fragmented** | Dataset tersebar di laptop pribadi, tidak terkatalog, tidak diketahui lisensinya, tidak bisa diwariskan. |
 | 5 | **Roadmap disconnect** | Topik TA dan proyek MK tidak terhubung ke roadmap riset Prodi/Renstra Penelitian UAI. |
-| 6 | **AI use without research literacy** | Mahasiswa sudah memakai GenAI, tetapi tanpa protokol verifikasi; risiko referensi fiktif, klaim tanpa bukti, dan proposal yang "terdengar ilmiah". |
+| 6 | **Publication downstream thinking** | Publikasi dipikirkan setelah TA selesai, bukan dirancang mundur dari venue target; naskah tidak ditulis atau dikirim ke venue yang tidak tepat (termasuk risiko jurnal predator). |
+| 7 | **AI use without research literacy** | Mahasiswa sudah memakai GenAI, tetapi tanpa protokol verifikasi; risiko referensi fiktif, klaim tanpa bukti, dan proposal yang "terdengar ilmiah". |
 
 Akibat gabungannya: TA berkualitas rendah dengan pola *solution-first* ("saya ingin memakai Random Forest untuk memprediksi X"), publikasi mahasiswa minim, dan setiap angkatan memulai dari nol. Analisis lengkap: [STR-01](../01-strategic-foundation/01-current-state-and-gaps.md).
 
@@ -90,12 +91,12 @@ Berikut keputusan konkret yang perlu disepakati Prodi agar pilot dapat berjalan.
 | 3 | **Gate & rubrik 5E** sebagai instrumen penilaian; Research Integrity sebagai gate lulus/gagal, bukan skor | Adopsi 8 gate + rubrik 5E + integrity gate | [OPS-03](../06-execution-os/03-research-gates.md), [MET-06](../04-metopen-research-studio/06-assessment-and-5e-rubric.md) | Tim kurikulum |
 | 4 | **AI policy** Prodi untuk riset mahasiswa: AI diperbolehkan dengan protokol Think → Ask → Ground → Verify → Challenge → Reproduce → Disclose → Own dan AI Usage Log wajib | Adopsi AIX-04 sebagai kebijakan Prodi; selaras kebijakan publikasi ACM | [AIX-04](../05-ai-augmented-research/04-ai-research-protocol.md), [MET-07](../04-metopen-research-studio/07-research-integrity-and-ethics.md) | Kaprodi |
 | 5 | **Repositori riset** GitHub sebagai wadah resmi (Issue, PR gate review, Mission Control, registry) dengan kebijakan data sensitif tidak pernah masuk GitHub | Adopsi GOVERNANCE.md + SECURITY.md; tunjuk `@maintainers` | [GOVERNANCE.md](../../GOVERNANCE.md), [GOV-01](../07-governance/01-governance-model.md) | Kaprodi + AI Research Center |
-| 6 | **Research ID** `UIAI-YYYY-NNN` sebagai primary key yang dipakai di Metopen, TA, dataset, publikasi, dan pelaporan | Adopsi skema ID; ID diberikan saat lolos G2 | [MST-03 §6](03-glossary.md), [GOVERNANCE.md §5](../../GOVERNANCE.md) | Admin riset / `@maintainers` |
+| 6 | **Research ID** `UIAI-YYYY-NNN` sebagai primary key yang dipakai di Metopen, TA, dataset, publikasi, dan pelaporan | Adopsi skema ID; ID sementara `UIAI-YYYY-TBD` saat Issue dibuka, ID resmi saat lolos G2 | [MST-03 §6](03-glossary.md), [GOVERNANCE.md §5](../../GOVERNANCE.md) | Admin riset / `@maintainers` |
 | 7 | **Peran mentor riset** (dosen) dan pengakuan bebannya (BKD/penugasan) | Setiap tim Metopen memiliki 1 dosen mentor; mentor = reviewer gate G4–G8; diakui sebagai pembimbingan/penelitian | [GOV-01](../07-governance/01-governance-model.md), [AIR-03](../03-ai-research-ecosystem/03-faculty-research-alignment.md) | Kaprodi + Dekan |
 | 8 | **Pilot pada semester ganjil 2026/2027** untuk kelas Metopen (GitHub Phase 2 — Pilot Metopen; GOV-02 Phase 1) dengan KPI pilot yang disepakati | Jalankan pilot satu kelas; evaluasi akhir semester; keputusan scale-up untuk AI/ML pada semester berikutnya | [GOV-02](../07-governance/02-implementation-roadmap.md), [GOV-03](../07-governance/03-kpi-and-measurement.md) | Kaprodi |
 | 9 | **Verifikasi fakta institusional** (akreditasi, skema penelitian internal, tabel kurikulum) sebelum dokumen ini dikompilasi menjadi dokumen formal | Tugaskan admin riset memverifikasi dan mencatat sumber resmi | [MST-00 §10](00-readme.md) | Admin riset |
 
-Yang **tidak** diminta: penambahan SKS, perubahan struktur kurikulum, pengadaan sistem informasi baru, atau kewajiban publikasi bagi semua mahasiswa. Semua berjalan di atas mata kuliah yang sudah ada dan GitHub yang gratis untuk institusi pendidikan.
+Yang **tidak** diminta: penambahan SKS, perubahan struktur kurikulum, pengadaan sistem informasi baru, atau kewajiban publikasi bagi semua mahasiswa. Semua berjalan di atas mata kuliah yang sudah ada dan GitHub yang sudah dipakai sebagai research operating system ([verifikasi ketentuan GitHub Education] sebelum dokumen formal).
 
 ## 7. Ringkasan satu paragraf
 

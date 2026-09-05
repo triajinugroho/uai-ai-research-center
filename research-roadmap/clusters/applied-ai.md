@@ -50,9 +50,9 @@ C4 adalah klaster dengan jumlah riset terbanyak, karena pintu masuk **Problem** 
 | Data Mining (sem. IV) | eksplorasi data domain, feature | E/R |
 | NLP | aplikasi teks domain | R |
 | Proyek Perangkat Lunak (sem. VI) | prototype sistem domain | R |
-| Kerja Praktik (sem. VI) | masalah nyata dari industri/instansi | Problem/Partner entry |
+| Kerja Praktik (sem. VI) | masalah nyata dari industri/instansi | E (problem discovery; entry door Problem/Partner) |
 | Interaksi Manusia–Komputer | evaluasi pengguna domain | E |
-| Metodologi Penelitian / TA | design science, case study, quasi-experiment | Prove / Contribute |
+| Metodologi Penelitian / TA | design science, case study, quasi-experiment | R (Prove / Contribute) |
 
 Detail: [research-based-learning](../../research-based-learning/README.md).
 

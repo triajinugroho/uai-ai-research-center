@@ -5,8 +5,8 @@
 | Field | Nilai |
 |---|---|
 | **Research ID** | UIAI-2026-003 |
-| **Judul** | Klasifikasi citra produk/label halal untuk pra-skrining konsumen dan pengawas |
-| **Cluster** | C4 Applied AI for Human Flourishing (primer) · C1 (sekunder: data & evaluasi) — label `cluster:applied` |
+| **Judul** | Klasifikasi citra produk/label halal |
+| **Cluster** | C4 Applied AI for Human Flourishing (primer) · C1 AI Models, Data & Knowledge (sekunder: data & evaluasi) — label `cluster:applied` |
 | **Domain** | Halal |
 | **Problem owner** | `[isi: unit kajian halal / komunitas konsumen / asosiasi UMKM]` |
 | **Potential dataset** | [DS-2026-002 Halal Products](../../datasets-registry/datasets/DS-2026-002-halal-products.md) (Public/Partner) |

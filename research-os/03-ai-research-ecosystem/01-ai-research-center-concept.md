@@ -116,7 +116,7 @@ Compute adalah fungsi yang paling bergantung pada sumber daya universitas; pusat
 | | |
 |---|---|
 | **Layanan** | Menyebarkan hasil ke akademik, mitra, dan publik: research day, poster, brief, portal GitHub publik, website |
-| **Mekanisme** | Organization profile README sebagai dashboard publik; Research Day Prodi (poster dan defense terbaik); research brief ke mitra; Phase 5 Public Research Portal ([GOV-02](../07-governance/02-implementation-roadmap.md)) |
+| **Mekanisme** | Organization profile README sebagai dashboard publik; Research Day Prodi (poster dan defense terbaik); research brief ke mitra; GitHub Phase 5 Public Research Portal ([GOVERNANCE.md §10](../../GOVERNANCE.md)) = GOV-02 Phase 5 Scale cross-faculty ([GOV-02](../07-governance/02-implementation-roadmap.md)) |
 | **Output** | Portofolio publik, poster, brief, berita riset |
 | **KPI** | Jumlah brief/poster; kunjungan portal; riset yang dikutip/diadopsi mitra |
 
@@ -217,9 +217,10 @@ Peran mengikuti tim GitHub di [GOVERNANCE.md §3](../../GOVERNANCE.md) dan RACI 
 | `@reviewers` | Dosen + peer terlatih | Gate review, peer review manuscript |
 | `@maintainers` | Pemelihara Research OS | Research ID, registry, template, workflow |
 | `@students` | Mahasiswa aktif riset | Menjalankan riset di repositori sendiri |
-| Admin/asisten riset | `[isi]` | Triase intake, pencatatan Mission Control, pelaporan |
+| `@researchers` | Peneliti/asisten riset | Triase intake, pencatatan Mission Control, dukungan eksperimen |
+| Staf administrasi riset | `[isi]` | Administrasi nota kesepakatan/perjanjian data, pelaporan portofolio, logistik Research Day |
 
-Ritme minimum: triase backlog mingguan (`@maintainers` + research lead), review roadmap tahunan, Research Day per semester, laporan portofolio per semester ke Prodi/fakultas. Fase implementasi (Foundation → Research OS → Pilot Metopen → Curriculum Integration → AI Center Launch → Public Research Portal) ada di [GOV-02](../07-governance/02-implementation-roadmap.md); pusat riset "diluncurkan" secara formal pada Phase 4, tetapi fungsinya sudah berjalan sejak Phase 2 lewat Metopen.
+Ritme minimum: triase backlog mingguan (`@maintainers` + research lead), review roadmap tahunan, Research Day per semester, laporan portofolio per semester ke Prodi/fakultas. Fase implementasi ada di [GOV-02](../07-governance/02-implementation-roadmap.md) (Phase 0 Design → 1 Pilot Metopen → 2 Integrate AI/ML → 3 Expand technical courses → 4 AI Research Center integration → 5 Scale cross-faculty); padanan fase GitHub (0 Foundation → 1 Research OS → 2 Pilot Metopen → 3 Curriculum Integration → 4 AI Center Launch → 5 Public Research Portal) ada di [GOVERNANCE.md §10](../../GOVERNANCE.md). Pusat riset "diluncurkan" secara formal pada GOV-02 Phase 4 / GitHub Phase 4 (AI Center Launch), tetapi fungsinya sudah berjalan sejak GOV-02 Phase 1 / GitHub Phase 2 (Pilot Metopen) lewat Metopen.
 
 ## 8. Yang bukan AI Research Center
 
@@ -231,7 +232,7 @@ Ritme minimum: triase backlog mingguan (`@maintainers` + research lead), review 
 
 ## 9. Dari dokumen ini ke concept paper
 
-Concept paper / proposal pusat riset (Artefak 2 dalam [research-os/README](../README.md)) dapat disusun langsung dari repo:
+Concept paper / proposal pusat riset — salah satu artefak turunan repo ([research-os/README §Artefak turunan](../README.md#artefak-turunan)) — dapat disusun langsung dari repo:
 
 | Bagian concept paper | Sumber |
 |---|---|

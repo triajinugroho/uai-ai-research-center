@@ -73,14 +73,14 @@ Tabel ini menunjukkan pada gate mana setiap kerangka mendapatkan evidence utaman
 | G7 Claim | ● | ● | | | | ● | ● |
 | G8 Contribution | ● | ● | ● | ● | ● | ● | ● |
 
-## 3.1 Empat prinsip alignment
+### 3.1 Empat prinsip alignment
 
 1. **Alignment lewat artefak, bukan lewat narasi.** Setiap klaim "selaras dengan OBE/PjBL/PP-PTS" harus menunjuk artefak yang dapat dibuka (PR, release, entri registry). Tanpa artefak, alignment hanya kalimat di proposal.
 2. **Satu artefak, banyak kerangka.** PR `GATE REVIEW: Method Ready` melayani OBE (asesmen), PjBL (milestone proyek), PP-PTS (bukti kegiatan), AI Center (mentor terlibat), dan TA (desain yang akan dieksekusi). Jangan membuat artefak terpisah per kerangka.
 3. **Kerangka mengikuti pipeline, bukan sebaliknya.** Jika suatu kerangka menuntut format tertentu, format itu dipenuhi lewat *ekspor* ([GOV-05 §3](../07-governance/05-ppts-and-institutional-evidence.md)), bukan dengan mengubah alur riset mahasiswa.
 4. **Keselarasan diverifikasi tiap semester.** Tabel §1 dan §3 diperiksa pada evaluasi semester; kerangka yang berubah (mis. instrumen akreditasi baru) memicu pembaruan kolom "Evidence", bukan pembongkaran sistem.
 
-## 3.2 Cara memakai dokumen ini
+### 3.2 Cara memakai dokumen ini
 
 | Kebutuhan | Langkah |
 |---|---|

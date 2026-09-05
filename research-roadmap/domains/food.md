@@ -1,6 +1,6 @@
 # Domain — Food (Pangan)
 
-> **Status** Draft v0.1 (2026-09) · **Terkait** [Roadmap README](../README.md) · [Roadmap 2026–2030](../2026-2030/README.md) · [C2 AI Systems & Security](../clusters/ai-systems-security.md) · [C4 Applied AI](../clusters/applied-ai.md) · [Domain Halal](halal.md) · [AIR-04 Cross-Faculty AI Model](../../research-os/03-ai-research-ecosystem/04-cross-faculty-ai-model.md)
+> **Status** Draft v0.1 (2026-09) · **Terkait** [Roadmap README](../README.md) · [Roadmap 2026–2030](../2026-2030/README.md) · [C2 AI Systems, Software & Security](../clusters/ai-systems-security.md) · [C4 Applied AI](../clusters/applied-ai.md) · [Domain Halal](halal.md) · [AIR-04 Cross-Faculty AI Model](../../research-os/03-ai-research-ecosystem/04-cross-faculty-ai-model.md)
 
 | Field | Nilai |
 |---|---|

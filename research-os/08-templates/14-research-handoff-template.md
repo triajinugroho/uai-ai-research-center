@@ -6,7 +6,7 @@
 
 ## Cara pakai
 
-Handoff mencatat transfer riset antar tahap — **Course → Metopen → TA → AI Center** — agar penerima dapat melanjutkan tanpa mengulang dari nol dan gate yang sudah lulus dapat diwarisi (*inherited*) dengan bukti. Diisi oleh tim yang menyerahkan bersama mentor pada akhir tahap: akhir mata kuliah mode R (asset ke backlog/Metopen), setelah G8 Metopen (ke pembimbing TA), setelah sidang TA (ke AI Center/klaster/angkatan berikut), atau saat tim berhenti di tengah jalan. Disimpan sebagai `docs/handoff-[dari]-[ke]-[YYYY-MM].md` di repositori riset, ditautkan dari README riset dan Issue backlog, dan dicatat di Mission Tracker (kolom Status/Next Evidence). Penerima menandatangani setelah memverifikasi bahwa artefak yang disebut benar-benar ada dan dapat dibuka; gate warisan yang bukti utamanya hilang tidak diakui.
+Handoff mencatat transfer riset antar tahap — **Course → Metopen → TA → AI Center** — agar penerima dapat melanjutkan tanpa mengulang dari nol dan gate yang sudah lulus dapat diwarisi (*inherited*) dengan bukti. Diisi oleh tim yang menyerahkan bersama mentor pada akhir tahap: akhir mata kuliah mode R (asset ke backlog/Metopen), setelah G8 Metopen (ke pembimbing TA), setelah sidang TA (ke AI Center/klaster/angkatan berikut), atau saat tim berhenti di tengah jalan. Disimpan sebagai `docs/handoff.md` di repositori riset (OPS-140; bila handoff berulang, tambahkan bagian baru `## Handoff [dari] → [ke] ([YYYY-MM])` di file yang sama — riwayat lengkap ada di git), ditautkan dari README riset dan Issue backlog, dan dicatat di Mission Tracker (kolom Status/Next Evidence). Penerima menandatangani setelah memverifikasi bahwa artefak yang disebut benar-benar ada dan dapat dibuka; gate warisan yang bukti utamanya hilang tidak diakui.
 
 ## Jenis transisi
 
@@ -17,7 +17,7 @@ Handoff mencatat transfer riset antar tahap — **Course → Metopen → TA → 
 | TA → AI Center | setelah sidang TA / rilis | hasil akhir, manuscript/status publikasi, artefak (ART), dataset (DS), daftar masalah lanjutan | ketua klaster, mentor, angkatan berikut |
 | Berhenti di tengah | tim tidak melanjutkan | status gate terakhir, artefak yang ada, alasan | backlog (status Idea/Archived) |
 
-## Template (salin ke `docs/handoff-[dari]-[ke]-[YYYY-MM].md`)
+## Template (salin ke `docs/handoff.md`)
 
 ```markdown
 # Research Handoff — [Research ID] · [judul]
@@ -27,14 +27,14 @@ Dari: [tahap/tim/nama] → Ke: [tahap/tim/nama] · Tanggal: [YYYY-MM-DD] · Gate
 | Artefak | Lokasi (path/URL/ID) | Status | Gate/bukti | Catatan |
 |---|---|---|---|---|
 | [Problem Brief] | [docs/problem.md] | [final/draft] | [G2 ✓] | |
-| [Literature map + synthesis matrix] | [docs/literature-map.md, references.bib (n entri)] | | [G3 ✓] | |
+| [Literature map + synthesis matrix] | [docs/literature-map.md, docs/literature/synthesis-matrix.csv, references.bib (n entri)] | | [G3 ✓] | |
 | [RQ/Hypothesis, Contribution] | [docs/research-question.md] | | [G4 ✓] | |
-| [Design Card, Experiment Cards] | [docs/research-design.md, experiments/] | | [G5 ✓] | |
-| [Kode, environment, seed] | [src/, requirements.txt, experiments/config-*.yaml] | | [G6 ✓; reproduksi peer tanggal] | |
+| [Design Card, Research Design, Data Plan, Experiment Cards] | [docs/design-card.md, docs/research-design.md, docs/data-plan.md, experiments/pilot-01/experiment-card.md] | | [G5 ✓] | |
+| [Kode, environment, seed] | [src/, requirements.txt, run.sh, experiments/pilot-01/config.yaml, experiments/main/] | | [G6 ✓; reproduksi peer tanggal] | |
 | [Data / metadata] | [DS-…; data/README.md; lokasi fisik] | | | [privasi, cara akses] |
-| [Hasil, analisis, figur] | [results/, figures/] | | [G7 ✓] | |
-| [Research Pack / proposal / manuscript] | [paper/, release v1.0] | | [G8 ✓] | |
-| [AI Usage Log & Statement, ethics] | [docs/ai-usage-log.md, docs/AI-USAGE.md, docs/ethics.md] | | | |
+| [Hasil, analisis, figur] | [results/analysis.md, results/pilot-01/, results/main/summary.csv, figures/] | | [G7 ✓] | |
+| [Research Pack / proposal / manuscript] | [docs/research-pack.md, paper/proposal.md, paper/proposal-v1.0.pdf, release v1.0] | | [G8 ✓] | |
+| [AI Usage Log & Statement, ethics] | [docs/AI-USAGE.md (log + statement), paper/AI-USAGE-STATEMENT.md, docs/ethics.md] | | | |
 | [Integrity Checklist] | [docs/integrity-checklist.md] | [PASS/FAIL] | | |
 
 ## 2. Missing evidence (apa yang belum ada agar klaim/gate berikutnya sah)

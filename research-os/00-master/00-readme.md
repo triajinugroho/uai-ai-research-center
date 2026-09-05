@@ -59,7 +59,7 @@ Aturan praktis: **Tier 1 wajib dibaca pembuat kebijakan, Tier 2 tim kurikulum, T
 | 07 Governance & Implementation | [`07-governance/`](../07-governance/01-governance-model.md) | GOV | 1 | Siapa melakukan apa, KPI, roadmap, risiko, evidence institusional | 5 |
 | 08 Templates & Toolkit | [`08-templates/`](../08-templates/01-research-one-pager-template.md) | TPL | 3 | 15 template executable | 15 |
 
-Total 57 dokumen: ±10 Tier 1, ±15 Tier 2, ±30 Tier 3.
+Total 57 dokumen: 17 Tier 1, 21 Tier 2, 19 Tier 3 (hitungan per blok metadata; estimasi awal dokumen sumber: ±10/±15/±30).
 
 ## 5. Hubungan antar dokumen (peta ketergantungan)
 
@@ -149,10 +149,10 @@ Definisi lengkap dan mengikat ada di [MST-03 Glossary](03-glossary.md). Sepuluh 
 | Task WBS | `OPS-NNN` | `OPS-042` | Tiga digit; berbeda dari dokumen `OPS-01`…`OPS-05` |
 | Sprint | `S0`…`S16` | `S6` | S0 onboarding; S1–S16 = minggu 1–16 |
 | Gate | `G1`…`G8` | `G5` | Label GitHub `gate:G5-method` |
-| Research | `UIAI-YYYY-NNN` | `UIAI-2026-001` | Diberikan saat lolos G2 |
+| Research | `UIAI-YYYY-NNN` | `UIAI-2026-001` | ID sementara `UIAI-YYYY-TBD` saat Issue dibuka; ID resmi ditetapkan `@maintainers` saat PR `GATE REVIEW: Problem Ready` (G2) di-merge ([MST-03 §6](03-glossary.md), [GOVERNANCE.md §5](../../GOVERNANCE.md)) |
 | Dataset / Publikasi / Artefak | `DS-` / `PUB-` / `ART-YYYY-NNN` | `DS-2026-001` | Registry masing-masing |
 | Risiko | `RSK-NN` | `RSK-03` | [GOV-04](../07-governance/04-risk-register.md) |
-| KPI | `KPI-L/I/G-NN` | `KPI-L-01` | Leading / Intermediate / laGging, [GOV-03](../07-governance/03-kpi-and-measurement.md) |
+| KPI | `KPI-L/I/G/Q-NN` | `KPI-L-01` | Leading / Intermediate / laGging / Quality-integrity, [GOV-03](../07-governance/03-kpi-and-measurement.md) |
 
 Nomor urut tidak pernah dipakai ulang. Detail: [MST-03 §6](03-glossary.md) dan [GOVERNANCE.md §5](../../GOVERNANCE.md).
 

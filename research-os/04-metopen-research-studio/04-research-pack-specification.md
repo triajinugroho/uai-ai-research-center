@@ -24,20 +24,20 @@ Tiga sifat wajib:
 |---|---|---|---|---|---|
 | 1 | Problem Brief | Mengapa masalah penting | `docs/problem.md` | [TPL-01](../08-templates/01-research-one-pager-template.md) | G2 |
 | 2 | Stakeholder / Impact Statement | Untuk siapa riset berguna | `docs/problem.md` §Stakeholder | TPL-01 | G2 |
-| 3 | Literature Evidence Map | Apa yang sudah diketahui | `docs/literature-map.md`, `literature/synthesis-matrix.csv`, `references.bib` | — | G3 |
-| 4 | Research Gap | Apa yang belum diketahui | `docs/gap.md` | — | G3→G4 |
+| 3 | Literature Evidence Map | Apa yang sudah diketahui | `docs/literature-map.md`, `docs/literature/synthesis-matrix.csv` (+ `search-strategy.md`, `verification.md` di `docs/literature/`), `references.bib` | — | G3 |
+| 4 | Research Gap | Apa yang belum diketahui | `docs/literature-map.md` §Gap Candidates (G3) → `docs/research-question.md` §Research Gap (G4) | — | G3 (kandidat) → G4 (final, dinilai) |
 | 5 | RQ / Hypothesis | Apa yang diuji | `docs/research-question.md` | TPL-01 | G4 |
 | 6 | Contribution Statement | Kebaruan/kontribusi | `docs/research-question.md` §Contribution | TPL-01 | G4, revisi G7 |
-| 7 | Research Design | Bagaimana menjawab RQ | `docs/research-design.md` | [TPL-08](../08-templates/08-research-design-card.md) | G5 |
-| 8 | Dataset / Data Plan | Dari mana evidence berasal | `docs/research-design.md` §Data, `data/README.md`, kartu dataset | [TPL-05](../08-templates/05-dataset-registry-template.md) | G5 |
-| 9 | Baseline & Metrics | Dibanding apa dan dinilai bagaimana | `docs/research-design.md` §Evaluation, `experiments/config/` | [TPL-09](../08-templates/09-experiment-card.md) | G5 |
-| 10 | Pilot Experiment | Apakah desain viable | `experiments/`, `results/`, `figures/` | TPL-09 | G6, G7 |
+| 7 | Research Design | Bagaimana menjawab RQ | `docs/research-design.md` + `docs/design-card.md` (TPL-08) | [TPL-08](../08-templates/08-research-design-card.md) | G5 |
+| 8 | Dataset / Data Plan | Dari mana evidence berasal | `docs/data-plan.md` (+ ringkasan §Data di `docs/research-design.md`), `data/README.md`, kartu dataset | [TPL-05](../08-templates/05-dataset-registry-template.md) | G5 |
+| 9 | Baseline & Metrics | Dibanding apa dan dinilai bagaimana | `docs/research-design.md` §Evaluation, `experiments/pilot-01/experiment-card.md` + `config.yaml` (dan `experiments/main/`) | [TPL-09](../08-templates/09-experiment-card.md) | G5 |
+| 10 | Pilot Experiment | Apakah desain viable | `experiments/pilot-01/`, `results/pilot-01/`, `results/analysis.md`, `figures/pilot-01/` | TPL-09 | G6, G7 |
 | 11 | Threats to Validity | Apa yang bisa membuat kesimpulan salah | `docs/research-design.md` §Threats (v1), `results/analysis.md` §Threats (v2) | TPL-08 | G5, G7 |
-| 12 | Ethics & Privacy | Batas moral/profesional | `docs/ethics.md`, `ETHICS.md` | [TPL-11](../08-templates/11-research-integrity-checklist.md) | G5, G8 |
-| 13 | AI Usage Statement | AI digunakan untuk apa | `AI-USAGE.md`, log di `docs/ai-usage-log.md` | [TPL-10](../08-templates/10-ai-usage-log-template.md) | setiap gate, final G8 |
+| 12 | Ethics & Privacy | Batas moral/profesional | `docs/ethics.md` (penunjuk `ETHICS.md` di root opsional) | [TPL-11](../08-templates/11-research-integrity-checklist.md) | G5, G8 |
+| 13 | AI Usage Statement | AI digunakan untuk apa | `docs/AI-USAGE.md` (log TPL-10 + statement ringkas); statement final `paper/AI-USAGE-STATEMENT.md` | [TPL-10](../08-templates/10-ai-usage-log-template.md) | setiap gate, final G8 |
 | 14 | Reproducibility README | Bagaimana direplikasi | `README.md`, `experiments/README.md` | TPL-15 | G6, G8 |
-| 15 | Proposal TA | Dokumen formal | `paper/proposal-ta.*` (atau manuscript) | [MET-05](05-publication-backward-design.md) | G8 |
-| 16 | Research Pitch | Pertanggungjawaban oral | `presentation/` (slide + notulen) | [TPL-13](../08-templates/13-research-defense-template.md) | G5 (W8), G8 (W16) |
+| 15 | Proposal TA | Dokumen formal | `paper/proposal.md` (+ `paper/proposal-v0.8.pdf`, `paper/proposal-v1.0.pdf`) atau manuscript | [MET-05](05-publication-backward-design.md) | G8 |
+| 16 | Research Pitch | Pertanggungjawaban oral | `presentation/midterm-pitch.pdf` (W8), `presentation/defense-final.pdf` (W16); notulen di `docs/reviews/midterm-red-team.md`, `docs/reviews/defense-minutes.md` | [TPL-13](../08-templates/13-research-defense-template.md) | G5 (W8), G8 (W16) |
 
 ## 3. Spesifikasi per artefak
 

@@ -14,6 +14,7 @@ Issue "Research Problem"  ──►  Triage @maintainers  ──►  Validasi G2
         │                                                             │
         ▼                                                             ▼
 Research ID UIAI-YYYY-NNN  ──►  Entri BACKLOG.md + problems/UIAI-YYYY-NNN-slug.md
+(resmi saat PR G2 di-merge; sebelumnya UIAI-YYYY-TBD)
         │
         ▼
 Tim terbentuk (Metopen / TA / riset dosen)  ──►  repo proj-YYYY-topic  ──►  G1…G8
@@ -23,12 +24,12 @@ Tim terbentuk (Metopen / TA / riset dosen)  ──►  repo proj-YYYY-topic  ─
 |---|---|---|---|
 | 1. Usul | mahasiswa, dosen, partner | Buka Issue dengan form **Research Problem** (`.github/ISSUE_TEMPLATE/`): judul, cluster, domain, problem owner, potential dataset, maturity, related courses, potential output, priority | Issue berlabel `type:problem`, `maturity:idea` |
 | 2. Triage | `@maintainers` (+ `@research-leads` klaster) | Cek kelengkapan, tetapkan `cluster:*`, prioritas `P0–P3`, tandai fit roadmap; minta klarifikasi bila perlu | komentar triage di Issue |
-| 3. Validasi G2 tingkat masalah | `@maintainers` + 1 dosen klaster | Masalah nyata, penting, ada pemangku kepentingan; *problem-first* bukan *solution-first*; tidak masuk daftar "sengaja tidak dikejar" roadmap | komentar "G2 backlog: lulus" |
-| 4. Research ID | `@maintainers` | Beri `UIAI-YYYY-NNN` berurutan per tahun, tidak pernah dipakai ulang; judul Issue diawali `[UIAI-YYYY-NNN]` | judul Issue, counter di BACKLOG.md |
+| 3. Validasi G2 tingkat masalah | `@maintainers` + 1 dosen klaster | Masalah nyata, penting, ada pemangku kepentingan; *problem-first* bukan *solution-first*; tidak masuk daftar "sengaja tidak dikejar" roadmap | PR **GATE REVIEW: Problem Ready** (G2) di-merge — PR gate dari repo tim ([OPS-021/OPS-022](../research-os/06-execution-os/01-research-wbs-master.md)) atau, untuk masalah yang belum punya tim, PR kartu masalah ke folder ini |
+| 4. Research ID | `@maintainers` | Tetapkan ID resmi `UIAI-YYYY-NNN` saat PR G2 di-merge — berurutan per tahun, tidak pernah dipakai ulang; setelah merge, ganti `UIAI-YYYY-TBD` pada judul Issue (dan README riset bila repo sudah ada) menjadi `[UIAI-YYYY-NNN]` | judul Issue, counter di BACKLOG.md |
 | 5. Indeks | pengusul/`@maintainers` | Tambah baris di [BACKLOG.md](BACKLOG.md) dan buat `problems/UIAI-YYYY-NNN-slug.md` dari [TPL-04](../research-os/08-templates/04-research-backlog-template.md) via PR | PR merged |
 | 6. Eksekusi | tim riset + mentor | Saat ada tim: buat repo `proj-YYYY-topic` dari [TPL-15](../research-os/08-templates/15-research-repository-template.md); Issue menjadi item Mission Control; gate G1–G8 berjalan | label `gate:*`, release |
 
-Sebelum langkah 4, Issue memakai penanda ID sementara sesuai [CONTRIBUTING.md](../CONTRIBUTING.md). Masalah yang **tidak lolos** validasi tidak dihapus: Issue ditutup dengan alasan (*not planned*) dan dapat dibuka lagi bila ada bukti baru.
+Sebelum langkah 4, Issue memakai ID sementara `UIAI-YYYY-TBD` ([CONTRIBUTING.md](../CONTRIBUTING.md)). Masalah yang **tidak lolos** validasi tidak dihapus: Issue ditutup dengan alasan (*not planned*) dan dapat dibuka lagi bila ada bukti baru.
 
 ## 2. Siapa boleh mengusulkan
 

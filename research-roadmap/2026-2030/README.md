@@ -2,19 +2,21 @@
 
 > **Status** Draft v0.1 (2026-09) · **Terkait** [Research Roadmap README](../README.md) · [GOV-02 Implementation Roadmap](../../research-os/07-governance/02-implementation-roadmap.md) · [GOV-03 KPI & Measurement](../../research-os/07-governance/03-kpi-and-measurement.md) · [GOV-04 Risk Register](../../research-os/07-governance/04-risk-register.md) · [STR-05 Theory of Change](../../research-os/01-strategic-foundation/05-theory-of-change.md) · [GOVERNANCE.md](../../GOVERNANCE.md)
 
-Roadmap ini menjabarkan **arah riset** per tahun. Ia sejajar dengan fase implementasi GitHub di [GOVERNANCE.md](../../GOVERNANCE.md) (Phase 0–5) dan fase institusional di [GOV-02](../../research-os/07-governance/02-implementation-roadmap.md), tetapi sudut pandangnya berbeda: GOV-02 menjawab *kapan sistem siap*, roadmap ini menjawab *riset apa yang dikejar ketika sistem itu siap*. Target angka tidak diulang di sini; semuanya merujuk ke [GOV-03](../../research-os/07-governance/03-kpi-and-measurement.md).
+Roadmap ini menjabarkan **arah riset** per tahun. Ia sejajar dengan dua skema fase yang penomorannya berbeda — fase GitHub di [GOVERNANCE.md §10](../../GOVERNANCE.md) (GitHub Phase 0 Foundation · 1 Research OS · 2 Pilot Metopen · 3 Curriculum Integration · 4 AI Center Launch · 5 Public Research Portal) dan fase akademik di [GOV-02](../../research-os/07-governance/02-implementation-roadmap.md) (GOV-02 Phase 0 Design · 1 Pilot Metopen · 2 Integrate AI/ML · 3 Expand technical courses · 4 AI Research Center integration · 5 Scale cross-faculty); setiap penyebutan nomor fase di dokumen ini menyebut skemanya. Sudut pandang roadmap ini berbeda dari keduanya: GOV-02 menjawab *kapan sistem siap*, roadmap ini menjawab *riset apa yang dikejar ketika sistem itu siap*. Target angka tidak diulang di sini; semuanya merujuk ke [GOV-03](../../research-os/07-governance/03-kpi-and-measurement.md).
 
 ## 1. Ringkasan satu tabel
 
 | Tahun | Tahap | Fokus riset | Program yang dibuka | Milestone institusional |
 |---|---|---|---|---|
-| **2026** | Foundation & Pilot Metopen | Riset skala kecil dari masalah kampus sendiri: **C3 × Education**, **C1 × Education/Government**, **C4 × Halal** | belum ada repo `program-*`; sel matriks dijalankan lewat `proj-2026-*` | Research OS v0.1; angkatan pilot Metopen; Research ID pertama; datasets-registry terisi metadata |
-| **2027** | Curriculum Integration & program unggulan | Mata kuliah mode R menghasilkan research asset; riset TA dari Research Pack angkatan 2026 | `program-ai-education`, `program-responsible-ai` | RPS AI/ML, Data Mining, NLP, Metopen, TA yang terhubung; Faculty Portfolio pertama |
-| **2028** | AI Center Launch & cross-faculty | Klaster dosen aktif; masalah dari fakultas lain dan partner; C2 mulai dibuka lebar | `program-ai-halal`, `program-ai-health` | Peluncuran resmi pusat riset AI; MoU/kerja sama pertama dengan partner; mid-term review roadmap |
-| **2029** | Public Portal & scaling | Publikasi dan artefak dari program; dataset UAI yang dapat dibagikan; benchmark berbahasa Indonesia | `program-indonesian-llm` | GitHub menjadi portal publik pusat riset; dashboard otomatis; dataset/benchmark pertama dirilis publik |
-| **2030** | Evaluasi & agenda berikutnya | Konsolidasi: replikasi, meta-analisis internal, studi dampak | tidak ada program baru; program yang ada dievaluasi lanjut/ubah/hentikan | End-of-horizon review; roadmap 2031–2035; evidence untuk siklus akreditasi berikutnya |
+| **2026** | Foundation & Pilot Metopen *(GitHub Phase 0–2 / GOV-02 Phase 0–1)* | Riset skala kecil dari masalah kampus sendiri: **C3 × Education**, **C1 × Education/Government**, **C4 × Halal** | belum ada repo `program-*`; sel matriks dijalankan lewat `proj-2026-*` | Research OS v0.1; angkatan pilot Metopen; Research ID pertama; datasets-registry terisi metadata |
+| **2027** | Curriculum Integration & program unggulan *(GitHub Phase 3 / GOV-02 Phase 2–3)* | Mata kuliah mode R menghasilkan research asset; riset TA dari Research Pack angkatan 2026 | `program-ai-education`, `program-responsible-ai` | RPS AI/ML, Data Mining, NLP, Metopen, TA yang terhubung; Faculty Portfolio pertama |
+| **2028** | AI Center Launch & cross-faculty *(GitHub Phase 4 / GOV-02 Phase 4)* | Klaster dosen aktif; masalah dari fakultas lain dan partner; C2 mulai dibuka lebar | `program-ai-halal`, `program-ai-health` | Peluncuran resmi pusat riset AI; MoU/kerja sama pertama dengan partner; mid-term review roadmap |
+| **2029** | Public Portal & scaling *(GitHub Phase 5 / GOV-02 Phase 5)* | Publikasi dan artefak dari program; dataset UAI yang dapat dibagikan; benchmark berbahasa Indonesia | `program-indonesian-llm` | GitHub menjadi portal publik pusat riset; dashboard otomatis; dataset/benchmark pertama dirilis publik |
+| **2030** | Evaluasi & agenda berikutnya *(GitHub Phase 5 / GOV-02 Phase 5, akhir horizon)* | Konsolidasi: replikasi, meta-analisis internal, studi dampak | tidak ada program baru; program yang ada dievaluasi lanjut/ubah/hentikan | End-of-horizon review; roadmap 2031–2035; evidence untuk siklus akreditasi berikutnya |
 
 Urutan pembukaan program disengaja: **pendidikan** dan **responsible AI** lebih dulu karena masalah, data, dan pemangku kepentingannya ada di dalam kampus (risiko akses data rendah, hasil cepat terlihat). **Halal** dan **kesehatan** menyusul setelah ada mitra lintas fakultas dan tata kelola data sensitif teruji. **Indonesian LLM** paling akhir karena membutuhkan compute, korpus, dan kematangan evaluasi yang dibangun oleh program-program sebelumnya.
+
+Tahun pada kolom *Program yang dibuka* adalah **target paling awal** dan hanya berlaku bila syarat §3 terpenuhi. [GOV-02](../../research-os/07-governance/02-implementation-roadmap.md) menempatkan pembuatan repo `program-*` dan target *≥2 repo `program-*` aktif* pada GOV-02 Phase 4 / GitHub Phase 4 (AI Center Launch, semester ganjil 2028/2029); pembukaan dua program unggulan pada 2027 memenuhi target itu lebih awal, dan bila syarat §3 belum terpenuhi pada 2027, pembukaannya bergeser ke 2028 tanpa mengubah urutan.
 
 ## 2. Rincian per tahun
 
@@ -27,7 +29,7 @@ Urutan pembukaan program disengaja: **pendidikan** dan **responsible AI** lebih 
 | Sel matriks aktif | C3 × Education (academic advising, AI literacy); C1 × Education/Government (RAG dokumen akademik & regulasi); C4 × Halal (klasifikasi citra produk/label) |
 | Program dibuka | — (repo `program-*` belum dibuat; lihat aturan di [README](../README.md) §3.3) |
 | Target output | KPI *leading* GOV-03: Research One-Pager, RQ tervalidasi, repositori, pilot experiment untuk angkatan pilot Metopen |
-| Milestone institusional | Phase 0–2 GitHub selesai; [BACKLOG.md](../../research-backlog/BACKLOG.md) berisi masalah tervalidasi G2; [REGISTRY.md](../../datasets-registry/REGISTRY.md) berisi kartu dataset pertama; pelatihan dosen reviewer gate |
+| Milestone institusional | GitHub Phase 0–2 (Foundation, Research OS, Pilot Metopen) = GOV-02 Phase 0–1 (Design, Pilot Metopen) selesai; [BACKLOG.md](../../research-backlog/BACKLOG.md) berisi masalah tervalidasi G2; [REGISTRY.md](../../datasets-registry/REGISTRY.md) berisi kartu dataset pertama; pelatihan dosen reviewer gate |
 | Bukti yang dicari | apakah alur Issue → gate → Research Pack berjalan dengan beban dosen yang wajar |
 
 ### 2027 — Curriculum Integration & program unggulan
@@ -63,7 +65,7 @@ Urutan pembukaan program disengaja: **pendidikan** dan **responsible AI** lebih 
 | Sel matriks aktif | C1 × semua domain yang punya korpus (benchmark Indonesia); C2 × Business (MLOps berbiaya rendah); C4 × Government/Social Impact |
 | Program dibuka | `program-indonesian-llm` — evaluasi dan adaptasi model bahasa untuk konteks Indonesia/domain UAI, bukan pelatihan foundation model dari nol (lihat [C1](../clusters/ai-models-data-knowledge.md)) |
 | Target output | rilis `DS-*` dan `ART-*` publik pertama; publikasi dengan artefak yang dapat direproduksi; KPI lagging GOV-03 |
-| Milestone institusional | Phase 5 GitHub: portal publik, dashboard otomatis, README organisasi sebagai dashboard; kebijakan compute dan penyimpanan data institusional |
+| Milestone institusional | GitHub Phase 5 (Public Research Portal) / GOV-02 Phase 5 (Scale cross-faculty): portal publik, dashboard otomatis, README organisasi sebagai dashboard; kebijakan compute dan penyimpanan data institusional |
 | Bukti yang dicari | apakah artefak UAI dipakai/dikutip pihak luar |
 
 ### 2030 — Evaluasi & agenda berikutnya

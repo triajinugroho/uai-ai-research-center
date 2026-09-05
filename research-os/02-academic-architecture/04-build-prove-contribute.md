@@ -119,7 +119,7 @@ Jenis output mengikuti [ARC-06](06-research-output-taxonomy.md); pipeline publik
 
 **Kriteria handoff TA → AI Research Center (Handoff #3).**
 
-1. Repositori final berisi kode, konfigurasi, seed, environment, hasil, figur, dan `AI-USAGE.md`; lisensi per komponen dinyatakan.
+1. Repositori final berisi kode, konfigurasi, seed, environment, hasil, figur, dan `docs/AI-USAGE.md`; lisensi per komponen dinyatakan.
 2. Semua output terdaftar: publikasi di `publications/`, dataset di `datasets-registry/`, artefak di `publications/` (bagian artefak).
 3. Bagian *missing evidence* dan *next steps* diisi untuk riset lanjutan; minimal satu Issue `type:problem` atau `type:research-question` baru dibuka di backlog dari hasil TA.
 4. Owner lanjutan disebut: dosen pembimbing, research lead klaster, atau program riset.
@@ -153,7 +153,7 @@ Contribute menghasilkan satu TA. Scale membuat satu TA menjadi bagian dari sesua
 | Dataset rilis | Data governance review → lisensi → rilis di HF/Kaggle/server | `DS-YYYY-NNN` di `datasets-registry/` |
 | Artefak/software/model | IP review singkat → lisensi → release | `ART-YYYY-NNN` |
 | HKI | Pendaftaran lewat unit HKI universitas | Dicatat di publications (bagian artefak) |
-| Riset dosen / hibah | TA menjadi bagian proposal penelitian internal (skema yang mensyaratkan minimal 2 mahasiswa) atau eksternal | Faculty Portfolio di Mission Control |
+| Riset dosen / hibah | TA menjadi bagian proposal penelitian internal (skema yang mensyaratkan minimal 2 mahasiswa — sumber: dokumen diskusi; verifikasi sebelum dokumen formal) atau eksternal | Faculty Portfolio di Mission Control |
 | Program riset | Beberapa riset dengan tema sama menjadi `program-<nama>` (5–10 tahun) | Repo `program-*` |
 | Backlog baru | *Next steps* dari handoff #3 menjadi Issue baru | Research ID baru, terhubung ke ID lama |
 
@@ -172,11 +172,11 @@ Setiap handoff — #1 Course → Metopen, #2 Metopen → TA, #3 TA → AI Center
 | **Next steps** | 3–5 langkah konkret berikutnya | "Literature search W3; minta data 2 semester tambahan ke pengelola; tetapkan baseline kedua" |
 | **Owner** | Siapa yang bertanggung jawab setelah handoff (dosen + mahasiswa) | "[isi] (dosen mentor, C3); tim: [isi]" |
 
-Ditambah: Research ID, entry door, klaster, lisensi/privasi data, dan AI Usage Log terakhir. Handoff disimpan di repositori riset (`docs/handoff-<tahap>.md`) dan ditautkan dari Issue.
+Ditambah: Research ID, entry door, klaster, lisensi/privasi data, dan AI Usage Log terakhir. Handoff disimpan di repositori riset (`docs/handoff.md`, satu bagian per tahap #1/#2/#3; struktur kanonik [TPL-15](../08-templates/15-research-repository-template.md)) dan ditautkan dari Issue.
 
 ## 10. Skenario naratif: satu riset dari proyek AI/ML semester V hingga TA
 
-**Research ID:** `UIAI-2026-017` · **Klaster primer:** C3 Human-Centered & Responsible AI · **Sekunder:** C4 Applied AI (domain Education) · **Entry door:** Course Project. Nama orang dan dataset di bawah adalah ilustrasi.
+**Research ID:** `UIAI-2026-017` (ilustratif) · **Klaster primer:** C3 Human-Centered & Responsible AI · **Sekunder:** C4 Applied AI (domain Education) · **Entry door:** Course Project. Research ID, nama orang, dataset, dan ID output (`DS-`/`PUB-`/`ART-`) di bawah adalah ilustrasi; contoh ID riil ada di [research-backlog/BACKLOG.md](../../research-backlog/BACKLOG.md).
 
 **Discover (sebelum semester V).** Bagian akademik Prodi menyampaikan ke pusat riset bahwa mahasiswa yang tertinggal sering baru terdeteksi setelah UTS. Seorang dosen membuka Issue `type:problem` "Deteksi dini mahasiswa berisiko tertinggal dari aktivitas LMS" — cluster `human-ai`, domain Education, potential dataset: log LMS anonim (kandidat `DS-2026-004`), related course AI/ML + Metopen, priority P1. Research ID masih sementara — nomor resmi baru diberikan saat G2.
 

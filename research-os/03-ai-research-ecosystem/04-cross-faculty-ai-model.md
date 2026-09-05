@@ -63,7 +63,7 @@ Setelah masuk, alur sama dengan riset lain: klasifikasi → pencocokan → Resea
 
 ### 4.2 MoU ringan
 
-Kolaborasi internal antar fakultas tidak selalu memerlukan MoU formal universitas; cukup **nota kesepakatan riset satu halaman** yang disahkan pimpinan kedua unit dan disimpan di `docs/agreement.md` (INTERNAL) repositori riset. Isinya:
+Kolaborasi internal antar fakultas tidak selalu memerlukan MoU formal universitas; cukup **nota kesepakatan riset satu halaman** yang disahkan pimpinan kedua unit dan disimpan sebagai bagian **Nota kesepakatan lintas fakultas** di `docs/team.md` (INTERNAL) repositori riset — struktur kanonik [TPL-15](../08-templates/15-research-repository-template.md). Isinya:
 
 1. Research ID, judul kerja, klaster/domain.
 2. Problem owner (mitra), AI capability owner (Informatika), mahasiswa yang terlibat.
@@ -83,7 +83,7 @@ Mengikuti prinsip kontribusi substansial (ide/desain, data, analisis, penulisan,
 - Mahasiswa yang menjalankan riset adalah penulis (sering penulis pertama pada paper hasil TA).
 - Dosen Informatika yang merancang metode dan mengawasi eksperimen adalah penulis.
 - Penyedia data tanpa kontribusi intelektual lain → *acknowledgement* + sitasi dataset (`DS-YYYY-NNN`).
-- Urutan penulis ditetapkan berdasarkan kontribusi, dicatat di `paper/AUTHORSHIP.md`; perselisihan diputuskan `@directors`.
+- Urutan penulis ditetapkan berdasarkan kontribusi, dicatat di `docs/team.md` §Authorship dan disalin ke bagian penulis `paper/proposal.md`; perselisihan diputuskan `@directors`.
 - Kontribusi AI diungkap sesuai kebijakan venue; AI bukan penulis.
 
 ### 4.4 Data governance

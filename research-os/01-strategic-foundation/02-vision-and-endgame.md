@@ -28,7 +28,7 @@ Yang dilatih bukan hafalan jenis penelitian, melainkan alur *research thinking*:
 
 ## 3. Empat level outcome
 
-Empat level ini adalah *maturity* riset sekaligus level capaian mahasiswa. Ketiganya dipetakan ke gate ([OPS-03](../06-execution-os/03-research-gates.md)) dan label `maturity:*` di GitHub.
+Empat level ini adalah *maturity* riset sekaligus level capaian mahasiswa. Keempatnya dipetakan ke gate ([OPS-03](../06-execution-os/03-research-gates.md)) dan label `maturity:*` di GitHub.
 
 ### 3.1 TA Ready — minimum (wajib 100%)
 

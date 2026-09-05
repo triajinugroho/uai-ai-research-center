@@ -53,7 +53,7 @@ Tahun 2030 dipilih sebagai horizon karena selaras dengan [`research-roadmap/2026
 | **Activities** | Semester genap 2026/2027: revisi RPS AI/ML mengikuti [ARC-05](../02-academic-architecture/05-cpl-cpmk-artifact-alignment.md) dan [`courses/ai-ml/`](../../research-based-learning/courses/ai-ml/README.md); definisi `research-artifact.md`; pelatihan koordinator. Semester ganjil 2027/2028: proyek AI/ML memakai Issue `type:problem`/`type:dataset`, baseline & metrik, reproducibility minimum; handoff Course → Metopen; Metopen angkatan kedua berjalan paralel dengan perbaikan dari pilot |
 | **Deliverables** | RPS AI/ML v1.0 (mode R); `research-artifact.md` per tim AI/ML; ≥N dataset `DS-2027-*`; backlog terisi dari proyek MK; Metopen angkatan kedua |
 | **Owner** | Koordinator AI/ML (R); tim kurikulum (A); admin riset (registry) |
-| **KPI** | KPI-I-06 AI/ML mode R aktif; KPI-I-05 ≥30% tim Metopen angkatan kedua memakai asset angkatan sebelumnya/AI-ML; KPI-I-02 ≥70% TA continuation dari pilot |
+| **KPI** | KPI-I-06 AI/ML mode R aktif; KPI-I-05 ≥20% tim Metopen angkatan kedua memakai asset angkatan sebelumnya/AI-ML (target pilot [GOV-03](03-kpi-and-measurement.md)); KPI-I-02 ≥70% TA continuation dari pilot |
 | **Exit criteria** | Minimal satu siklus penuh AI/ML → Metopen dengan handoff terdokumentasi; TA angkatan pilot berjalan dari Research Pack; KPI pilot bertahan atau naik pada angkatan kedua |
 
 ### Phase 3 — Expand technical courses (2027/2028)
