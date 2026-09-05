@@ -20,7 +20,7 @@ Konsekuensi desain: nilai tidak bisa "dikejar di akhir semester". Tim yang tidak
 
 | Komponen | Bobot | Dinilai lewat | Kapan | Satuan |
 |---|---|---|---|---|
-| **A. Milestone Portfolio (Research Pack)** | **60%** | Rubrik 5E pada PR gate G1–G8 | Berjalan (W1–W16) | Tim, dimodulasi individu (§7) |
+| **A. Milestone Portfolio (Research Pack)** | **60%** | Rubrik 5E pada PR gate G1–G8 | Berjalan (W1–W16) | Tim, dimodulasi individu (§6) |
 | — End | 10% | G1, G2, G4 | W1, W2, W6 | |
 | — Evidence | 15% | G3, G4 | W3–W6 | |
 | — Experiment | 15% | G5, G6 | W7–W10 | |
@@ -36,17 +36,19 @@ Konversi ke nilai huruf mengikuti ketentuan Prodi (`[isi]`). Level rubrik dikonv
 
 ### 2.1 Rekonsiliasi dengan CPMK
 
-| Komponen | CPMK yang dibuktikan ([MET-02](02-metopen-course-outcomes.md)) |
-|---|---|
-| A — End | 01 Problem, 05 RQ, 06 Hypothesis |
-| A — Evidence | 02 Discovery, 03 Synthesis, 04 Gap |
-| A — Experiment | 07 Methods, 08 Experiment, 06 Hypothesis (kriteria penolakan) |
-| A — Explanation | 09 Validity, 12 Writing |
-| A — Execution | 08 Experiment (reproducibility), 10 AI-Assisted |
-| B — Defense | 13 Defense, 01, 09 |
-| C — Peer Review | 12 Writing (sebagai reviewer), 03 Synthesis |
-| D — Partisipasi | 10 AI-Assisted, disiplin semua CPMK |
-| Integrity Gate | 11 Research Integrity |
+| Komponen | CPMK yang dibuktikan ([MET-02](02-metopen-course-outcomes.md)) | Bobot CPMK yang ditampung (poin dari 100) |
+|---|---|---|
+| A — End (10) | 01 Problem, 05 RQ, 06 Hypothesis | 01 (5) + 05 (4) + 06 (1) = 10 |
+| A — Evidence (15) | 02 Discovery, 03 Synthesis, 04 Gap | 02 (5) + 03 (4) + 04 (6) = 15 |
+| A — Experiment (15) | 07 Methods, 08 Experiment, 06 Hypothesis (kriteria penolakan) | 07 (10) + 08 (2) + 06 (3) = 15 |
+| A — Explanation (10) | 09 Validity, 12 Writing | 09 (6) + 12 (4) = 10 |
+| A — Execution (10) | 08 Experiment (reproducibility), 10 AI-Assisted | 08 (8) + 10 (2) = 10 |
+| B — Defense (15) | 13 Defense, 01, 09 | 13 (10) + 01 (3) + 09 (2) = 15 |
+| C — Peer Review (10) | 12 Writing (sebagai reviewer), 03 Synthesis | 12 (6) + 03 (4) = 10 |
+| D — Partisipasi (15) | 10 AI-Assisted, disiplin semua CPMK | 10 (4) + porsi disiplin sprint 02 (1), 05 (2), 07 (2), 08 (2), 12 (2), 13 (2) = 15 |
+| Integrity Gate | 11 Research Integrity | prasyarat lulus/gagal, bukan poin |
+
+Alokasi ini identik dengan tabel rekonsiliasi di [MET-02](02-metopen-course-outcomes.md) §4: jumlah tiap baris = bobot komponen di §2, jumlah seluruh sel = 100 (sama dengan total bobot CPMK). Alokasi bersifat indikatif untuk RPS; perubahan harus dilakukan di kedua dokumen sekaligus.
 
 ## 3. Rubrik 5E
 

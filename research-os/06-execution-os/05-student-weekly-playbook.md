@@ -21,7 +21,7 @@ Setiap halaman minggu memakai enam bagian ini, dalam urutan ini, tanpa tambahan:
 Satu kalimat: outcome minggu ini. Bukan daftar kegiatan.
 
 ## Tasks
-7–10 baby steps, masing-masing dengan Task ID dari WBS, judul, dan effort.
+5–10 baby steps (umumnya 7–10), masing-masing dengan Task ID dari WBS, judul, dan effort.
 Tandai [ ] belum, [~] sedang, [x] selesai.
 
 ## Deliverable
@@ -92,7 +92,7 @@ melebihi apa yang RQ dapat buktikan.
 [ ] OPS-052  Rumuskan 1-3 RQ dan/atau hipotesis yang dapat difalsifikasi ...... 2h    (semua)
 [ ] OPS-053  Tulis Contribution Statement ..................................... 1.5h  (Fajar)
 [ ] OPS-054  Uji RQ dengan checklist keterjawaban dan falsifiabilitas ......... 1.5h  (Rani)
-[ ] OPS-055  Perbarui Research One-Pager ke v1 ................................ 1h    (Fajar)
+[ ] OPS-055  Perbarui Research One-Pager ke v1 (problem-gap-RQ-contribution) . 1h    (Fajar)
 [ ] OPS-056  Buka Issue type:research-question ................................ 0.5h  (Fajar)
 [ ] OPS-057  Siapkan PR GATE REVIEW: Question Ready ........................... 1h    (Rani)
 [ ] OPS-058  Perbarui AI Usage Log dan jurnal mingguan W6 ..................... 0.5h  (semua)
@@ -137,7 +137,7 @@ Baris di bawah hanyalah *This Week* tiap minggu; rinciannya ada di halaman mingg
 
 | Minggu | Sprint | Gate | This Week (outcome) |
 |---|---|---|---|
-| W0 | S0 | G1 | Akun, tim, repositori, AI Usage Log siap. |
+| S0 (pra-W1) Onboarding | S0 | G1 | Akun, tim, repositori riset (TPL-15), AI Usage Log siap sebelum W1. |
 | W1 Endgame | S1 | G1 | Endgame dan klaim awal tertulis; PR G1. |
 | W2 Problem | S2 | G2 | Problem Brief problem-first dengan bukti stakeholder; Research ID resmi. |
 | W3 Search | S3 | G3 | Search strategy dijalankan; semua referensi terverifikasi. |
@@ -149,10 +149,10 @@ Baris di bawah hanyalah *This Week* tiap minggu; rinciannya ada di halaman mingg
 | W9 Repository | S9 | G6 | Repositori dapat dijalankan satu perintah dengan seed. |
 | W10 Pilot | S10 | G6 | Pilot berjalan; peer mereproduksi baseline; PR G6. |
 | W11 Analysis | S11 | G7 | Hasil penuh dengan ketidakpastian, error analysis, figur jujur. |
-| W12 Contribution | S12 | G7 | Tabel CER, threats v1, contribution tidak melebihi bukti; PR G7. |
+| W12 Contribution | S12 | G7 | Tabel CER, threats v2, contribution tidak melebihi bukti; PR G7. |
 | W13 Manuscript | S13 | G8 | Proposal/manuscript dari artefak; release v0.8. |
 | W14 Peer Review | S14 | G8 | Memberi dan menerima review; tabel tanggapan. |
-| W15 Revision | S15 | G8 | Revisi tuntas; integrity checklist ditandatangani; rehearsal. |
+| W15 Revision | S15 | G8 | Revisi tuntas (proposal v0.9); integrity checklist ditandatangani; rehearsal. |
 | W16 Defense | S16 | G8 | Defense, handoff, release v1.0 Research Pack. |
 
 ## Tiga pertanyaan sebelum menutup laptop setiap minggu
